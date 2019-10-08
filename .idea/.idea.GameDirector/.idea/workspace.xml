@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00e495e6-08be-4489-a00b-71ea0b27686c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/GameDirector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Flags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UFPS/Base/Scripts/Gameplay/Player/Local/vp_FPPlayerDamageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UFPS/Base/Scripts/Gameplay/Player/vp_PlayerDamageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/InputObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_EnableMeshOnDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_UpdateDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UFPS/Base/Scripts/Gameplay/Level/Spawning/vp_Remover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHazzard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_ToggleDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Director/Main/Flags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DisablMeshOnPlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DataObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DirectorObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Flags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Tools/DisablMeshOnPlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Tools/DisableCanvasOnPlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DirectorScripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Tools/ToggleDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/DistanceCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Main/Tools/UpdateDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/Inputs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/UpdateDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateDistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/InputObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/CheckPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/UpdateHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Decision/DecisionObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Decision/SpawnHazzard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/DR_SpawnRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/HealthPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Decision/DecisionMaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Decision/SpawnHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_ValueLessThan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_Triggers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/SpawnHazzard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/SpawnHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Enable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Flags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_UpdateDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_EnableMeshOnDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_ToggleDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_DetectSeen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/Debug/D_LookingAtDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_ZoneUpdater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R4fByawmyov9Xli9fdWbOfGNdq" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00e495e6-08be-4489-a00b-71ea0b27686c" name="Default Changelist" comment="" />
+      <created>1568931157995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568931157995</updated>
+      <workItem from="1568931162868" duration="2766000" />
+      <workItem from="1569273411885" duration="49692000" />
+      <workItem from="1569689031851" duration="7300000" />
+      <workItem from="1569871201332" duration="3634000" />
+      <workItem from="1570076960322" duration="11209000" />
+      <workItem from="1570303151969" duration="3989000" />
+      <workItem from="1570420716726" duration="8035000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
