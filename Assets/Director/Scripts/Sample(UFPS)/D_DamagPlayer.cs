@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagPlayer : MonoBehaviour
+public class D_DamagPlayer : MonoBehaviour
 {
     public float damageAmount = 1;
     public float damageTimer = 1;

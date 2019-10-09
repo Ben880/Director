@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\bmwla\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\bmwla\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_Director.-605003601.00" t="ExcludeRecursive" />
+    <e p="C:\Users\bmwla\Documents\GitHub\Director" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Director" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Data.cs" t="Include" />
+            <e p="DirectorObjects.cs" t="Include" />
+            <e p="Flags.cs" t="Include" />
+            <e p="Inputs" t="Include">
+              <e p="InputObject.cs" t="Include" />
+              <e p="UpdateDistance.cs" t="Include" />
+              <e p="UpdateTime.cs" t="Include" />
+            </e>
+            <e p="Logic" t="Include">
+              <e p="D_DetectSeen.cs" t="Include" />
+              <e p="D_LogicHolder.cs" t="Include" />
+              <e p="D_LogicObject.cs" t="Include" />
+              <e p="D_SpawnHazzard.cs" t="Include" />
+              <e p="D_SpawnHealth.cs" t="Include" />
+            </e>
+            <e p="Points" t="Include">
+              <e p="CheckPoint.cs" t="Include" />
+              <e p="D_Enable.cs" t="Include" />
+              <e p="D_PointObject.cs" t="Include" />
+              <e p="D_SpawnRandom.cs" t="Include" />
+            </e>
+            <e p="Points.cs" t="Include" />
+            <e p="Sample(UFPS)" t="Include">
+              <e p="D_DamagPlayer.cs" t="Include" />
+              <e p="UpdateHealth.cs" t="Include" />
+            </e>
+            <e p="Tools" t="Include">
+              <e p="D_Timer.cs" t="Include" />
+              <e p="Debug" t="Include">
+                <e p="D_EnableMeshOnDebug.cs" t="Include" />
+                <e p="D_LookingAtDebug.cs" t="Include" />
+                <e p="D_ToggleDebug.cs" t="Include" />
+                <e p="D_UpdateDebug.cs" t="Include" />
+              </e>
+              <e p="DisableCanvasOnPlay.cs" t="Include" />
+            </e>
+            <e p="Zones" t="Include">
+              <e p="D_ZoneUpdater.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="UFPS" t="Include">
+          <e p="Base" t="Include">
+            <e p="Content" t="Include">
+              <e p="Art" t="Include">
+                <e p="Body" t="Include">
+                  <e p="Animations" t="Include">
+                    <e p="_README_Animations.txt" t="Include" />
+                  </e>
+                  <e p="Materials" t="Include">
+                    <e p="InvisibleShadowCaster.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="Weapons" t="Include">
+                  <e p="Source" t="Include">
+                    <e p="BasicArms" t="Include">
+                      <e p="_README_BasicArms.txt" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+              <e p="Levels" t="Include">
+                <e p="SkyCity" t="Include">
+                  <e p="CustomShaders" t="Include">
+                    <e p="DiffuseVertexColor.shader" t="Include" />
+                    <e p="ReflectiveCubeMapped.shader" t="Include" />
+                    <e p="ReflectiveCubeMapped_Glass.shader" t="Include" />
+                    <e p="Scroll_Emissive.shader" t="Include" />
+                    <e p="SimpleEmissive.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Core" t="Include">
+                <e p="Attributes" t="Include">
+                  <e p="vp_FloatFieldAttribute.cs" t="Include" />
+                  <e p="vp_HelpBoxAttribute.cs" t="Include" />
+                  <e p="vp_ItemAmountAttribute.cs" t="Include" />
+                  <e p="vp_ItemIDAttribute.cs" t="Include" />
+                  <e p="vp_ItemTypeAttribute.cs" t="Include" />
+                  <e p="vp_PropertyDrawerUtility.cs.cs" t="Include" />
+                  <e p="vp_SeparatorAttribute.cs" t="Include" />
+                </e>
+                <e p="ComponentSystem" t="Include">
+                  <e p="vp_Component.cs" t="Include" />
+                  <e p="vp_ComponentPreset.cs" t="Include" />
+                  <e p="vp_State.cs" t="Include" />
+                  <e p="vp_StateManager.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="Menu" t="Include">
+                    <e p="vp_AboutBox.cs" t="Include" />
+                    <e p="vp_AddonBrowser.cs" t="Include" />
+                    <e p="vp_UFPSMenu.cs" t="Include" />
+                    <e p="vp_UpdateDialog.cs" t="Include" />
+                  </e>
+                  <e p="vp_ComponentPersister.cs" t="Include" />
+                  <e p="vp_EditorApplicationQuit.cs" t="Include" />
+                  <e p="vp_EditorGUIUtility.cs" t="Include" />
+                  <e p="vp_EditorUtility.cs" t="Include" />
+                  <e p="vp_EventDumpWindow.cs" t="Include" />
+                  <e p="vp_FileDialog.cs" t="Include" />
+                  <e p="vp_FPCameraEditor.cs" t="Include" />
+                  <e p="vp_FPControllerEditor.cs" t="Include" />
+                  <e p="vp_FPInputEditor.cs" t="Include" />
+                  <e p="vp_FPPlayerEventHandlerEditor.cs" t="Include" />
+                  <e p="vp_FPWeaponEditor.cs" t="Include" />
+                  <e p="vp_FPWeaponMeleeAttackEditor.cs" t="Include" />
+                  <e p="vp_FPWeaponShooterEditor.cs" t="Include" />
+                  <e p="vp_InputEditor.cs" t="Include" />
+                  <e p="vp_InputWindow.cs" t="Include" />
+                  <e p="vp_MessageBox.cs" t="Include" />
+                  <e p="vp_PresetEditorGUIUtility.cs" t="Include" />
+                  <e p="vp_ShooterEditor.cs" t="Include" />
+                  <e p="vp_TimerEditor.cs" t="Include" />
+                  <e p="vp_UFPSInfo.cs" t="Include" />
+                  <e p="vp_WeaponEditor.cs" t="Include" />
+                  <e p="vp_WeaponShooterEditor.cs" t="Include" />
+                </e>
+                <e p="EventSystem" t="Include">
+                  <e p="vp_Activity.cs" t="Include" />
+                  <e p="vp_Attempt.cs" t="Include" />
+                  <e p="vp_Event.cs" t="Include" />
+                  <e p="vp_EventDump.cs" t="Include" />
+                  <e p="vp_EventHandler.cs" t="Include" />
+                  <e p="vp_GlobalEvent.cs" t="Include" />
+                  <e p="vp_Message.cs" t="Include" />
+                  <e p="vp_StateEventHandler.cs" t="Include" />
+                  <e p="vp_TargetEvent.cs" t="Include" />
+                  <e p="vp_Value.cs" t="Include" />
+                </e>
+                <e p="Help" t="Include">
+                  <e p="vp_Help.cs" t="Include" />
+                  <e p="vp_UFPSHelp.cs" t="Include" />
+                </e>
+                <e p="Motion" t="Include">
+                  <e p="vp_AngleBob.cs" t="Include" />
+                  <e p="vp_Billboard.cs" t="Include" />
+                  <e p="vp_Bob.cs" t="Include" />
+                  <e p="vp_Perlin.cs" t="Include" />
+                  <e p="vp_RigidbodyImpulse.cs" t="Include" />
+                  <e p="vp_Spin.cs" t="Include" />
+                  <e p="vp_Spring.cs" t="Include" />
+                  <e p="vp_Toss.cs" t="Include" />
+                </e>
+                <e p="Utility" t="Include">
+                  <e p="vp_3DUtility.cs" t="Include" />
+                  <e p="vp_AudioUtility.cs" t="Include" />
+                  <e p="vp_Gizmo.cs" t="Include" />
+                  <e p="vp_Input.cs" t="Include" />
+                  <e p="vp_Layer.cs" t="Include" />
+                  <e p="vp_MaterialUtility.cs" t="Include" />
+                  <e p="vp_MathUtility.cs" t="Include" />
+                  <e p="vp_ParticleFXPooler.cs" t="Include" />
+                  <e p="vp_PoolManager.cs" t="Include" />
+                  <e p="vp_Timer.cs" t="Include" />
+                  <e p="vp_TimeUtility.cs" t="Include" />
+                  <e p="vp_Utility.cs" t="Include" />
+                  <e p="vp_WaypointGizmo.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Demo" t="Include">
+                <e p="vp_DemoManager.cs" t="Include" />
+                <e p="vp_DoomsDayDevice.cs" t="Include" />
+                <e p="vp_FPSDemo1.cs" t="Include" />
+                <e p="vp_FPSDemo2.cs" t="Include" />
+                <e p="vp_FPSDemo3.cs" t="Include" />
+                <e p="vp_FPSDemoManager.cs" t="Include" />
+                <e p="vp_FPSDemoPlaceHolderMessenger.cs" t="Include" />
+              </e>
+              <e p="Effects" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="vp_PlayerFootFXHandlerEditor.cs" t="Include" />
+                </e>
+                <e p="SurfaceSystem" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="vp_DecalManagerEditor.cs" t="Include" />
+                    <e p="vp_SurfaceManagerEditor.cs" t="Include" />
+                  </e>
+                  <e p="vp_DecalManager.cs" t="Include" />
+                  <e p="vp_Effect.cs" t="Include" />
+                  <e p="vp_ImpactEvent.cs" t="Include" />
+                  <e p="vp_SurfaceEffect.cs" t="Include" />
+                  <e p="vp_SurfaceIdentifier.cs" t="Include" />
+                  <e p="vp_SurfaceManager.cs" t="Include" />
+                  <e p="vp_SurfaceType.cs" t="Include" />
+                </e>
+                <e p="vp_Debris.cs" t="Include" />
+                <e p="vp_DecalManager.cs" t="Include" />
+                <e p="vp_FadingDecal.cs" t="Include" />
+                <e p="vp_MuzzleFlash.cs" t="Include" />
+                <e p="vp_PlayerFootFXHandler.cs" t="Include" />
+                <e p="vp_PulsingLight.cs" t="Include" />
+                <e p="vp_RigidbodyFX.cs" t="Include" />
+                <e p="vp_Shell.cs" t="Include" />
+              </e>
+              <e p="Gameplay" t="Include">
+                <e p="AI" t="Include">
+                  <e p="vp_SecurityCamTurret.cs" t="Include" />
+                  <e p="vp_SimpleAITurret.cs" t="Include" />
+                </e>
+                <e p="Combat" t="Include">
+                  <e p="vp_Bullet.cs" t="Include" />
+                  <e p="vp_DamageHandler.cs" t="Include" />
+                  <e p="vp_DamageInfo.cs" t="Include" />
+                  <e p="vp_DamageTransfer.cs" t="Include" />
+                  <e p="vp_Explosion.cs" t="Include" />
+                  <e p="vp_FXBullet.cs" t="Include" />
+                  <e p="vp_Grenade.cs" t="Include" />
+                  <e p="vp_HitscanBullet.cs" t="Include" />
+                  <e p="vp_Regenerator.cs" t="Include" />
+                  <e p="vp_Shooter.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="vp_FootstepManagerEditor.cs" t="Include" />
+                  <e p="vp_MovingPlatformEditor.cs" t="Include" />
+                  <e p="vp_RemotePlayerWizard.cs" t="Include" />
+                  <e p="vp_SpawnPointEditor.cs" t="Include" />
+                  <e p="vp_SurfaceIdentifierEditor.cs" t="Include" />
+                </e>
+                <e p="Inventory" t="Include">
+                  <e p="Attributes" t="Include">
+                    <e p="vp_InventoryCapsAttribute.cs" t="Include" />
+                    <e p="vp_InventoryItemsAttribute.cs" t="Include" />
+                    <e p="vp_InventorySpaceAttribute.cs" t="Include" />
+                  </e>
+                  <e p="ItemTypes" t="Include">
+                    <e p="vp_CustomType.cs" t="Include" />
+                    <e p="vp_ItemType.cs" t="Include" />
+                    <e p="vp_UnitBankType.cs" t="Include" />
+                    <e p="vp_UnitType.cs" t="Include" />
+                  </e>
+                  <e p="vp_Inventory.cs" t="Include" />
+                  <e p="vp_ItemIdentifier.cs" t="Include" />
+                  <e p="vp_ItemInstance.cs" t="Include" />
+                  <e p="vp_ItemPickup.cs" t="Include" />
+                  <e p="vp_UnitBankInstance.cs" t="Include" />
+                </e>
+                <e p="Level" t="Include">
+                  <e p="MovingPlatform" t="Include">
+                    <e p="vp_MovingPlatform.cs" t="Include" />
+                  </e>
+                  <e p="Spawning" t="Include">
+                    <e p="vp_Placement.cs" t="Include" />
+                    <e p="vp_RandomSpawner.cs" t="Include" />
+                    <e p="vp_Remover.cs" t="Include" />
+                    <e p="vp_Respawner.cs" t="Include" />
+                    <e p="vp_SpawnPoint.cs" t="Include" />
+                  </e>
+                  <e p="vp_KillZone.cs" t="Include" />
+                </e>
+                <e p="Player" t="Include">
+                  <e p="Local" t="Include">
+                    <e p="FootstepManager" t="Include">
+                      <e p="vp_FootstepManager.cs" t="Include" />
+                      <e p="vp_SurfaceIdentifier.cs" t="Include" />
+                    </e>
+                    <e p="Interaction" t="Include">
+                      <e p="vp_Climb.cs" t="Include" />
+                      <e p="vp_Grab.cs" t="Include" />
+                      <e p="vp_Interactable.cs" t="Include" />
+                      <e p="vp_ItemGrab.cs" t="Include" />
+                      <e p="vp_PlatformSwitch.cs" t="Include" />
+                      <e p="vp_Switch.cs" t="Include" />
+                    </e>
+                    <e p="OldInventory" t="Include">
+                      <e p="_OLD_INVENTORY_README_.txt" t="Include" />
+                    </e>
+                    <e p="vp_FPBodyAnimator.cs" t="Include" />
+                    <e p="vp_FPCamera.cs" t="Include" />
+                    <e p="vp_FPCameraSmoothToggle.cs" t="Include" />
+                    <e p="vp_FPController.cs" t="Include" />
+                    <e p="vp_FPEarthquake.cs" t="Include" />
+                    <e p="vp_FPInput.cs" t="Include" />
+                    <e p="vp_FPInteractManager.cs" t="Include" />
+                    <e p="vp_FPInventory.cs" t="Include" />
+                    <e p="vp_FPPistolReloader.cs" t="Include" />
+                    <e p="vp_FPPlayerDamageHandler.cs" t="Include" />
+                    <e p="vp_FPPlayerEventHandler.cs" t="Include" />
+                    <e p="vp_FPWeapon.cs" t="Include" />
+                    <e p="vp_FPWeaponHandler.cs" t="Include" />
+                    <e p="vp_FPWeaponMeleeAttack.cs" t="Include" />
+                    <e p="vp_FPWeaponReloader.cs" t="Include" />
+                    <e p="vp_FPWeaponShooter.cs" t="Include" />
+                    <e p="vp_FPWeaponThrower.cs" t="Include" />
+                    <e p="vp_LocalPlayer.cs" t="Include" />
+                  </e>
+                  <e p="vp_3rdPersonWeaponAim.cs" t="Include" />
+                  <e p="vp_BodyAnimator.cs" t="Include" />
+                  <e p="vp_CapsuleController.cs" t="Include" />
+                  <e p="vp_CharacterController.cs" t="Include" />
+                  <e p="vp_Controller.cs" t="Include" />
+                  <e p="vp_PlayerDamageHandler.cs" t="Include" />
+                  <e p="vp_PlayerEventHandler.cs" t="Include" />
+                  <e p="vp_PlayerInventory.cs" t="Include" />
+                  <e p="vp_PlayerItemDropper.cs" t="Include" />
+                  <e p="vp_PlayerRespawner.cs" t="Include" />
+                  <e p="vp_RagdollHandler.cs" t="Include" />
+                  <e p="vp_SimpleFiring.cs" t="Include" />
+                  <e p="vp_Weapon.cs" t="Include" />
+                  <e p="vp_WeaponHandler.cs" t="Include" />
+                  <e p="vp_WeaponReloader.cs" t="Include" />
+                  <e p="vp_WeaponShooter.cs" t="Include" />
+                  <e p="vp_WeaponThrower.cs" t="Include" />
+                </e>
+                <e p="Powerups" t="Include">
+                  <e p="vp_HealthPowerup.cs" t="Include" />
+                  <e p="vp_Powerup.cs" t="Include" />
+                  <e p="vp_SlomoPowerup.cs" t="Include" />
+                  <e p="vp_StatePowerup.cs" t="Include" />
+                </e>
+                <e p="vp_Gameplay.cs" t="Include" />
+              </e>
+              <e p="GUI" t="Include">
+                <e p="vp_PainHUD.cs" t="Include" />
+                <e p="vp_SimpleCrosshair.cs" t="Include" />
+                <e p="vp_SimpleHUD.cs" t="Include" />
+              </e>
+              <e p="Presets" t="Include">
+                <e p="Demo" t="Include">
+                  <e p="ArtilleryCamera.txt" t="Include" />
+                  <e p="ArtilleryController.txt" t="Include" />
+                  <e p="ArtilleryInput.txt" t="Include" />
+                  <e p="AstronautCamera.txt" t="Include" />
+                  <e p="AstronautController.txt" t="Include" />
+                  <e p="AstronautInput.txt" t="Include" />
+                  <e p="AstronautWeapon.txt" t="Include" />
+                  <e p="ControllerCrouch.txt" t="Include" />
+                  <e p="ControllerMegaSpeed.txt" t="Include" />
+                  <e p="CowboyCamera.txt" t="Include" />
+                  <e p="CowboyController.txt" t="Include" />
+                  <e p="CowboyInput.txt" t="Include" />
+                  <e p="CowboyShooter.txt" t="Include" />
+                  <e p="CowboyShooterZoom.txt" t="Include" />
+                  <e p="CowboyWeapon.txt" t="Include" />
+                  <e p="CowboyWeaponCrouch.txt" t="Include" />
+                  <e p="CowboyWeaponZoom.txt" t="Include" />
+                  <e p="CrouchInput.txt" t="Include" />
+                  <e p="DefaultCamera.txt" t="Include" />
+                  <e p="DefaultInput.txt" t="Include" />
+                  <e p="DefaultWeapon.txt" t="Include" />
+                  <e p="DrunkCamera.txt" t="Include" />
+                  <e p="DrunkController.txt" t="Include" />
+                  <e p="DrunkInput.txt" t="Include" />
+                  <e p="DrunkWeapon.txt" t="Include" />
+                  <e p="FreezeCamera.txt" t="Include" />
+                  <e p="FreezeController.txt" t="Include" />
+                  <e p="FreezeInput.txt" t="Include" />
+                  <e p="ImmobileCamera.txt" t="Include" />
+                  <e p="ImmobileController.txt" t="Include" />
+                  <e p="ImmobileInput.txt" t="Include" />
+                  <e p="ImmobileWeapon.txt" t="Include" />
+                  <e p="MaceCamera.txt" t="Include" />
+                  <e p="MaceInput.txt" t="Include" />
+                  <e p="MaceWeapon.txt" t="Include" />
+                  <e p="MafiaCamera.txt" t="Include" />
+                  <e p="MafiaCameraCrouch.txt" t="Include" />
+                  <e p="MafiaInput.txt" t="Include" />
+                  <e p="MafiaShooter.txt" t="Include" />
+                  <e p="MafiaShooterZoom.txt" t="Include" />
+                  <e p="MafiaWeapon.txt" t="Include" />
+                  <e p="MafiaWeaponCrouch.txt" t="Include" />
+                  <e p="MafiaWeaponZoom.txt" t="Include" />
+                  <e p="MechCamera.txt" t="Include" />
+                  <e p="MechController.txt" t="Include" />
+                  <e p="MechInput.txt" t="Include" />
+                  <e p="MechShooter.txt" t="Include" />
+                  <e p="MechWeapon.txt" t="Include" />
+                  <e p="MechWeaponZoom.txt" t="Include" />
+                  <e p="MeleeAttackToDown.txt" t="Include" />
+                  <e p="MeleeAttackToDownLeft.txt" t="Include" />
+                  <e p="MeleeAttackToDownRight.txt" t="Include" />
+                  <e p="MeleeAttackToLeft.txt" t="Include" />
+                  <e p="MeleeAttackToRight.txt" t="Include" />
+                  <e p="MeleeAttackToUp.txt" t="Include" />
+                  <e p="MeleeWeaponPullDown.txt" t="Include" />
+                  <e p="MeleeWeaponPullLeft.txt" t="Include" />
+                  <e p="MeleeWeaponPullRight.txt" t="Include" />
+                  <e p="MeleeWeaponPullUp.txt" t="Include" />
+                  <e p="MeleeWeaponPullUpLeft.txt" t="Include" />
+                  <e p="MeleeWeaponPullUpRight.txt" t="Include" />
+                  <e p="MeleeWeaponSwingDown.txt" t="Include" />
+                  <e p="MeleeWeaponSwingDownLeft.txt" t="Include" />
+                  <e p="MeleeWeaponSwingDownRight.txt" t="Include" />
+                  <e p="MeleeWeaponSwingLeft.txt" t="Include" />
+                  <e p="MeleeWeaponSwingRight.txt" t="Include" />
+                  <e p="MeleeWeaponSwingUp.txt" t="Include" />
+                  <e p="ModernCamera.txt" t="Include" />
+                  <e p="ModernCameraCrouch.txt" t="Include" />
+                  <e p="ModernCameraZoom.txt" t="Include" />
+                  <e p="ModernCameraZoomInput.txt" t="Include" />
+                  <e p="ModernController.txt" t="Include" />
+                  <e p="ModernControllerZoom.txt" t="Include" />
+                  <e p="ModernInput.txt" t="Include" />
+                  <e p="ModernShooter.txt" t="Include" />
+                  <e p="ModernShooterZoom.txt" t="Include" />
+                  <e p="ModernWeapon.txt" t="Include" />
+                  <e p="ModernWeaponCrouch.txt" t="Include" />
+                  <e p="ModernWeaponZoom.txt" t="Include" />
+                  <e p="MouseLowSensCamera.txt" t="Include" />
+                  <e p="MouseLowSensInput.txt" t="Include" />
+                  <e p="MouseLowSensWeapon.txt" t="Include" />
+                  <e p="MouseRawUnityCamera.txt" t="Include" />
+                  <e p="MouseRawUnityInput.txt" t="Include" />
+                  <e p="MouseRawUnityWeapon.txt" t="Include" />
+                  <e p="MouseSmoothingCamera.txt" t="Include" />
+                  <e p="MouseSmoothingInput.txt" t="Include" />
+                  <e p="MouseSmoothingWeapon.txt" t="Include" />
+                  <e p="OldSchoolCamera.txt" t="Include" />
+                  <e p="OldSchoolController.txt" t="Include" />
+                  <e p="OldSchoolInput.txt" t="Include" />
+                  <e p="OldSchoolShooter.txt" t="Include" />
+                  <e p="OldSchoolWeapon.txt" t="Include" />
+                  <e p="Persp1999Camera.txt" t="Include" />
+                  <e p="Persp1999Input.txt" t="Include" />
+                  <e p="Persp1999Weapon.txt" t="Include" />
+                  <e p="PerspModernCamera.txt" t="Include" />
+                  <e p="PerspModernInput.txt" t="Include" />
+                  <e p="PerspModernWeapon.txt" t="Include" />
+                  <e p="PerspOldCamera.txt" t="Include" />
+                  <e p="PerspOldInput.txt" t="Include" />
+                  <e p="PerspOldWeapon.txt" t="Include" />
+                  <e p="PivotChestWeapon.txt" t="Include" />
+                  <e p="PivotElbowWeapon.txt" t="Include" />
+                  <e p="PivotMuzzleWeapon.txt" t="Include" />
+                  <e p="PivotWristWeapon.txt" t="Include" />
+                  <e p="SimpleAIShooter.txt" t="Include" />
+                  <e p="SmackController.txt" t="Include" />
+                  <e p="SniperCamera.txt" t="Include" />
+                  <e p="SniperInput.txt" t="Include" />
+                  <e p="SniperShooter.txt" t="Include" />
+                  <e p="SniperWeapon.txt" t="Include" />
+                  <e p="StompingCamera.txt" t="Include" />
+                  <e p="StompingInput.txt" t="Include" />
+                  <e p="SystemOFFCamera.txt" t="Include" />
+                  <e p="SystemOFFController.txt" t="Include" />
+                  <e p="SystemOFFInput.txt" t="Include" />
+                  <e p="SystemOFFShooter.txt" t="Include" />
+                  <e p="SystemOFFWeapon.txt" t="Include" />
+                  <e p="SystemOFFWeaponGlideIn.txt" t="Include" />
+                  <e p="TurretCamera.txt" t="Include" />
+                  <e p="TurretInput.txt" t="Include" />
+                  <e p="TurretShooter.txt" t="Include" />
+                  <e p="TurretWeapon.txt" t="Include" />
+                  <e p="WallFacingCamera.txt" t="Include" />
+                  <e p="WallFacingInput.txt" t="Include" />
+                  <e p="WallFacingWeapon.txt" t="Include" />
+                </e>
+                <e p="Standard" t="Include">
+                  <e p="Camera" t="Include">
+                    <e p="CameraClimb.txt" t="Include" />
+                    <e p="CameraCrouch.txt" t="Include" />
+                    <e p="CameraDead.txt" t="Include" />
+                    <e p="CameraDefault.txt" t="Include" />
+                    <e p="CameraFreeze.txt" t="Include" />
+                    <e p="CameraOutOfControl.txt" t="Include" />
+                    <e p="CameraReload.txt" t="Include" />
+                    <e p="CameraRun.txt" t="Include" />
+                    <e p="CameraSlide.txt" t="Include" />
+                    <e p="CameraZoom.txt" t="Include" />
+                  </e>
+                  <e p="Controller" t="Include">
+                    <e p="ControllerClimb.txt" t="Include" />
+                    <e p="ControllerCrouch.txt" t="Include" />
+                    <e p="ControllerDead.txt" t="Include" />
+                    <e p="ControllerDefault.txt" t="Include" />
+                    <e p="ControllerFreeze.txt" t="Include" />
+                    <e p="ControllerRun.txt" t="Include" />
+                    <e p="ControllerZoom.txt" t="Include" />
+                  </e>
+                  <e p="FootFX" t="Include">
+                    <e p="FootFXFixedTimeCrouch.txt" t="Include" />
+                    <e p="FootFXFixedTimeRun.txt" t="Include" />
+                    <e p="FootFXFixedTimeZoom.txt" t="Include" />
+                  </e>
+                  <e p="Input" t="Include">
+                    <e p="InputClimb.txt" t="Include" />
+                    <e p="InputDead.txt" t="Include" />
+                    <e p="InputZoom.txt" t="Include" />
+                  </e>
+                  <e p="Shooter" t="Include">
+                    <e p="ShooterMachinegun.txt" t="Include" />
+                    <e p="ShooterMachinegunOutOfControl.txt" t="Include" />
+                    <e p="ShooterMachinegunZoom.txt" t="Include" />
+                    <e p="ShooterPistol.txt" t="Include" />
+                    <e p="ShooterPistolOutOfControl.txt" t="Include" />
+                    <e p="ShooterPistolZoom.txt" t="Include" />
+                    <e p="ShooterRevolver.txt" t="Include" />
+                    <e p="ShooterRevolverZoom.txt" t="Include" />
+                  </e>
+                  <e p="Weapon" t="Include">
+                    <e p="WeaponGenericSlide.txt" t="Include" />
+                    <e p="WeaponMachinegun.txt" t="Include" />
+                    <e p="WeaponMachinegunCrouch.txt" t="Include" />
+                    <e p="WeaponMachinegunOutOfControl.txt" t="Include" />
+                    <e p="WeaponMachinegunReload.txt" t="Include" />
+                    <e p="WeaponMachinegunRun.txt" t="Include" />
+                    <e p="WeaponMachinegunZoom.txt" t="Include" />
+                    <e p="WeaponPistol.txt" t="Include" />
+                    <e p="WeaponPistolCrouch.txt" t="Include" />
+                    <e p="WeaponPistolOutOfControl.txt" t="Include" />
+                    <e p="WeaponPistolReload.txt" t="Include" />
+                    <e p="WeaponPistolReload2.txt" t="Include" />
+                    <e p="WeaponPistolRun.txt" t="Include" />
+                    <e p="WeaponPistolZoom.txt" t="Include" />
+                    <e p="WeaponRevolver.txt" t="Include" />
+                    <e p="WeaponRevolverCrouch.txt" t="Include" />
+                    <e p="WeaponRevolverOutOfControl.txt" t="Include" />
+                    <e p="WeaponRevolverReload.txt" t="Include" />
+                    <e p="WeaponRevolverRun.txt" t="Include" />
+                    <e p="WeaponRevolverZoom.txt" t="Include" />
+                  </e>
+                </e>
+                <e p="WeaponsHD" t="Include">
+                  <e p="AssaultRifle01" t="Include">
+                    <e p="ShooterAssaultRifle01Default.txt" t="Include" />
+                    <e p="ShooterAssaultRifle01Zoom.txt" t="Include" />
+                    <e p="WeaponAssaultRifle01Crouch.txt" t="Include" />
+                    <e p="WeaponAssaultRifle01Default.txt" t="Include" />
+                    <e p="WeaponAssaultRifle01Reload.txt" t="Include" />
+                    <e p="WeaponAssaultRifle01Run.txt" t="Include" />
+                    <e p="WeaponAssaultRifle01Zoom.txt" t="Include" />
+                  </e>
+                  <e p="Grenade01" t="Include">
+                    <e p="WeaponGrenade01Attack.txt" t="Include" />
+                    <e p="WeaponGrenade01Rewield.txt" t="Include" />
+                    <e p="WeaponGrenade01Zoom.txt" t="Include" />
+                  </e>
+                  <e p="Knife01" t="Include">
+                    <e p="KnifeAttackToDown.txt" t="Include" />
+                    <e p="KnifeAttackToDownLeft.txt" t="Include" />
+                    <e p="KnifeAttackToDownRight.txt" t="Include" />
+                  </e>
+                  <e p="Pistol01" t="Include">
+                    <e p="ShooterPistol01Default.txt" t="Include" />
+                    <e p="ShooterPistol01OutOfControl.txt" t="Include" />
+                    <e p="ShooterPistol01Zoom.txt" t="Include" />
+                    <e p="WeaponPistol01Crouch.txt" t="Include" />
+                    <e p="WeaponPistol01Default.txt" t="Include" />
+                    <e p="WeaponPistol01Idle.txt" t="Include" />
+                    <e p="WeaponPistol01OutOfControl.txt" t="Include" />
+                    <e p="WeaponPistol01Run.txt" t="Include" />
+                    <e p="WeaponPistol01Slide.txt" t="Include" />
+                    <e p="WeaponPistol01Zoom.txt" t="Include" />
+                  </e>
+                  <e p="Shotgun01" t="Include">
+                    <e p="ShooterShotgun01Default.txt" t="Include" />
+                    <e p="ShooterShotgun01Zoom.txt" t="Include" />
+                    <e p="WeaponShotgun01Crouch.txt" t="Include" />
+                    <e p="WeaponShotgun01Default.txt" t="Include" />
+                    <e p="WeaponShotgun01Reload.txt" t="Include" />
+                    <e p="WeaponShotgun01Run.txt" t="Include" />
+                    <e p="WeaponShotgun01Zoom.txt" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="VR" t="Include">
+            <e p="_VR_README_.txt" t="Include" />
+            <e p="Content" t="Include">
+              <e p="Presets" t="Include">
+                <e p="VRCameraDead.txt" t="Include" />
+                <e p="VRMaceDefault.txt" t="Include" />
+                <e p="VRMachinegunDefault.txt" t="Include" />
+                <e p="VRMachinegunReload.txt" t="Include" />
+                <e p="VRMachinegunRun.txt" t="Include" />
+                <e p="VRMachinegunZoom.txt" t="Include" />
+                <e p="VRPistolDefault.txt" t="Include" />
+                <e p="VRPistolReload1.txt" t="Include" />
+                <e p="VRPistolReload2.txt" t="Include" />
+                <e p="VRPistolRun.txt" t="Include" />
+                <e p="VRPistolZoom.txt" t="Include" />
+                <e p="VRRevolverCrouch.txt" t="Include" />
+                <e p="VRRevolverDefault.txt" t="Include" />
+                <e p="VRRevolverReload.txt" t="Include" />
+                <e p="VRRevolverZoom.txt" t="Include" />
+              </e>
+              <e p="Scenes" t="Include">
+                <e p="_VR_SCENE_SETUP_README_.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="vp_VRCameraManager.cs" t="Include" />
+              <e p="vp_VRCrosshair.cs" t="Include" />
+              <e p="vp_VRPainFlash.cs" t="Include" />
+              <e p="vp_VRTeleporter.cs" t="Include" />
+              <e p="vp_VRWeaponManager.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Director.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
