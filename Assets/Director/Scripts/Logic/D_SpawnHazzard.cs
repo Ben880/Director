@@ -16,7 +16,7 @@ public class D_SpawnHazzard : D_LogicObject
     // Update is called once per frame
     void Update()
     {
-        if (director.getData().getFloat("Health").value > 60 && director.getData().getFloat("Health").value < 90)
+        if (m_DDirector.getData().getFloat("Health").value > 60 && m_DDirector.getData().getFloat("Health").value < 90)
         {
             gameObject.SetActive(true);
         }

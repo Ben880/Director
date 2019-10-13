@@ -5,7 +5,7 @@ using UnityEditor;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class Data: MonoBehaviour
+public class D_Data: MonoBehaviour
 {
 
     [System.Serializable]//makes sure this shows up in the inspector

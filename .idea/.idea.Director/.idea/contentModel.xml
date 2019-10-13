@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\bmwla\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -9,13 +9,14 @@
       <e p="Assets" t="Include">
         <e p="Director" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Data.cs" t="Include" />
-            <e p="DirectorObjects.cs" t="Include" />
-            <e p="Flags.cs" t="Include" />
+            <e p="D_Data.cs" t="Include" />
+            <e p="D_DirectorObjects.cs" t="Include" />
+            <e p="D_Flags.cs" t="Include" />
+            <e p="D_Points.cs" t="Include" />
             <e p="Inputs" t="Include">
-              <e p="InputObject.cs" t="Include" />
-              <e p="UpdateDistance.cs" t="Include" />
-              <e p="UpdateTime.cs" t="Include" />
+              <e p="D_InputObject.cs" t="Include" />
+              <e p="D_UpdateDistance.cs" t="Include" />
+              <e p="D_UpdateTime.cs" t="Include" />
             </e>
             <e p="Logic" t="Include">
               <e p="D_DetectSeen.cs" t="Include" />
@@ -25,17 +26,17 @@
               <e p="D_SpawnHealth.cs" t="Include" />
             </e>
             <e p="Points" t="Include">
-              <e p="CheckPoint.cs" t="Include" />
+              <e p="D_CheckPoint.cs" t="Include" />
               <e p="D_Enable.cs" t="Include" />
               <e p="D_PointObject.cs" t="Include" />
               <e p="D_SpawnRandom.cs" t="Include" />
             </e>
-            <e p="Points.cs" t="Include" />
             <e p="Sample(UFPS)" t="Include">
               <e p="D_DamagPlayer.cs" t="Include" />
-              <e p="UpdateHealth.cs" t="Include" />
+              <e p="D_UpdateHealth.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
+              <e p="D_DisableCanvasOnPlay.cs" t="Include" />
               <e p="D_Timer.cs" t="Include" />
               <e p="Debug" t="Include">
                 <e p="D_EnableMeshOnDebug.cs" t="Include" />
@@ -43,7 +44,6 @@
                 <e p="D_ToggleDebug.cs" t="Include" />
                 <e p="D_UpdateDebug.cs" t="Include" />
               </e>
-              <e p="DisableCanvasOnPlay.cs" t="Include" />
             </e>
             <e p="Zones" t="Include">
               <e p="D_ZoneUpdater.cs" t="Include" />

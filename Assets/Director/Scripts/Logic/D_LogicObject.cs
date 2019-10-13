@@ -6,11 +6,11 @@ public class D_LogicObject : MonoBehaviour
 {
     [Header("Logic Base")]
     public bool execute = true;
-    protected DirectorObjects director;
+    protected D_DirectorObjects m_DDirector;
     // Start is called before the first frame update
     protected void Start()
     {
-        director = new DirectorObjects();
+        m_DDirector = new D_DirectorObjects();
     }
 
     public virtual void executeLogic()

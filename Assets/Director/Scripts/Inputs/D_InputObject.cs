@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputObject : MonoBehaviour
+public class D_InputObject : MonoBehaviour
 {
     
-    protected DirectorObjects director;
+    protected D_DirectorObjects m_DDirector;
     // Start is called before the first frame update
     protected void Start()
     {
-        director = new DirectorObjects();
+        m_DDirector = new D_DirectorObjects();
     }
 
     // Update is called once per frame

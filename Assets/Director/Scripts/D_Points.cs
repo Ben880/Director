@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Points
+public class D_Points
 {
     private static GameObject startPoint;
     private static GameObject endPoint;
@@ -16,7 +16,7 @@ public class Points
     private static List<GameObject> enemyPoints = new List<GameObject>();
     private static bool init = false;
 
-    public Points()
+    public D_Points()
     {
         if (!init)
         {

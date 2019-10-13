@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="" />
@@ -12,8 +12,36 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_DirectorObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/UpdateHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/DisableCanvasOnPlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_DirectorObjects.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1RwCrBxrOjyFQTiWtytuDkb1BiN" />
   <component name="PropertiesComponent">
@@ -60,7 +88,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570568968378</updated>
-      <workItem from="1570568974624" duration="626000" />
+      <workItem from="1570568974624" duration="1433000" />
+      <workItem from="1570806227699" duration="261000" />
+      <workItem from="1570989860927" duration="2589000" />
     </task>
     <servers />
   </component>
@@ -74,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

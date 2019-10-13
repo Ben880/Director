@@ -16,8 +16,8 @@ public class D_DetectSeen : D_LogicObject
     void Start()
     {
         base.Start();
-        cam = director.getMainCamera().GetComponent<Camera>();
-        pointObjects = director.getPoints().getAll();
+        cam = m_DDirector.getMainCamera().GetComponent<Camera>();
+        pointObjects = m_DDirector.getPoints().getAll();
     }
 
     // Update is called once per frame
@@ -30,19 +30,19 @@ public class D_DetectSeen : D_LogicObject
             {
                 if (GeometryUtility.TestPlanesAABB(planes, point.GetComponent<Collider>().bounds))
                 {
-                    Vector3 heading =  (point.transform.position - director.getMainCamera().transform.position).normalized;
+                    Vector3 heading =  (point.transform.position - m_DDirector.getMainCamera().transform.position).normalized;
                     RaycastHit hit;
-                    if (Physics.Raycast(director.getMainCamera().transform.position, heading, out hit))
+                    if (Physics.Raycast(m_DDirector.getMainCamera().transform.position, heading, out hit))
                     {
                         D_PointObject pointScript = hit.transform.GetComponent<D_PointObject>();
-                        Debug.DrawRay(director.getMainCamera().transform.position, heading * hit.distance, Color.yellow);
+                        Debug.DrawRay(m_DDirector.getMainCamera().transform.position, heading * hit.distance, Color.yellow);
                         try
                         {
                             pointScript.setSeen(true);
                         }
                         catch (Exception e)
                         {
-                            if (logMessage && director.isDebug())
+                            if (logMessage && m_DDirector.isDebug())
                             {
                                 Debug.Log("Empty catch statement: may be masking error");
                                 logMessage = false;
@@ -54,7 +54,7 @@ public class D_DetectSeen : D_LogicObject
         }
         catch (System.Exception e)
         {
-            pointObjects = director.getPoints().getAll();
+            pointObjects = m_DDirector.getPoints().getAll();
         }
     }
 

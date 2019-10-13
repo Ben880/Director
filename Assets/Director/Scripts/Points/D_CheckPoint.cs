@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckPoint : MonoBehaviour
+public class D_CheckPoint : MonoBehaviour
 {
     
     
@@ -23,7 +23,7 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("player entered");
-            new DirectorObjects().getDirector().GetComponentInChildren<UpdateTime>().applyCheckpoint();
+            new D_DirectorObjects().getDirector().GetComponentInChildren<D_UpdateTime>().applyCheckpoint();
         }
     }
 }

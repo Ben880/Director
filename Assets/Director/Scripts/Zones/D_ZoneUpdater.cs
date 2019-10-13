@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class D_ZoneUpdater : MonoBehaviour
 {
-    private DirectorObjects director;
+    private D_DirectorObjects _dDirector;
     // Start is called before the first frame update
     void Start()
     {
-        director = new DirectorObjects();
+        _dDirector = new D_DirectorObjects();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class D_ZoneUpdater : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            director.setCurrentZone(gameObject);
+            _dDirector.setCurrentZone(gameObject);
             Debug.Log("Zone update");
         }
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class Flags: MonoBehaviour
+public class D_Flags: MonoBehaviour
 {
     [System.Serializable]//makes sure this shows up in the inspector
     public class Flag {

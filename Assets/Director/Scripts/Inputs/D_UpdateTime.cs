@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
-public class UpdateTime : InputObject
+public class D_UpdateTime : D_InputObject
 {
     private int timeIndex;
     private int checkpointIndex;
@@ -12,19 +12,19 @@ public class UpdateTime : InputObject
     void Start()
     {
         base.Start();
-        timeIndex = director.getData().getFloatIndex("Total Time");
-        checkpointIndex = director.getData().getFloatIndex("Checkpoint Time");
+        timeIndex = m_DDirector.getData().getFloatIndex("Total Time");
+        checkpointIndex = m_DDirector.getData().getFloatIndex("Checkpoint Time");
     }
 
     // Update is called once per frame
     void Update()
     {
-        director.getData().getFloat(timeIndex).value += Time.deltaTime;
-        director.getData().getFloat(checkpointIndex).value += Time.deltaTime;
+        m_DDirector.getData().getFloat(timeIndex).value += Time.deltaTime;
+        m_DDirector.getData().getFloat(checkpointIndex).value += Time.deltaTime;
     }
 
     public void applyCheckpoint()
     {
-        director.getData().getFloat(checkpointIndex).value = 0;
+        m_DDirector.getData().getFloat(checkpointIndex).value = 0;
     }
 }

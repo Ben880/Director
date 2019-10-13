@@ -10,12 +10,12 @@ public class D_EnableMeshOnDebug : MonoBehaviour
 
     private MeshRenderer mesh;
 
-    private Flags flags;
+    private D_Flags _dFlags;
     // Start is called before the first frame update
     void Start()
     {
-        flags = GameObject.FindGameObjectWithTag("Director").GetComponent<Flags>();
-        debugFlag = flags.getFlagId("Debug");
+        _dFlags = GameObject.FindGameObjectWithTag("Director").GetComponent<D_Flags>();
+        debugFlag = _dFlags.getFlagId("Debug");
         mesh = gameObject.GetComponent<MeshRenderer>();
         mesh.enabled = false;
         
@@ -24,7 +24,7 @@ public class D_EnableMeshOnDebug : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mesh.enabled = flags.getValue(flags.getFlagId("Debug"));
+        mesh.enabled = _dFlags.getValue(_dFlags.getFlagId("Debug"));
         
     }
 }

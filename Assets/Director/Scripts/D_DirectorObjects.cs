@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class DirectorObjects
+public class D_DirectorObjects
 {
     private static bool init = false;
     private static GameObject director;
     private static GameObject player;
-    private static Flags flags;
-    private static Data data;
-    private static Points points;
+    private static D_Flags _dFlags;
+    private static D_Data data;
+    private static D_Points _dPoints;
     private static GameObject mainCamera;
     private static GameObject currentZone;
-    public DirectorObjects()
+    public D_DirectorObjects()
     {
         if (init == false)
         {
             director = GameObject.FindGameObjectWithTag("Director");
             player = GameObject.FindGameObjectWithTag("Player");
-            flags = director.GetComponent<Flags>();
-            data = director.GetComponent<Data>();
-            points = new Points();
+            _dFlags = director.GetComponent<D_Flags>();
+            data = director.GetComponent<D_Data>();
+            _dPoints = new D_Points();
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             //initialized
             init = true;
@@ -30,9 +30,9 @@ public class DirectorObjects
     }
     
 
-    public Flags getFlags()
+    public D_Flags getFlags()
     {
-        return flags;
+        return _dFlags;
     }
 
     public GameObject getDirector()
@@ -45,14 +45,14 @@ public class DirectorObjects
         return player;
     }
 
-    public Data getData()
+    public D_Data getData()
     {
         return data;
     }
 
-    public Points getPoints()
+    public D_Points getPoints()
     {
-        return points;
+        return _dPoints;
     }
 
     public GameObject getMainCamera()
@@ -74,7 +74,7 @@ public class DirectorObjects
     {
         Debug.Log("Director received zone update");
         currentZone = zone; 
-        points.zoneUpdate(zone);
+        _dPoints.zoneUpdate(zone);
         
     }
 }

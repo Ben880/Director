@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpdateDistance : InputObject
+public class D_UpdateDistance : D_InputObject
 {
     private GameObject start;
 
@@ -20,14 +20,14 @@ public class UpdateDistance : InputObject
         base.Start();
         start = GameObject.FindGameObjectWithTag("StartPoint");
         end = GameObject.FindGameObjectWithTag("EndPoint");
-        totalIndex = director.getData().getFloatIndex("Total Distance");
-        traversedIndex = director.getData().getFloatIndex("Traversed Distance");
-        director.getData().getFloat(totalIndex).value = Vector3.Distance(start.transform.position, end.transform.position);
+        totalIndex = m_DDirector.getData().getFloatIndex("Total Distance");
+        traversedIndex = m_DDirector.getData().getFloatIndex("Traversed Distance");
+        m_DDirector.getData().getFloat(totalIndex).value = Vector3.Distance(start.transform.position, end.transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        director.getData().getFloat(traversedIndex).value = Vector3.Distance(start.transform.position, director.getPlayer().transform.position);
+        m_DDirector.getData().getFloat(traversedIndex).value = Vector3.Distance(start.transform.position, m_DDirector.getPlayer().transform.position);
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 public class D_LookingAtDebug : MonoBehaviour
 {
     public float interactionDistance = 20;
-    private DirectorObjects director;
+    private D_DirectorObjects _dDirector;
     public GameObject textPrefab;
     public GameObject mainCamera;
 
@@ -15,7 +15,7 @@ public class D_LookingAtDebug : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        director = new DirectorObjects();
+        _dDirector = new D_DirectorObjects();
         text = textPrefab.GetComponent<TextMeshProUGUI>();
         if (mainCamera == null)
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -26,7 +26,7 @@ public class D_LookingAtDebug : MonoBehaviour
     {
         Vector3 forward = mainCamera.transform.TransformDirection(Vector3.forward) * interactionDistance;
         //debuging lets you see the ray cast up to unit of 10
-        if (director.getFlags().getValue("Debug"))
+        if (_dDirector.getFlags().getValue("Debug"))
         {
             
             Debug.DrawRay( mainCamera.transform.position, forward, Color.green);
