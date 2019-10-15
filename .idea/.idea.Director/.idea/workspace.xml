@@ -42,11 +42,11 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_DirectorObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Spawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_EnableRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +97,7 @@
       <updated>1570568968378</updated>
       <workItem from="1570568974624" duration="1433000" />
       <workItem from="1570806227699" duration="261000" />
-      <workItem from="1570989860927" duration="5525000" />
+      <workItem from="1570989860927" duration="5800000" />
     </task>
     <servers />
   </component>

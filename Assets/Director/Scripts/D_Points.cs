@@ -8,7 +8,6 @@ public class D_Points
     private static GameObject startPoint;
     private static GameObject endPoint;
 
-
     private static List<GameObject> healthPoints = new List<GameObject>();
     private static List<GameObject> itemPoints = new List<GameObject>();
     private static List<GameObject> obstaclePoints = new List<GameObject>();
@@ -43,6 +42,14 @@ public class D_Points
             startPoint = GameObject.FindGameObjectWithTag("StartPoint");
             endPoint = GameObject.FindGameObjectWithTag("EndPoint");
             init = true;
+            Debug.Log("Points found:" +
+                      "\nStart Point: " + startPoint +
+                      "\nEnd Point: " + endPoint +
+                      "\nHealthPoints: " + healthPoints.Count +
+                      "\nItemPoints: " + itemPoints.Count +
+                      "\nObstaclePoints: " + obstaclePoints.Count +
+                      "\nHazardPoints: " + hazzardPoints.Count +
+                      "\nEnemyPoints: " + enemyPoints.Count );
         }
     }
 
