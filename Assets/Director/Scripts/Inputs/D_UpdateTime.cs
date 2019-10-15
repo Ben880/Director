@@ -12,19 +12,22 @@ public class D_UpdateTime : D_InputObject
     void Start()
     {
         base.Start();
-        timeIndex = m_DDirector.getData().getFloatIndex("Total Time");
-        checkpointIndex = m_DDirector.getData().getFloatIndex("Checkpoint Time");
+        timeIndex = director.getData().getFloatIndex("Total Time");
+        checkpointIndex = director.getData().getFloatIndex("Checkpoint Time");
     }
 
     // Update is called once per frame
     void Update()
     {
-        m_DDirector.getData().getFloat(timeIndex).value += Time.deltaTime;
-        m_DDirector.getData().getFloat(checkpointIndex).value += Time.deltaTime;
+        if (enabled)
+        {
+            director.getData().getFloat(timeIndex).value += Time.deltaTime;
+            director.getData().getFloat(checkpointIndex).value += Time.deltaTime;
+        }
     }
 
     public void applyCheckpoint()
     {
-        m_DDirector.getData().getFloat(checkpointIndex).value = 0;
+        director.getData().getFloat(checkpointIndex).value = 0;
     }
 }

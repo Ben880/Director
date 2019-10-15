@@ -13,13 +13,13 @@ public class D_UpdateHealth : D_InputObject
     void Start()
     {
         base.Start();
-        m_Player = m_DDirector.getPlayer().GetComponentInChildren<vp_FPPlayerEventHandler>();
-        healthIndex = m_DDirector.getData().getFloatIndex("Health");
+        m_Player = director.getPlayer().GetComponentInChildren<vp_FPPlayerEventHandler>();
+        healthIndex = director.getData().getFloatIndex("Health");
     }
 
     // Update is called once per frame
     void Update()
     {
-        m_DDirector.getData().getFloat(healthIndex).value = m_Player.Health.Get()*10f;
+        director.getData().getFloat(healthIndex).value = m_Player.Health.Get()*10f;
     }
 }

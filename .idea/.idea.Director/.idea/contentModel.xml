@@ -38,14 +38,13 @@
               <e p="D_UpdateHealth.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
+              <e p="D_Debug.cs" t="Include" />
               <e p="D_DisableCanvasOnPlay.cs" t="Include" />
+              <e p="D_EnableMeshOnDebug.cs" t="Include" />
+              <e p="D_LookingAtDebug.cs" t="Include" />
               <e p="D_Timer.cs" t="Include" />
-              <e p="Debug" t="Include">
-                <e p="D_EnableMeshOnDebug.cs" t="Include" />
-                <e p="D_LookingAtDebug.cs" t="Include" />
-                <e p="D_ToggleDebug.cs" t="Include" />
-                <e p="D_UpdateDebug.cs" t="Include" />
-              </e>
+              <e p="D_ToggleDebug.cs" t="Include" />
+              <e p="D_UpdateDebug.cs" t="Include" />
             </e>
             <e p="Zones" t="Include">
               <e p="D_ZoneUpdater.cs" t="Include" />

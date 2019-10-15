@@ -13,6 +13,7 @@ public class D_DirectorObjects
     private static D_Points _dPoints;
     private static GameObject mainCamera;
     private static GameObject currentZone;
+    private static D_Debug d_debug;
     public D_DirectorObjects()
     {
         if (init == false)
@@ -23,10 +24,16 @@ public class D_DirectorObjects
             data = director.GetComponent<D_Data>();
             _dPoints = new D_Points();
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+            d_debug = new D_Debug(this);
             //initialized
             init = true;
         }
         
+    }
+
+    public D_Debug Debug()
+    {
+        return d_debug;
     }
     
 
@@ -72,7 +79,7 @@ public class D_DirectorObjects
 
     public void setCurrentZone(GameObject zone)
     {
-        Debug.Log("Director received zone update");
+        Debug().Log("Director received zone update");
         currentZone = zone; 
         _dPoints.zoneUpdate(zone);
         
