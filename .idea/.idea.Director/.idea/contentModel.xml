@@ -28,7 +28,9 @@
             <e p="Points" t="Include">
               <e p="D_CheckPoint.cs" t="Include" />
               <e p="D_Enable.cs" t="Include" />
+              <e p="D_EnableRandom.cs" t="Include" />
               <e p="D_PointObject.cs" t="Include" />
+              <e p="D_Spawn.cs" t="Include" />
               <e p="D_SpawnRandom.cs" t="Include" />
             </e>
             <e p="Sample(UFPS)" t="Include">

@@ -14,9 +14,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_EnableRandom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_DirectorObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +44,9 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Spawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_EnableRandom.cs" />
       </list>
     </option>
   </component>
@@ -90,7 +97,7 @@
       <updated>1570568968378</updated>
       <workItem from="1570568974624" duration="1433000" />
       <workItem from="1570806227699" duration="261000" />
-      <workItem from="1570989860927" duration="2589000" />
+      <workItem from="1570989860927" duration="5525000" />
     </task>
     <servers />
   </component>
