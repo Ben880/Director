@@ -78,7 +78,7 @@ public class D_SpawnHealth : D_LogicObject
     {
         base.Start();
         timer.set(10);
-        healthIndex = m_DDirector.getData().getFloatIndex("Health");
+        healthIndex = director.getData().getFloatIndex("Health");
     }
     //==============================================================
     //==================== Execute Logic ===========================
@@ -90,7 +90,7 @@ public class D_SpawnHealth : D_LogicObject
             return;
         base.executeLogic();                                                // execute parent method (should be empty)
         timer.step();                                                       // step the timer used for spawning
-        currentHealth = m_DDirector.getData().getFloat(healthIndex).value;     // update local variable
+        currentHealth = director.getData().getFloat(healthIndex).value;     // update local variable
         if (shouldSpawnHelath())                                            // if shouldSpawnHelath()
         {
             GameObject spawnObject = locateHealthSpawn();                       // spawn result of locateHealth()
@@ -99,11 +99,11 @@ public class D_SpawnHealth : D_LogicObject
             float timerAmount = Random.Range(minTime, maxTime);
             timer.set(timerAmount);
             standby = false;
-            if (m_DDirector.isDebug())
+            if (director.isDebug())
                 Debug.Log("Health Timer set at: " + timerAmount);
         }
 
-        if (m_DDirector.isDebug() && timer.isCompleted() && !standby)
+        if (director.isDebug() && timer.isCompleted() && !standby)
         {
             Debug.Log("Health Timer complete entering standby mode");
             standby = true;
@@ -148,7 +148,7 @@ public class D_SpawnHealth : D_LogicObject
     // determines which health to spawn from a list of health points from locateHealthSpawns()
     public GameObject locateHealthSpawn()
     {
-        if (m_DDirector.getFlags().getValue("Debug"))
+        if (director.getFlags().getValue("Debug"))
             Debug.Log("locating health spawn");
         List<GameObject> points = locateHealthSpawns();
         if (points.Count == 0)
@@ -170,7 +170,7 @@ public class D_SpawnHealth : D_LogicObject
             float selectedDistance = -1;
             foreach (GameObject point in points)
             {
-                float currentDistance = Vector3.Distance(point.transform.position, m_DDirector.getPlayer().transform.position);
+                float currentDistance = Vector3.Distance(point.transform.position, director.getPlayer().transform.position);
                 if ( currentDistance < selectedDistance || selectedDistance == -1)
                 {
                     selection = point;
@@ -185,9 +185,9 @@ public class D_SpawnHealth : D_LogicObject
             for (int i = points.Count-1; i >=0; i--)
             //foreach (GameObject point in points)
             {
-                float playerEndDistance = Vector3.Distance(m_DDirector.getPlayer().transform.position,
-                    m_DDirector.getPoints().getEnd().transform.position);
-                if (Vector3.Distance(points[i].transform.position, m_DDirector.getPoints().getEnd().transform.position) >
+                float playerEndDistance = Vector3.Distance(director.getPlayer().transform.position,
+                    director.getPoints().getEnd().transform.position);
+                if (Vector3.Distance(points[i].transform.position, director.getPoints().getEnd().transform.position) >
                     playerEndDistance)
                     points.Remove(points[i]);
             }
@@ -195,7 +195,7 @@ public class D_SpawnHealth : D_LogicObject
             float selectedDistance = -1;
             foreach (GameObject point in points)
             {
-                float currentDistance = Vector3.Distance(point.transform.position, m_DDirector.getPlayer().transform.position);
+                float currentDistance = Vector3.Distance(point.transform.position, director.getPlayer().transform.position);
                 if ( currentDistance < selectedDistance || selectedDistance == -1)
                 {
                     selection = point;
@@ -216,17 +216,17 @@ public class D_SpawnHealth : D_LogicObject
     private List<GameObject> locateHealthSpawns()
     {
         List<GameObject> spawnablePoints = new List<GameObject>();
-        foreach (GameObject point in m_DDirector.getPoints().getHealth())
+        foreach (GameObject point in director.getPoints().getPointsOfType(spawnTypes.health))
         {
             if (isPointSpawnable(point))
             {
                 spawnablePoints.Add(point);
             }
         }
-        if (m_DDirector.getFlags().getValue("Debug"))
+        if (director.getFlags().getValue("Debug"))
             Debug.Log("Spawnable points found: " +
                       spawnablePoints.Count + "\nOut of: " +
-                      m_DDirector.getPoints().getHealth().Count);
+                      director.getPoints().getPointsOfType(spawnTypes.health).Count);
         return spawnablePoints;
     }
     //==============================================================
@@ -246,7 +246,7 @@ public class D_SpawnHealth : D_LogicObject
                     && isUnseen(pointScript);
         if (spawnLocation == locationType.range)     //if location type = range get distance & return evaluation
         {
-            float distance = Vector3.Distance(m_DDirector.getPlayer().transform.position, point.transform.position);
+            float distance = Vector3.Distance(director.getPlayer().transform.position, point.transform.position);
             return (distance >= minSpawnDistance && distance <= maxSpawnDistance) && isUnseen(pointScript);
         }
         return false;
@@ -266,7 +266,7 @@ public class D_SpawnHealth : D_LogicObject
     private bool spawnHealth(GameObject point)
     {
         point.GetComponent<D_PointObject>().trigger();
-        if (m_DDirector.getFlags().getValue("Debug"))
+        if (director.getFlags().getValue("Debug"))
             Debug.Log("Sent command to spawn health");
         return true;
     }
@@ -278,15 +278,15 @@ public class D_SpawnHealth : D_LogicObject
     {
         if (useUpdateInstead)
         {
-            float health = m_DDirector.getData().getFloat(healthIndex).value;
+            float health = director.getData().getFloat(healthIndex).value;
             if (health < 50f && health != 0)
             {
                 if (lastHealth != health)
                     Debug.Log("Looking for locations to spawn health");
                 lastHealth = health;
-                foreach (GameObject point in m_DDirector.getPoints().getHealth())
+                foreach (GameObject point in director.getPoints().getPointsOfType(spawnTypes.health))
                 {
-                    if (Vector3.Distance(m_DDirector.getPlayer().transform.position, point.transform.position) <
+                    if (Vector3.Distance(director.getPlayer().transform.position, point.transform.position) <
                         maxSpawnDistance &&
                         point.GetComponent<D_PointObject>().isSpawnable())
                     {

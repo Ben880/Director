@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class D_LogicObject : MonoBehaviour
+public class D_LogicObject : D_DirectorObject
 {
-    [Header("Logic Base")]
+    [Header("Logic Object")]
     public bool execute = true;
-    protected D_DirectorObjects m_DDirector;
+
     // Start is called before the first frame update
     protected void Start()
     {
-        m_DDirector = new D_DirectorObjects();
+        base.Start();
     }
 
     public virtual void executeLogic()

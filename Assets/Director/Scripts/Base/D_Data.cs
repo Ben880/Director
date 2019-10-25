@@ -7,22 +7,26 @@ using UnityEngine;
 
 public class D_Data: MonoBehaviour
 {
-
-    [System.Serializable]//makes sure this shows up in the inspector
+    //====================================
+    //=============Floats=================
+    //====================================
+    [System.Serializable]
     public class Floats {
         public Floats(string s)
         {
             key = s;
         }
-        public string key;//your name variable to edit
-        public float value = 0;//bool value
+        public string key;
+        public float value = 0;
     }
+    [SerializeField]
     private List<Floats> floats = new List<Floats>();
-    
-    [System.Serializable]//makes sure this shows up in the inspector
-
+    //====================================
+    //=============Ints===================
+    //====================================
+    [System.Serializable]
     public class Ints {
-        public string key;//your name variable to edit
+        public string key;
         public int value = 0;//bool value
     }    
     [SerializeField]
@@ -32,6 +36,8 @@ public class D_Data: MonoBehaviour
     {
 
     }
+    
+    
 
     public List<Floats> getFloatList()
     {
@@ -46,7 +52,7 @@ public class D_Data: MonoBehaviour
     {
         return floats[i];
     }
-    
+
     public Floats getFloat(string s)
     {
         return floats[getFloatIndex(s)];

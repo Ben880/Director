@@ -1,20 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class D_InputObject : D_DirectorObject
+public class Test : MonoBehaviour
 {
-    
     // Start is called before the first frame update
-    protected void Start()
+    void Start()
     {
-        base.Start();
+        
     }
 
     // Update is called once per frame
-    public void Update()
+    public virtual void Update()
     {
+        Debug.Log("Base");
+        test();
+    }
 
+    public void test()
+    {
+        Debug.Log("Base test");
     }
 }

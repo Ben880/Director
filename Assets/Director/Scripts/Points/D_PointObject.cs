@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class D_PointObject : MonoBehaviour
+public class D_PointObject : D_DirectorObject
 {
+
     protected bool spawnable = true;
     protected bool seen = false;
     protected bool inZone = false;
+    [Header("Point Object")] 
+    public spawnTypes spawnType;
+    public bool deleteAfterSpawn = false;
     public bool ignoreSpawnable = false;
     public bool ignoreSeen = false;
     public bool ignoreZone = false;
-    
+
+
+    void Start()
+    {
+        base.Start();
+    }
     public virtual void trigger() { }
 
     public virtual bool isSpawnable()
@@ -44,6 +53,11 @@ public class D_PointObject : MonoBehaviour
             "\nSpawnable: " + spawnable +
             "\nSeen: " + seen+
             "\ninZone: " +inZone;
+    }
+
+    public virtual void addToSpawnTracker(GameObject obj)
+    {
+        director.getTracker().registerObject(obj, spawnType);
     }
 
 

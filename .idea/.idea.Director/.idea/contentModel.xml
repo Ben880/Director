@@ -9,10 +9,17 @@
       <e p="Assets" t="Include">
         <e p="Director" t="Include">
           <e p="Scripts" t="Include">
-            <e p="D_Data.cs" t="Include" />
-            <e p="D_DirectorObjects.cs" t="Include" />
-            <e p="D_Flags.cs" t="Include" />
-            <e p="D_Points.cs" t="Include" />
+            <e p="Base" t="Include">
+              <e p="D_Data.cs" t="Include" />
+              <e p="D_Director.cs" t="Include" />
+              <e p="D_DirectorObject.cs" t="Include" />
+              <e p="D_DirectorObjects.cs" t="Include" />
+              <e p="D_Flags.cs" t="Include" />
+              <e p="D_Points.cs" t="Include" />
+              <e p="D_SpawnTracker.cs" t="Include" />
+              <e p="D_SpawnTypeConfiguration.cs" t="Include" />
+            </e>
+            <e p="ExtendTest.cs" t="Include" />
             <e p="Inputs" t="Include">
               <e p="D_InputObject.cs" t="Include" />
               <e p="D_UpdateDistance.cs" t="Include" />
@@ -27,16 +34,20 @@
             </e>
             <e p="Points" t="Include">
               <e p="D_CheckPoint.cs" t="Include" />
-              <e p="D_Enable.cs" t="Include" />
-              <e p="D_EnableRandom.cs" t="Include" />
               <e p="D_PointObject.cs" t="Include" />
-              <e p="D_Spawn.cs" t="Include" />
-              <e p="D_SpawnRandom.cs" t="Include" />
+              <e p="D_SpawnTypes.cs" t="Include" />
+              <e p="SpawnScripts" t="Include">
+                <e p="D_Enable.cs" t="Include" />
+                <e p="D_EnableRandom.cs" t="Include" />
+                <e p="D_Spawn.cs" t="Include" />
+                <e p="D_SpawnRandom.cs" t="Include" />
+              </e>
             </e>
             <e p="Sample(UFPS)" t="Include">
               <e p="D_DamagPlayer.cs" t="Include" />
               <e p="D_UpdateHealth.cs" t="Include" />
             </e>
+            <e p="Test.cs" t="Include" />
             <e p="Tools" t="Include">
               <e p="D_Debug.cs" t="Include" />
               <e p="D_DisableCanvasOnPlay.cs" t="Include" />

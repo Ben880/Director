@@ -23,7 +23,7 @@ public class D_CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("player entered");
-            new D_DirectorObjects().getDirector().GetComponentInChildren<D_UpdateTime>().applyCheckpoint();
+            new D_DirectorObjects().getDirectorObject().GetComponentInChildren<D_UpdateTime>().applyCheckpoint();
         }
     }
 }

@@ -19,6 +19,8 @@ public class D_EnableRandom : D_PointObject
     {
         int random = Random.Range(0, enableObjects.Count - 1);
         enableObjects[random].SetActive(true);
+        addToSpawnTracker(enableObjects[random]);
+        enableObjects.RemoveAt(random);
         if (canEnableMultipleObjects)
         {
             enableObjects.RemoveAt(random);

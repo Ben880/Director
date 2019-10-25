@@ -6,7 +6,7 @@ using UnityEngine;
 public class D_DirectorObjects
 {
     private static bool init = false;
-    private static GameObject director;
+    private static GameObject directorObject;
     private static GameObject player;
     private static D_Flags _dFlags;
     private static D_Data data;
@@ -14,17 +14,19 @@ public class D_DirectorObjects
     private static GameObject mainCamera;
     private static GameObject currentZone;
     private static D_Debug d_debug;
+    private static D_SpawnTracker tracker;
     public D_DirectorObjects()
     {
         if (init == false)
         {
-            director = GameObject.FindGameObjectWithTag("Director");
+            directorObject = GameObject.FindGameObjectWithTag("Director");
             player = GameObject.FindGameObjectWithTag("Player");
-            _dFlags = director.GetComponent<D_Flags>();
-            data = director.GetComponent<D_Data>();
+            _dFlags = directorObject.GetComponent<D_Flags>();
+            data = directorObject.GetComponent<D_Data>();
             _dPoints = new D_Points();
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             d_debug = new D_Debug(this);
+            tracker = directorObject.GetComponent<D_SpawnTracker>();
             //initialized
             init = true;
         }
@@ -35,16 +37,20 @@ public class D_DirectorObjects
     {
         return d_debug;
     }
-    
 
+    public D_SpawnTracker getTracker()
+    {
+        return tracker;
+    }
+    
     public D_Flags getFlags()
     {
         return _dFlags;
     }
 
-    public GameObject getDirector()
+    public GameObject getDirectorObject()
     {
-        return director;
+        return directorObject;
     }
 
     public GameObject getPlayer()

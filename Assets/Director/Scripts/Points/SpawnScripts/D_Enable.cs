@@ -16,6 +16,7 @@ public class D_Enable : D_PointObject
     {
         enableObject.SetActive(true);
         spawnable = false;
+        addToSpawnTracker(enableObject);
     }
 
 
