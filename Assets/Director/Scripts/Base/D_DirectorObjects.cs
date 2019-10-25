@@ -33,6 +33,11 @@ public class D_DirectorObjects
         
     }
 
+    public D_Director getDirectorScript()
+    {
+        return directorObject.GetComponent<D_Director>();
+    }
+
     public D_Debug Debug()
     {
         return d_debug;

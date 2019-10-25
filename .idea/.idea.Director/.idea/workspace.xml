@@ -30,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" />
@@ -75,9 +75,10 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_GetConfigs.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/OptionsEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypeConfiguration.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
       </list>
     </option>
   </component>
@@ -133,7 +134,7 @@
       <workItem from="1571693774679" duration="146000" />
       <workItem from="1571776782229" duration="3544000" />
       <workItem from="1571948292026" duration="603000" />
-      <workItem from="1572026214738" duration="13127000" />
+      <workItem from="1572026214738" duration="14892000" />
     </task>
     <servers />
   </component>
