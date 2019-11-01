@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEditor;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -85,6 +86,18 @@ public class D_Data: MonoBehaviour
 
         return -1;
     }
-    
 
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder(1000);
+        foreach (var val in floats)
+        {
+            sb.Append(val.key);
+            sb.Append(": ");
+            sb.Append(val.value);
+            sb.Append("\n");
+
+        }
+        return sb.ToString();
+    }
 }

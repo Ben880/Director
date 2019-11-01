@@ -10,19 +10,23 @@
         <e p="Director" t="Include">
           <e p="Scripts" t="Include">
             <e p="Base" t="Include">
+              <e p="D_Conditon.cs" t="Include" />
               <e p="D_Data.cs" t="Include" />
               <e p="D_Director.cs" t="Include" />
               <e p="D_DirectorObject.cs" t="Include" />
               <e p="D_DirectorObjects.cs" t="Include" />
               <e p="D_Flags.cs" t="Include" />
               <e p="D_Points.cs" t="Include" />
+              <e p="D_SpawnController.cs" t="Include" />
               <e p="D_SpawnTracker.cs" t="Include" />
               <e p="D_SpawnTypeConfiguration.cs" t="Include" />
             </e>
             <e p="ExtendTest.cs" t="Include" />
             <e p="Inputs" t="Include">
               <e p="D_InputObject.cs" t="Include" />
+              <e p="D_UpdateDamageDelta.cs" t="Include" />
               <e p="D_UpdateDistance.cs" t="Include" />
+              <e p="D_UpdateLastSpawned.cs" t="Include" />
               <e p="D_UpdateTime.cs" t="Include" />
             </e>
             <e p="Logic" t="Include">

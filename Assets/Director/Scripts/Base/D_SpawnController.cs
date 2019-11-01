@@ -1,17 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using UnityEditor;
 using UnityEngine;
-
-public class D_SpawnHealth : D_LogicObject
+[System.Serializable]
+public class D_SpawnController : D_DirectorObject
 {
-    public bool useUpdateInstead = true;
+    
+    [Header("Spawn Type")] 
+    public spawnTypes spawnType; 
+    //==============================================================
+    //================= Spawn Quantity Rules =======================
+    //==============================================================
+    public enum quantityType
+    {
+        single, 
+        batch,
+        stream
+    };
+    [Header("Spawn Quantity Rules")]
+    public quantityType spawnQuantity;
+    public float baseBatchQuantity = 5;
     //==============================================================
     //================= Spawn Location Rules =======================
     //==============================================================
     // determins what points should be considered 
-    public enum locationType 
+    public enum locationType
     {
         range,
         random,
@@ -19,96 +31,41 @@ public class D_SpawnHealth : D_LogicObject
     };
     [Header("Spawn Location Rules")] 
     public bool ignoreSeen = false;
-
     public locationType spawnLocation;
-    public float minSpawnDistance = 5;
-    public float maxSpawnDistance = 100;
+    public float rangeMin = 5;
+    public float rangeMax = 100;
     //==============================================================
     //================= Spawn Selection Rules ======================
     //==============================================================
     // determines which point to select from all points that were considered
-    public enum selectionType 
+    public enum selectionType
     {
-        first, 
-        random, 
-        closestToPlayer, 
+        first,
+        random,
+        closestToPlayer,
         closestToPlayerAndEnd
     };
     [Header("Spawn Selection Rules")] 
     public selectionType spawnSelection;
     //==============================================================
-    //=================== Spawn Type Rules =========================
+    //=================== Spawn Condition Rules ====================
     //==============================================================
     // logic for determining what type of health should be spawned (if point supports it)
-    public enum conditionType 
-    {
-        Strict, 
-        Range, 
-        Random
-    };
-    [Header("Spawn Type Rules")] 
-    public conditionType spawnCondition;
-    public float targetHealth = 70;
-    public float forceSpawnThreshhold = 20;
-    public float minRangeAmount = -10;
-    public float maxRangeAmount = 10;
-    //==============================================================
-    //================= Spawn Frequency Rules ======================
-    //==============================================================
-    public enum frequencyType
-    {
-        Timer, 
-        WhleNeededWithTimer
-    };
-    [Header("Spawn Frequency Rules")] 
-    public frequencyType spawnFrequency;
-    public float minTime = 10;
-    public float maxTime = 100;
-    
-    private int healthIndex;
-    private float lastHealth;
-    private float currentHealth;
-    private bool doSpawnHealth = true;
-    private D_Timer timer = new D_Timer();
 
-    private bool standby = false;
-    //need variable for this
+    [Header("Spawn Condition Rules")]
+    public D_Conditon[] conditions = new D_Conditon[1];
     
-    void Start()
+    
+    
+    public void executeLogic()
     {
-        base.Start();
-        timer.set(10);
-        healthIndex = director.getData().getFloatIndex("Health");
-    }
-    //==============================================================
-    //==================== Execute Logic ===========================
-    //==============================================================
-    // main logic for decision system
-    public override void executeLogic()
-    {
-        if (useUpdateInstead)
-            return;
-        base.executeLogic();                                                // execute parent method (should be empty)
-        timer.step();                                                       // step the timer used for spawning
-        currentHealth = director.getData().getFloat(healthIndex).value;     // update local variable
         if (shouldSpawnHelath())                                            // if shouldSpawnHelath()
         {
-            GameObject spawnObject = locateHealthSpawn();                       // spawn result of locateHealth()
+            GameObject spawnObject = locateSpawn();                       // spawn result of locateHealth()
             if (spawnObject != null)
                 spawnObject.GetComponent<D_PointObject>().trigger();
-            float timerAmount = Random.Range(minTime, maxTime);
-            timer.set(timerAmount);
-            standby = false;
-            if (director.isDebug())
-                Debug.Log("Health Timer set at: " + timerAmount);
+            director.getData().getFloat(spawnType.ToString() + " Spawned Last").value = 0;
         }
-
-        if (director.isDebug() && timer.isCompleted() && !standby)
-        {
-            Debug.Log("Health Timer complete entering standby mode");
-            standby = true;
-        }
-            
     }
     //==============================================================
     //================= Should Spawn Health ========================
@@ -119,10 +76,13 @@ public class D_SpawnHealth : D_LogicObject
     // this will be done by checking for flags/values set by other classes
     private bool shouldSpawnHelath()
     {
-        return execute 
-               && ((currentHealth < targetHealth && doSpawnHealth) 
-                   || currentHealth < forceSpawnThreshhold)
-               && frequencyCheck();
+        bool evaluation = true;
+        for (int i = 0; i < conditions.Length; i++)
+        {
+            evaluation = evaluation && conditions[i].evaluate();
+        }
+
+        return evaluation;
     }
     //==============================================================
     //================= Frequency Check  ===========================
@@ -130,15 +90,6 @@ public class D_SpawnHealth : D_LogicObject
     //checks to see if it is time to spawn health.
     private bool frequencyCheck()
     {
-        bool isTimerCompleet = timer.isCompleted();
-        if (spawnFrequency == frequencyType.Timer)
-        {
-            return isTimerCompleet;
-        }
-        if (spawnFrequency == frequencyType.WhleNeededWithTimer)
-        {
-            return isTimerCompleet && currentHealth < targetHealth;
-        }
         //should not reach this point if so then spawn anyway
         return true;
     }
@@ -146,14 +97,13 @@ public class D_SpawnHealth : D_LogicObject
     //==================== Locate Health ===========================
     //==============================================================
     // determines which health to spawn from a list of health points from locateHealthSpawns()
-    public GameObject locateHealthSpawn()
+    public GameObject locateSpawn()
     {
-        if (director.getFlags().getValue("Debug"))
-            Debug.Log("locating health spawn");
-        List<GameObject> points = locateHealthSpawns();
+        director.Debug().Log("locating spawn: "  + spawnType.ToString());
+        List<GameObject> points = locateSpawns();
         if (points.Count == 0)
         {
-            Debug.Log("D_SpawnHealth could not find any points to spawn");
+            Debug.Log("Could not find any points to spawn: "  + spawnType.ToString());
             return null;
         }
         if (spawnSelection == selectionType.first)
@@ -213,20 +163,19 @@ public class D_SpawnHealth : D_LogicObject
     //==============================================================
     // locates all points and then checks if each one is spawnable using isPointSpawnable()
     // then returns a list of points that are spawnable
-    private List<GameObject> locateHealthSpawns()
+    private List<GameObject> locateSpawns()
     {
         List<GameObject> spawnablePoints = new List<GameObject>();
-        foreach (GameObject point in director.getPoints().getPointsOfType(spawnTypes.Health))
+        foreach (GameObject point in director.getPoints().getPointsOfType(spawnType))
         {
             if (isPointSpawnable(point))
             {
                 spawnablePoints.Add(point);
             }
         }
-        if (director.getFlags().getValue("Debug"))
-            Debug.Log("Spawnable points found: " +
-                      spawnablePoints.Count + "\nOut of: " +
-                      director.getPoints().getPointsOfType(spawnTypes.Health).Count);
+        director.Debug().Log("Spawnable " +  spawnType.ToString()+ " points found: " +
+                             spawnablePoints.Count + "\nOut of: " +
+                             director.getPoints().getPointsOfType(spawnType).Count);
         return spawnablePoints;
     }
     //==============================================================
@@ -247,7 +196,7 @@ public class D_SpawnHealth : D_LogicObject
         if (spawnLocation == locationType.range)     //if location type = range get distance & return evaluation
         {
             float distance = Vector3.Distance(director.getPlayer().transform.position, point.transform.position);
-            return (distance >= minSpawnDistance && distance <= maxSpawnDistance) && isUnseen(pointScript);
+            return (distance >= rangeMin && distance <= rangeMax) && isUnseen(pointScript);
         }
         return false;
     }
@@ -263,39 +212,10 @@ public class D_SpawnHealth : D_LogicObject
     //===================== Spawn Health ===========================
     //==============================================================
     // does what it says
-    private bool spawnHealth(GameObject point)
+    private bool spawn(GameObject point)
     {
         point.GetComponent<D_PointObject>().trigger();
-        if (director.getFlags().getValue("Debug"))
-            Debug.Log("Sent command to spawn health");
+        director.Debug().Log("Sent command to spawn " + spawnType.ToString());
         return true;
-    }
-    //==============================================================
-    //===================== Old Code ===============================
-    //==============================================================
-    // this is odl code and should not be used
-    void Update()
-    {
-        if (useUpdateInstead)
-        {
-            float health = director.getData().getFloat(healthIndex).value;
-            if (health < 50f && health != 0)
-            {
-                if (lastHealth != health)
-                    Debug.Log("Looking for locations to spawn health");
-                lastHealth = health;
-                foreach (GameObject point in director.getPoints().getPointsOfType(spawnTypes.Health))
-                {
-                    if (Vector3.Distance(director.getPlayer().transform.position, point.transform.position) <
-                        maxSpawnDistance &&
-                        point.GetComponent<D_PointObject>().isSpawnable())
-                    {
-                        point.GetComponent<D_PointObject>().trigger();
-                        Debug.Log("Sent command to spawn health");
-                    }
-                }
-
-            }
-        }
     }
 }
