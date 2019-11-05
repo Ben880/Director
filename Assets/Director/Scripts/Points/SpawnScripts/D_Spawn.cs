@@ -6,7 +6,7 @@ public class D_Spawn : D_PointObject
 {
 
     public bool canSpawnMultipleTimes = false;
-    public GameObject spawnObjects = new GameObject();
+    public GameObject spawnObjects;
     private GameObject spawnedObject;
 
 

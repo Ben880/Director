@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class D_CheckPoint : MonoBehaviour
+public class D_CheckPoint : D_DirectorObject
 {
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        base.Start();
     }
 
     // Update is called once per frame
@@ -22,8 +22,9 @@ public class D_CheckPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("player entered");
-            new D_DirectorObjects().getDirectorObject().GetComponentInChildren<D_UpdateTime>().applyCheckpoint();
+            director.Debug().Log("player entered");
+            new D_DirectorObjects().getDirectorObject().GetComponentInChildren<D_UpdateTime>().applyCheckpoint(gameObject);
+            enabled = false;
         }
     }
 }

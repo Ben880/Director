@@ -38,7 +38,7 @@ public class D_LookingAtDebug : MonoBehaviour
         {
             GameObject lookingAt = hit.collider.gameObject; //gets the object the raycast hit
             string tag = lookingAt.tag;
-            if (tag.Equals("HealthPoint") || tag.Equals("ItemPoint")|| tag.Equals("ObstaclePoint")|| tag.Equals("EnemyPoint")|| tag.Equals("HazardPoint")) // checks if object is tagged as interactable
+            if (tag.Equals("PointObject")) // checks if object is tagged as interactable
             {
                 if (hit.distance < interactionDistance)
                 {

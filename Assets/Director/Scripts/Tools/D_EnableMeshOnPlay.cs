@@ -2,23 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class D_EnableMeshOnPlay : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.GetComponent<MeshRenderer>().enabled = true;
     }
 
     // Update is called once per frame
-    public virtual void Update()
+    void Update()
     {
-        Debug.Log("Base");
-        test();
-    }
-
-    public void test()
-    {
-        Debug.Log("Base test");
+        
     }
 }

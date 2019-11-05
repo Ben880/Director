@@ -14,6 +14,7 @@ public class D_SpawnTracker : D_DirectorObject
         {
             objects.Add(val.ToString(), new List<GameObject>());
         }
+        director.getDirectorScript().addToUpdateList(this);
     }
 
     // Update is called once per frame
@@ -32,6 +33,8 @@ public class D_SpawnTracker : D_DirectorObject
                 if (obj.Value[i] == null)
                     obj.Value.RemoveAt(i);
             }
+
+            director.getData().getFloat(obj.Key + " Count").value = obj.Value.Count;
         }
     }
 
