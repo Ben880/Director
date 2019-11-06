@@ -48,3 +48,5 @@ Assets/StreamingAssets/crashlytics-build.properties
 
 
 # End of https://www.gitignore.io/api/unity
+Assets/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/Local/OldInventory/OldInventory.unitypackage
+DirectorVersion2.unitypackage

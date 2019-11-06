@@ -15,7 +15,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UFPS/Base/Scripts/Gameplay/Combat/vp_FXBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -156,7 +155,7 @@
       <workItem from="1572211940346" duration="6675000" />
       <workItem from="1572316944638" duration="8340000" />
       <workItem from="1572552187289" duration="227000" />
-      <workItem from="1572926120378" duration="8088000" />
+      <workItem from="1572926120378" duration="8685000" />
     </task>
     <servers />
   </component>
