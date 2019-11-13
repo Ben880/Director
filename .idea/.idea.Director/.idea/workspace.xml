@@ -70,7 +70,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/SpawnEditorConfig.cs" />
@@ -98,8 +97,9 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +161,7 @@
       <workItem from="1572552187289" duration="227000" />
       <workItem from="1572926120378" duration="8685000" />
       <workItem from="1573166356519" duration="2819000" />
-      <workItem from="1573593309517" duration="8420000" />
+      <workItem from="1573593309517" duration="9486000" />
     </task>
     <servers />
   </component>

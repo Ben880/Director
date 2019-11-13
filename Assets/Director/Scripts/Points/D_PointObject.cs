@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class D_PointObject : D_DirectorObject
 {
@@ -14,13 +15,26 @@ public class D_PointObject : D_DirectorObject
     public bool ignoreSpawnable = false;
     public bool ignoreSeen = false;
     public bool ignoreZone = false;
+    public GameObject triggerOther;
+    private D_PointObject triggerOtherScript;
+    private bool otherTriggered = false;
 
 
     void Start()
     {
         base.Start();
+        triggerOtherScript = triggerOther.GetComponent<D_PointObject>();
     }
-    public virtual void trigger() { }
+
+    public virtual void trigger()
+    {
+        if (triggerOtherScript != null && !otherTriggered)
+        {
+            otherTriggered = true;
+            triggerOtherScript.trigger();
+        }
+            
+    }
 
     public virtual bool isSpawnable()
     {
