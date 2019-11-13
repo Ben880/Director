@@ -20,6 +20,7 @@ public class D_SpawnRandom : D_PointObject
             spawnable = false;
         if (spawnedObject != null)
             spawnable = false;
+        base.trigger();
     }
     
 }

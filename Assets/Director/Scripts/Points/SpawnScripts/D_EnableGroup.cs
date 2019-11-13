@@ -8,6 +8,7 @@ public class D_EnableGroup : D_PointObject
 
     void Start()
     {
+        base.Start();
         foreach (GameObject obj in enableObjects)
         {
             obj.SetActive(false);
@@ -22,6 +23,7 @@ public class D_EnableGroup : D_PointObject
             addToSpawnTracker(obj);
         }
         spawnable = false;
+        base.trigger();
     }
 
 

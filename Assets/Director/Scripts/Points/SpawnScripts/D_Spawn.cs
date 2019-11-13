@@ -18,6 +18,7 @@ public class D_Spawn : D_PointObject
             spawnable = false;
         if (spawnedObject != null)
             spawnable = false;
+        base.trigger();
     }
     
 }

@@ -34,15 +34,15 @@ public class D_Points
             startPoint = GameObject.FindGameObjectWithTag("StartPoint");
             endPoint = GameObject.FindGameObjectWithTag("EndPoint");
             init = true;
-            Debug.Log("Points found:" +
+            Debug.Log("Points found:" + points.Count + 
                       "\nStart Point: " + startPoint +
                       "\nEnd Point: " + endPoint);
         }
     }
 
-    private void sortPoints()
+    public void removePoint(spawnTypes type, GameObject obj)
     {
-        
+        pointTypes[type.ToString()].Remove(obj);
     }
 
     public List<GameObject> getPointsOfType(spawnTypes type)

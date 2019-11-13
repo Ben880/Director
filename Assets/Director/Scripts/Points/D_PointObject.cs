@@ -33,7 +33,16 @@ public class D_PointObject : D_DirectorObject
             otherTriggered = true;
             triggerOtherScript.trigger();
         }
-            
+
+        if (deleteAfterSpawn)
+        {
+            foreach (Transform child in transform)
+            {
+                child.transform.parent = gameObject.transform.parent;
+            }
+            director.getPoints().removePoint(spawnType, gameObject);
+            Destroy(gameObject);
+        }
     }
 
     public virtual bool isSpawnable()

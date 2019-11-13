@@ -9,6 +9,7 @@ public class D_Enable : D_PointObject
 
     void Start()
     {
+        base.Start();
         enableObject.SetActive(false);
     }
 
@@ -17,6 +18,7 @@ public class D_Enable : D_PointObject
         enableObject.SetActive(true);
         spawnable = false;
         addToSpawnTracker(enableObject);
+        base.trigger();
     }
 
 

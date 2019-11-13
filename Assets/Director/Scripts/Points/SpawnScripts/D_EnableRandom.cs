@@ -9,6 +9,7 @@ public class D_EnableRandom : D_PointObject
 
     void Start()
     {
+        base.Start();
         foreach (GameObject obj in enableObjects)
         {
             obj.SetActive(false);
@@ -30,7 +31,7 @@ public class D_EnableRandom : D_PointObject
         {
             spawnable = false;
         }
-
+        base.trigger();
     }
 
 
