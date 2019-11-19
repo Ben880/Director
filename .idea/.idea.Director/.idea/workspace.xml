@@ -17,9 +17,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,8 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/UpdateHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/DisableCanvasOnPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" />
@@ -69,8 +69,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_GetConfigs.cs" />
@@ -84,22 +82,26 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +163,10 @@
       <workItem from="1572552187289" duration="227000" />
       <workItem from="1572926120378" duration="8685000" />
       <workItem from="1573166356519" duration="2819000" />
-      <workItem from="1573593309517" duration="11032000" />
+      <workItem from="1573593309517" duration="14543000" />
+      <workItem from="1573681009089" duration="164000" />
+      <workItem from="1573850266756" duration="597000" />
+      <workItem from="1574191354676" duration="7206000" />
     </task>
     <servers />
   </component>

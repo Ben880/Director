@@ -173,7 +173,7 @@ public class D_SpawnController : D_DirectorObject
                 spawnablePoints.Add(point);
             }
         }
-        director.Debug().Log("Spawnable " +  spawnType.ToString()+ " points found: " +
+        director.Debug().Log(gameObject.name + " Found spawnable " +  spawnType.ToString()+ " points found: " +
                              spawnablePoints.Count + "\nOut of: " +
                              director.getPoints().getPointsOfType(spawnType).Count);
         return spawnablePoints;

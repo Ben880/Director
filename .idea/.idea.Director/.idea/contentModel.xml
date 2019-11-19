@@ -605,6 +605,7 @@
             </e>
             <e p="Tools" t="Include">
               <e p="D_CircularArray.cs" t="Include" />
+              <e p="D_CircularList.cs" t="Include" />
               <e p="D_Debug.cs" t="Include" />
               <e p="D_DisableCanvasOnPlay.cs" t="Include" />
               <e p="D_EnableMeshOnDebug.cs" t="Include" />

@@ -23,7 +23,8 @@ public class D_PointObject : D_DirectorObject
     void Start()
     {
         base.Start();
-        triggerOtherScript = triggerOther.GetComponent<D_PointObject>();
+        if (triggerOther != null)
+            triggerOtherScript = triggerOther.GetComponent<D_PointObject>();
     }
 
     public virtual void trigger()

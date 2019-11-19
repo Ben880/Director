@@ -7,11 +7,15 @@ public class D_UpdateVelocity : D_InputObject
 {
     public float updateInterval = 0.1f;
     public int[] dataIntervals = new int[0];
+    public float[] maxVelocityPercentiles = new float[0];
 
+    private float[] peakVelocity;
     private int updatesPerSecond;
-    private D_CircularArray<Vector3> positions;
+    private D_CircularList<Vector3> positions;
     private int largest = 0;
     private float counter = 0;
+    private int updatesCounter;
+    private float maxVelocity = 0;
     
     //private List<Tuple<float, Vector3>> positions = new List<Tuple<float, Vector3>>();
     //positions.Add(new Tuple<float, Vector3>(director.getData().getFloat("Total Time").value, director.getPlayer().transform.position));
@@ -34,7 +38,8 @@ public class D_UpdateVelocity : D_InputObject
         }
         // with the largest interval create a new circular array;
         updatesPerSecond = Mathf.RoundToInt(1 / updateInterval);
-        positions = new D_CircularArray<Vector3>(largest*updatesPerSecond);
+        positions = new D_CircularList<Vector3>(largest*updatesPerSecond);
+        peakVelocity = new float[dataIntervals.Length];
     }
 
     // Update is called once per frame
@@ -44,22 +49,43 @@ public class D_UpdateVelocity : D_InputObject
         if (counter >= updateInterval)
         {
             counter = 0;
-            positions.Add(director.getPlayer().transform.position);
-            foreach (var val in dataIntervals)
+            positions.add(director.getPlayer().transform.position);
+            for (int i = 0; i < dataIntervals.Length; i++)
             {
-                int refrence = (val * updatesPerSecond * -1) - 1;
-                if (positions.testValid(refrence))
+                int refrence = (dataIntervals[i] * updatesPerSecond * -1) ;
+                float totalDistance = 0;
+                Vector3 lastLocation = new Vector3();
+                bool first = true;
+                foreach (var location in positions.getRange(refrence, 0))
                 {
-                    float totalDistance = 0;
-                    for (int i = refrence; i < 0; i++)
+                    if (!first)
                     {
-                        totalDistance += Vector3.Distance(positions.Get(0), positions.Get(i));
+                        totalDistance += Vector3.Distance(lastLocation, location);
                     }
+                    else
+                    {
+                        first = false;
+                    }
+                    lastLocation = location;
+                }
 
-                    director.getData().getFloat("Velocity " + val).value = totalDistance / val;
+                float velocity = totalDistance / dataIntervals[i];
+                director.getData().getFloat("Velocity " + dataIntervals[i]).value = velocity;
+                if (velocity > director.getData().getFloat("Peak Velocity" + dataIntervals[i]).value)
+                {
+                    director.getData().getFloat("Peak Velocity" + dataIntervals[i]).value = velocity;
+                }
+
+                if (velocity > director.getData().getFloat("Max Velocity").value)
+                {
+                    director.getData().getFloat("Max Velocity").value = velocity;
+                    foreach (var val in maxVelocityPercentiles)
+                    {
+                        director.getData().getFloat("Max Velocity %" + val).value = velocity*val/100;
+                    }
+                    
                 }
             }
-   
         }
     }
 
