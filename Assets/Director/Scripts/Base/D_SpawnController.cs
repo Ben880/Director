@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 [System.Serializable]
 public class D_SpawnController : D_DirectorObject
@@ -54,43 +55,49 @@ public class D_SpawnController : D_DirectorObject
 
     [Header("Spawn Condition Rules")]
     public D_Conditon[] conditions = new D_Conditon[1];
-    
-    
+    //==============================================================
+    //=================== Private ====================
+    //==============================================================
+    private bool loggedOutOfPoints = false;
+    private List<string>  reasons = new List<string>();
+    private int remainingPoints = 0;
+    void Start()
+    {
+        foreach (var condition in conditions)
+        {
+            reasons.Add(condition.ToString());
+        }
+    }
     
     public void executeLogic()
     {
-        if (shouldSpawnHelath())                                            // if shouldSpawnHelath()
+        if (shouldSpawn() && director.getDirectorScript().requestSpawn(spawnType))                                            // if shouldSpawnHelath()
         {
             GameObject spawnObject = locateSpawn();                       // spawn result of locateHealth()
             if (spawnObject != null)
+            {
                 spawnObject.GetComponent<D_PointObject>().trigger();
+                spawnObject.GetComponent<D_PointObject>().setSpawnReasons(gameObject.name, director.getData().getFloat("Total Time").value, reasons);
+            }
+            director.Debug().Log("SC-" +gameObject.name + " Located points: " + remainingPoints + "/" + director.getPoints().getPointsOfType(spawnType).Count+" type of: " + spawnType.ToString());
             director.getData().getFloat(spawnType.ToString() + " Spawned Last").value = 0;
+            director.getDirectorScript().addSpawned(spawnType);
         }
     }
     //==============================================================
-    //================= Should Spawn Health ========================
+    //================= Should Spawn ===============================
     //==============================================================
     // method determines if the director should spawn health
     // current method is determined by health and timers
     // other methods may be determined by external factors/flags based on intensity, accuarcy and others
     // this will be done by checking for flags/values set by other classes
-    private bool shouldSpawnHelath()
+    private bool shouldSpawn()
     {
-        bool evaluation = true;
         for (int i = 0; i < conditions.Length; i++)
         {
-            evaluation = evaluation && conditions[i].evaluate();
+            if (!conditions[i].evaluate())
+                return false;
         }
-
-        return evaluation;
-    }
-    //==============================================================
-    //================= Frequency Check  ===========================
-    //==============================================================
-    //checks to see if it is time to spawn health.
-    private bool frequencyCheck()
-    {
-        //should not reach this point if so then spawn anyway
         return true;
     }
     //==============================================================
@@ -99,11 +106,11 @@ public class D_SpawnController : D_DirectorObject
     // determines which health to spawn from a list of health points from locateHealthSpawns()
     public GameObject locateSpawn()
     {
-        director.Debug().Log("locating spawn: "  + spawnType.ToString());
+        //director.Debug().Log("D_SpawnController (" +gameObject.name+") locating spawn. Type: "  + spawnType.ToString());
         List<GameObject> points = locateSpawns();
         if (points.Count == 0)
         {
-            Debug.Log("Could not find any points to spawn: "  + spawnType.ToString());
+            Debug.Log("SC-" +gameObject.name +" Could not find any points to spawn. Type: "  + spawnType.ToString());
             return null;
         }
         if (spawnSelection == selectionType.first)
@@ -173,9 +180,14 @@ public class D_SpawnController : D_DirectorObject
                 spawnablePoints.Add(point);
             }
         }
-        director.Debug().Log(gameObject.name + " Found spawnable " +  spawnType.ToString()+ " points found: " +
-                             spawnablePoints.Count + "\nOut of: " +
-                             director.getPoints().getPointsOfType(spawnType).Count);
+
+        remainingPoints = spawnablePoints.Count;
+        if (spawnablePoints.Count == 0 && !loggedOutOfPoints)
+        {
+            director.Debug().Log("SC-" +gameObject.name + " out of points to spawn");
+            loggedOutOfPoints = true;
+        }
+        remainingPoints = spawnablePoints.Count;
         return spawnablePoints;
     }
     //==============================================================
@@ -205,17 +217,7 @@ public class D_SpawnController : D_DirectorObject
     {
         return !pointScript.isSeen()         // return true if point has not been seen
                || pointScript.ignoreSeen     // return true if point is ignoring seen
-                || ignoreSeen;               // return true if scrips is ignoring seen
+                || ignoreSeen;               // return true if scripts is ignoring seen
     }
     
-    //==============================================================
-    //===================== Spawn Health ===========================
-    //==============================================================
-    // does what it says
-    private bool spawn(GameObject point)
-    {
-        point.GetComponent<D_PointObject>().trigger();
-        director.Debug().Log("Sent command to spawn " + spawnType.ToString());
-        return true;
-    }
 }

@@ -22,16 +22,7 @@ public class D_Data: MonoBehaviour
     }
     [SerializeField]
     private List<Floats> floats = new List<Floats>();
-    //====================================
-    //=============Ints===================
-    //====================================
-    [System.Serializable]
-    public class Ints {
-        public string key;
-        public int value = 0;//bool value
-    }    
-    [SerializeField]
-    private Ints[] ints = new Ints[1];
+
 
     public void Start()
     {
@@ -70,22 +61,6 @@ public class D_Data: MonoBehaviour
         addFloat(s);
         return floats.Count - 1;
     }
-    
-    public Ints getInt(int i)
-    {
-        return ints[i];
-    }
-
-    public int getIntIndex(string s)
-    {
-        for (int i = 0; i < ints.Length; i++)
-        {
-            if (string.Equals(ints[i].key, s))
-                return i;
-        }
-
-        return -1;
-    }
 
     public override string ToString()
     {
@@ -96,7 +71,6 @@ public class D_Data: MonoBehaviour
             sb.Append(": ");
             sb.Append(val.value);
             sb.Append("\n");
-
         }
         return sb.ToString();
     }

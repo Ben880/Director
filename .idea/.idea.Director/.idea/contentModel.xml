@@ -565,6 +565,7 @@
             <e p="Base" t="Include">
               <e p="D_Conditon.cs" t="Include" />
               <e p="D_Data.cs" t="Include" />
+              <e p="D_Debug.cs" t="Include" />
               <e p="D_Director.cs" t="Include" />
               <e p="D_DirectorObject.cs" t="Include" />
               <e p="D_DirectorObjects.cs" t="Include" />
@@ -606,14 +607,19 @@
             <e p="Tools" t="Include">
               <e p="D_CircularArray.cs" t="Include" />
               <e p="D_CircularList.cs" t="Include" />
-              <e p="D_Debug.cs" t="Include" />
               <e p="D_DisableCanvasOnPlay.cs" t="Include" />
               <e p="D_EnableMeshOnDebug.cs" t="Include" />
               <e p="D_EnableMeshOnPlay.cs" t="Include" />
               <e p="D_LookingAtDebug.cs" t="Include" />
+              <e p="D_RegiserConsoleTextMesh.cs" t="Include" />
               <e p="D_Timer.cs" t="Include" />
               <e p="D_ToggleDebug.cs" t="Include" />
               <e p="D_UpdateDebug.cs" t="Include" />
+            </e>
+            <e p="Triggers" t="Include">
+              <e p="D_TriggerData.cs" t="Include" />
+              <e p="D_TriggerObject.cs" t="Include" />
+              <e p="D_TriggerPoint.cs" t="Include" />
             </e>
             <e p="Zones" t="Include">
               <e p="D_ZoneUpdater.cs" t="Include" />

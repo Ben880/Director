@@ -31,9 +31,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Flags.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDamageDelta.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Demo/UFPS/Base/Scripts/Gameplay/AI/vp_SimpleAITurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,17 +48,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/DisableCanvasOnPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/DirectorObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Flags.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_Spawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_EnableRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Points.cs" />
@@ -68,40 +67,45 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_GetConfigs.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/OptionsEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypeConfiguration.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_UpdateDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDamageDelta.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Flags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +115,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,6 +172,13 @@
       <workItem from="1573681009089" duration="164000" />
       <workItem from="1573850266756" duration="597000" />
       <workItem from="1574191354676" duration="7206000" />
+      <workItem from="1574218405117" duration="128000" />
+      <workItem from="1574443533279" duration="14479000" />
+      <workItem from="1574627266411" duration="800000" />
+      <workItem from="1574803277967" duration="5421000" />
+      <workItem from="1575047559619" duration="3434000" />
+      <workItem from="1575493207499" duration="879000" />
+      <workItem from="1576026158878" duration="273000" />
     </task>
     <servers />
   </component>

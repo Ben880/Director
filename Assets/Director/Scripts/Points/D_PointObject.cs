@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 
@@ -9,32 +10,31 @@ public class D_PointObject : D_DirectorObject
     protected bool spawnable = true;
     protected bool seen = false;
     protected bool inZone = false;
-    [Header("Point Object")] 
+    [Header("Spawn Type")] 
     public spawnTypes spawnType;
+    [Header("Point Config Type")]
     public bool deleteAfterSpawn = false;
     public bool ignoreSpawnable = false;
     public bool ignoreSeen = false;
     public bool ignoreZone = false;
-    public GameObject triggerOther;
-    private D_PointObject triggerOtherScript;
-    private bool otherTriggered = false;
-
-
+    
+    //spawned stats
+    private bool spawned = false;
+    private string spawnedBy = "";
+    private float spawnedAt = 0;
+    public float seenAt;
+    private List<string> spawnReasons = new List<string>();
+    private static StringBuilder sb = new StringBuilder();
+    
+    
     void Start()
     {
         base.Start();
-        if (triggerOther != null)
-            triggerOtherScript = triggerOther.GetComponent<D_PointObject>();
     }
 
     public virtual void trigger()
     {
-        if (triggerOtherScript != null && !otherTriggered)
-        {
-            otherTriggered = true;
-            triggerOtherScript.trigger();
-        }
-
+        spawned = true;
         if (deleteAfterSpawn)
         {
             foreach (Transform child in transform)
@@ -58,6 +58,8 @@ public class D_PointObject : D_DirectorObject
 
     public virtual void setSeen(bool b)
     {
+        if (seen != b)
+            seenAt = director.getData().getFloat("Total Time").value;
         seen = b;
     }
 
@@ -73,16 +75,36 @@ public class D_PointObject : D_DirectorObject
 
     public virtual string getDebugText()
     {
-        return "Tag: "+ gameObject.tag +
-            "\nSpawnable: " + spawnable +
-            "\nSeen: " + seen+
-            "\ninZone: " +inZone;
+        sb.Clear();
+        sb.Append("Type: " + spawnType.ToString());
+        sb.Append("\nSpawned: " + spawned);
+        sb.Append("\nSpawnable: " + spawnable);
+        sb.Append("\nSeen: " + seen);
+        sb.Append("\nSeen At: " + seenAt);
+        sb.Append("\nIn Zone: " + inZone);
+        sb.Append("\nSpawned By: " + spawnedBy);
+        sb.Append("\nSpawned at: " + spawnedAt);
+        sb.Append("\nReasons: ");
+        foreach (var reason in spawnReasons)
+        {
+            sb.Append("\n - " + reason);
+        }
+        return sb.ToString();
+    }
+
+    public virtual void setSpawnReasons(string name, float time, List<string> reasons)
+    {
+        spawnedBy = name;
+        spawnedAt = time;
+        spawnReasons = reasons;
     }
 
     public virtual void addToSpawnTracker(GameObject obj)
     {
         director.getTracker().registerObject(obj, spawnType);
     }
+    
+    
 
 
 }

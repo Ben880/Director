@@ -33,11 +33,9 @@ public class D_SpawnTracker : D_DirectorObject
                 if (obj.Value[i] == null)
                     obj.Value.RemoveAt(i);
             }
-
             director.getData().getFloat(obj.Key + " Count").value = obj.Value.Count;
         }
     }
-
 
     public void registerObject(GameObject obj, spawnTypes type)
     {

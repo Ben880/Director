@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.RegularExpressions;
-using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
 [System.Serializable]
 public class D_Conditon
@@ -22,8 +22,6 @@ public class D_Conditon
     public string dataName = "";
     public conditionType condition;
     public string otherData;
-    //public bool randomize = false;
-    //public float randomOffset = 0;
     private bool doNumberTest = true;
     private bool isNumber = false;
     private float value;
@@ -35,7 +33,6 @@ public class D_Conditon
             director = new D_DirectorObjects();
             init = true;
         }
-
         if (doNumberTest)
         {
             isNumber = float.TryParse(otherData, out value);
@@ -63,5 +60,34 @@ public class D_Conditon
                 return false;
         }
 
+    }
+
+    public string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append(dataName);
+        switch (condition)
+        {
+            case conditionType.greaterThan:
+                sb.Append(" > ");
+                break;
+            case conditionType.lessThan:
+                sb.Append(" < ");
+                break;
+            case conditionType.equal:
+                sb.Append(" == ");
+                break;
+            case conditionType.notEqual:
+                sb.Append(" != ");
+                break;
+            case conditionType.greaterThanOrEqual:
+                sb.Append(" >= ");
+                break;
+            case conditionType.lessThanOrEqual:
+                sb.Append(" <= ");
+                break;
+        }
+        sb.Append(otherData);
+        return sb.ToString();
     }
 }

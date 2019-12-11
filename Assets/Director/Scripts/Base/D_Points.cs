@@ -7,11 +7,8 @@ public class D_Points
 {
     private static GameObject startPoint;
     private static GameObject endPoint;
-
     private static List<GameObject> points = new List<GameObject>();
     private static Dictionary<string, List<GameObject>> pointTypes = new Dictionary<string, List<GameObject>>();
-
-    
     private static bool init = false;
 
     public D_Points()
@@ -33,10 +30,8 @@ public class D_Points
             }
             startPoint = GameObject.FindGameObjectWithTag("StartPoint");
             endPoint = GameObject.FindGameObjectWithTag("EndPoint");
+            Debug.Log("Points found:" + points.Count);
             init = true;
-            Debug.Log("Points found:" + points.Count + 
-                      "\nStart Point: " + startPoint +
-                      "\nEnd Point: " + endPoint);
         }
     }
 

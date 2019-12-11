@@ -5,14 +5,16 @@ using UnityEngine;
 public class D_DirectorObject : MonoBehaviour
 {
     public static D_DirectorObjects director;
-    //[Header("Direcotr Object")] 
-    //public string scriptName = "";
+
     
     // Start is called before the first frame update
     protected void Start()
     {
-        director = new D_DirectorObjects();
+
+        if (director == null)
+            director = new D_DirectorObjects();
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -29,5 +31,29 @@ public class D_DirectorObject : MonoBehaviour
     {
         //5 seconds
     }
-    
+
+    public virtual float getDistanceToPlayer()
+    {
+        return Vector3.Distance(director.getPlayer().transform.position, gameObject.transform.position);
+    }
+
+    public virtual void trigger()
+    {
+        
+    }
+
+    public virtual void executeLogic()
+    {
+        
+    }
+
+    public virtual bool isOtherPlayer(GameObject other)
+    {
+        return other.CompareTag("Player");
+    }
+
+    public virtual bool isDebug()
+    {
+        return director.isDebug();
+    }
 }

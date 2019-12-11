@@ -44,7 +44,7 @@ public class D_DetectSeen : D_LogicObject
                         {
                             if (logMessage && director.isDebug())
                             {
-                                Debug.Log("Empty catch statement: may be masking error");
+                                director.Debug().Log("Empty catch statement: may be masking error");
                                 logMessage = false;
                             }
                         }
