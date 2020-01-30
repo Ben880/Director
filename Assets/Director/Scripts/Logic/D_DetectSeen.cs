@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
+//using UnityEngine.Experimental.PlayerLoop;
 
 public class D_DetectSeen : D_LogicObject
 {
