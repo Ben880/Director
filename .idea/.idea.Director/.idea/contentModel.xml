@@ -589,6 +589,18 @@
               <e p="D_LogicObject.cs" t="Include" />
               <e p="D_SpawnHealth.cs" t="Include" />
             </e>
+            <e p="Network" t="Include">
+              <e p="Command.cs" t="Include" />
+              <e p="CommandTracker.cs" t="Include" />
+              <e p="Communication.cs" t="Include" />
+              <e p="DataSender.cs" t="Include" />
+              <e p="NetworkSettings.cs" t="Include" />
+              <e p="NotifyObject.cs" t="Include" />
+              <e p="PacketNode.cs" t="Include" />
+              <e p="PacketObject.cs" t="Include" />
+              <e p="TCPTestClient.cs" t="Include" />
+              <e p="TCPTestServer.cs" t="Include" />
+            </e>
             <e p="Points" t="Include">
               <e p="D_CheckPoint.cs" t="Include" />
               <e p="D_PointObject.cs" t="Include" />
