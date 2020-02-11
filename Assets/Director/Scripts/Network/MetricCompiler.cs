@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
-
+[RequireComponent(typeof(Communication))]
 public class MetricCompiler : MonoBehaviour
 {
     // ======================================================combination of send less and compute less
@@ -10,26 +11,36 @@ public class MetricCompiler : MonoBehaviour
     private D_DirectorObjects director;
     //access to server communications
     private Communication communication;
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] 
+    private float sendEveryMS = 100;
+    private float counter = 0;
+
+    void Awake()
     {
-        //obtaining refrences to needed objects
-        director = new D_DirectorObjects();
-        communication = gameObject.GetComponent<Communication>();
+        communication = GetComponent<Communication>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //create a sting builder and iterate through data adding it to a string
-        StringBuilder sb = new StringBuilder();
+        counter += Time.deltaTime;
+        if (counter >= sendEveryMS)
+        {
+            sendData();
+            counter = 0;
+        }
+    }
+
+    private void sendData()
+    {
+        PacketObject packet = new PacketObject();
+        packet.setDestination("MetricCompiler");
+        packet.setCommand("UpdateData");
         foreach (var floatObj in director.getData().getFloatList())
         {
-            sb.Append(floatObj.key);
-            sb.Append(":");
-            sb.Append(floatObj.value);
+            packet.addNode(new PacketNode(floatObj.key, floatObj.value));
         }
         //send data string to the server
-        communication.sendToServer(sb.ToString());
+        communication.sendToServer(packet);
     }
 }

@@ -6,44 +6,33 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-
+[RequireComponent(typeof(CommandTracker))]
 public class Communication : MonoBehaviour
 {
+    //other needed classes
+    private NetworkSettings ns;
+    private CommandTracker commandTracker;
+    // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
-    private bool connected = false;     //this may not be needed
-    private string id;                    //id of the Unity Client
-    private CommandTracker commandTracker;
+
+
     public bool debug = true;
     public bool silenceAllConsoleMessages = false;
 
     void Awake()
     {
+        // get needed classes
+        ns = new NetworkSettings(this);
+        commandTracker = GetComponent<CommandTracker>();
+        // connect to the server
         connectToServer();
-        //commandTracker;
         if (silenceAllConsoleMessages)
-        {
             Debug.Log("Errors are being hidden");
-        }
     }
-
-    // Start is called before the first frame update
-    void Start()
+    
+    private void connectToServer()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        sendToServer("");
-    }
-
-    private void connectToServer() //gets an id from the server and then calls reconnect
-    {
-        //connect logic
-        string connectResponse = "key"; // logic for getting id
-        id = connectResponse; //gets the key combine with above ========****####*#*#*#*#
         try {  			
             clientReceiveThread = new Thread (new ThreadStart(ListenForCommands)); 			
             clientReceiveThread.IsBackground = true; 			
@@ -55,7 +44,7 @@ public class Communication : MonoBehaviour
 
     }
 
-    public bool sendToServer(string clientMessage) // function to send packets
+    public bool sendToServer(PacketObject packetObject) // function to send packets
     {
         if (socketConnection == null) {             
             return false;         
@@ -65,7 +54,7 @@ public class Communication : MonoBehaviour
             NetworkStream stream = socketConnection.GetStream(); 			
             if (stream.CanWrite) {
                 // Convert string message to byte array.                 
-                byte[] clientMessageAsByteArray = Encoding.ASCII.GetBytes(clientMessage); 				
+                byte[] clientMessageAsByteArray = Encoding.ASCII.GetBytes(packetObject.ToString()); 				
                 // Write byte array to socketConnection stream.                 
                 stream.Write(clientMessageAsByteArray, 0, clientMessageAsByteArray.Length);                 
                 sendMessageToConsole("Client sent his message - should be received by server", false);             
@@ -82,7 +71,7 @@ public class Communication : MonoBehaviour
     private void ListenForCommands()
     {
         try { 			
-            socketConnection = new TcpClient("localhost", 8052);  			
+            socketConnection = new TcpClient("localhost", 8052);
             Byte[] bytes = new Byte[1024];             
             while (true) { 				
                 // Get a stream object for reading 				
@@ -126,7 +115,7 @@ public class Communication : MonoBehaviour
         else if (po.getDestination().Equals("UnityMain"))
         {
             if (po.getCommand().Equals("setID"))
-                id = Int32.Parse(po.getNode(po.findIndexOfNodeWithKey("ID")).value);
+                ns.ID = Int32.Parse(po.getNode(po.findIndexOfNodeWithKey("ID")).value);
         }
         		
     }
@@ -137,7 +126,7 @@ public class Communication : MonoBehaviour
         po.setDestination("ServerMain");
         po.setCommand("EndConnection");
         po.addNode(new PacketNode("Reason", "ApplicationQuit"));
-        sendToServer(po.ToString());
+        sendToServer(po);
         clientReceiveThread.Abort();
         socketConnection.Close();
     }

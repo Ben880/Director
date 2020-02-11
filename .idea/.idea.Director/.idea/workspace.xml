@@ -49,7 +49,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnEditorConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_GetConfigs.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/OptionsEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypeConfiguration.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_UpdateDebug.cs" />
@@ -123,14 +121,16 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/DataSender.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
       </list>
     </option>
   </component>
@@ -214,7 +214,7 @@
       <workItem from="1580409164504" duration="15070000" />
       <workItem from="1580856215318" duration="4023000" />
       <workItem from="1581371540043" duration="4214000" />
-      <workItem from="1581449387724" duration="829000" />
+      <workItem from="1581449387724" duration="6479000" />
     </task>
     <servers />
   </component>
@@ -241,9 +241,10 @@
       <screen x="-1366" y="-83" width="1366" height="728" />
     </state>
     <state x="-1182" y="-76" key="SettingsEditor/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426897777" />
-    <state x="-1020" y="-34" width="672" height="678" key="search.everywhere.popup" timestamp="1580426896459">
-      <screen x="-1366" y="-83" width="1366" height="728" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581455028099">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1581455028099" />
     <state x="-1020" y="-34" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426896459" />
   </component>
   <component name="XDebuggerManager">

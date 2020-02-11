@@ -1,18 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
-
-public class CommandTracker
+[RequireComponent(typeof(Communication))]
+public class CommandTracker: MonoBehaviour 
 {
-    
-    Dictionary<string, Command> commands = new Dictionary<string, Command>();
-    
-    public void registerCommand(string s)
+    private Dictionary<string, Command> commands = new Dictionary<string, Command>();
+    private Communication communication;
+    void Awake()
+    {
+        communication = GetComponent<Communication>();
+    }
+
+    // unused may be removed
+    public void qucickRegisterCommand(string s)
     {
         registerCommand(new Command(s, false));
     }
-
     public void registerCommand(Command command)
     {
         commands.Add(command.getName(), command);
@@ -22,12 +27,6 @@ public class CommandTracker
         po.addNode(new PacketNode("CommandName", command.getName()));
         po.addNode(new PacketNode("Enabled", command.isEnabled()));
     }
-
-    public Command getCommand(string s)
-    {
-        return commands[s];
-    }
-
     public void recievedCommand(PacketObject po)
     {
         Command commandToExecute = commands[po.getCommand()];
@@ -38,8 +37,35 @@ public class CommandTracker
         else
         {
             commands[po.getCommand()].execute();
-            
         }
-            
     }
+    // ==================================================
+    // ===methods for restricted access of commands======
+    // ==================================================
+    private Command getCommand(string key)
+    {
+        if (commands.ContainsKey(key))
+            return commands[key];
+        else
+            Debug.LogError($"Key ({key}) does not exist", this);
+        throw new Exception("No such key");
+    }
+
+    public void setCommandEnabled(string key, bool value)
+    {
+        getCommand(key).setEnabled(value);
+        PacketObject packet = new PacketObject();
+        packet.setDestination("CommandTracker");
+        packet.setCommand("SetCommandEnabled");
+        packet.addNode(new PacketNode("Key", key));
+        packet.addNode(new PacketNode("Value", value));
+        communication.sendToServer(packet);
+    }
+
+    public void registerNotifyObject(string key, NotifyObject notifyObj)
+    {
+        getCommand(key).registerNotifyObject(notifyObj);
+    }
+    
+    
 }

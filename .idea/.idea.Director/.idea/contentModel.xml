@@ -594,7 +594,7 @@
               <e p="CommandTracker.cs" t="Include" />
               <e p="Communication.cs" t="Include" />
               <e p="MetricCompiler.cs" t="Include" />
-              <e p="NetworkMain.cs" t="Include" />
+              <e p="NetworkConfig.cs" t="Include" />
               <e p="NetworkSettings.cs" t="Include" />
               <e p="NotifyObject.cs" t="Include" />
               <e p="PacketNode.cs" t="Include" />

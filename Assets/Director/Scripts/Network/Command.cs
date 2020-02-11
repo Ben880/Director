@@ -20,17 +20,14 @@ public class Command
     {
         return commandName;
     }
-
     public bool isEnabled()
     {
         return enabled;
     }
-
-    //set weather the command is enabled and update the server
     public void setEnabled(bool enabled)
     {
         this.enabled = enabled;
-        //logic for calling networking command here
+        
     }
 
     public void registerNotifyObject(NotifyObject notifyObject)

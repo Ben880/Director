@@ -39,6 +39,6 @@ public class NetworkSettings
         packet.setDestination("NetworkSettings");
         packet.setCommand("ChangeSetting");
         packet.addNode(new PacketNode(key, value));
-        communication.sendToServer(packet.ToString());
+        communication.sendToServer(packet);
     }
 }
