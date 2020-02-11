@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-public class DataSender : MonoBehaviour
+public class MetricCompiler : MonoBehaviour
 {
+    // ======================================================combination of send less and compute less
     //access to the data collection through D_DirectorObjects (Specifically .getData() method)
     private D_DirectorObjects director;
     //access to server communications

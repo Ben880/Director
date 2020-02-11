@@ -3,22 +3,11 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 
-public class CommandTracker : MonoBehaviour
+public class CommandTracker
 {
     
     Dictionary<string, Command> commands = new Dictionary<string, Command>();
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void registerCommand(string s)
     {
         registerCommand(new Command(s, false));
@@ -41,8 +30,16 @@ public class CommandTracker : MonoBehaviour
 
     public void recievedCommand(PacketObject po)
     {
-        
-        po.getCommand();
-        // other logic
+        Command commandToExecute = commands[po.getCommand()];
+        if (commandToExecute == null)
+            Debug.LogError("Command to execute is null");
+        else if (!commandToExecute.isEnabled())
+            Debug.LogError("Command to execute is disabled");
+        else
+        {
+            commands[po.getCommand()].execute();
+            
+        }
+            
     }
 }

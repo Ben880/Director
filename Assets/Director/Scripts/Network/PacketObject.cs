@@ -9,7 +9,8 @@ public class PacketObject
 {
     private string destination;
     private string command; 
-
+    //protobuff 
+    //--or Json newtonsoft
     private List<PacketNode> nodes = new List<PacketNode>();
 
     public void setDestination(string destination)

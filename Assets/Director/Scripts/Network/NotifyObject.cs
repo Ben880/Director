@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotifyObject : MonoBehaviour
+public class NotifyObject
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool notified;
+    public void notify()
     {
-        
+        notified = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void reset()
     {
-        
+        notified = false;
+    }
+
+    public bool isTriggered()
+    {
+        return notified;
     }
 }

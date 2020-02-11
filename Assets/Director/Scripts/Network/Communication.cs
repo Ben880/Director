@@ -20,7 +20,7 @@ public class Communication : MonoBehaviour
     void Awake()
     {
         connectToServer();
-        commandTracker = gameObject.GetComponent<CommandTracker>();
+        //commandTracker;
         if (silenceAllConsoleMessages)
         {
             Debug.Log("Errors are being hidden");

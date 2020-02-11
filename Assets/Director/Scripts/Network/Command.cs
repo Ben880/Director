@@ -40,8 +40,10 @@ public class Command
 
     public void execute()
     {
-        
+        foreach (NotifyObject notifyObj in notifyObjects)
+        {
+            notifyObj.notify();
+        }
     }
     
-
 }

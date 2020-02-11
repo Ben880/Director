@@ -593,7 +593,8 @@
               <e p="Command.cs" t="Include" />
               <e p="CommandTracker.cs" t="Include" />
               <e p="Communication.cs" t="Include" />
-              <e p="DataSender.cs" t="Include" />
+              <e p="MetricCompiler.cs" t="Include" />
+              <e p="NetworkMain.cs" t="Include" />
               <e p="NetworkSettings.cs" t="Include" />
               <e p="NotifyObject.cs" t="Include" />
               <e p="PacketNode.cs" t="Include" />

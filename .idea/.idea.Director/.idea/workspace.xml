@@ -38,7 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/DataSender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Tests.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/TCPTestClient.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,10 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/D_Data.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnEditorConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_GetConfigs.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/OptionsEditor.cs" />
@@ -123,12 +121,16 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/TCPTestClient.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/TCPTestServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/DataSender.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
       </list>
     </option>
   </component>
@@ -209,7 +211,10 @@
       <workItem from="1575493207499" duration="879000" />
       <workItem from="1576026158878" duration="1018000" />
       <workItem from="1576695600948" duration="1486000" />
-      <workItem from="1580409164504" duration="15046000" />
+      <workItem from="1580409164504" duration="15070000" />
+      <workItem from="1580856215318" duration="4023000" />
+      <workItem from="1581371540043" duration="4214000" />
+      <workItem from="1581449387724" duration="829000" />
     </task>
     <servers />
   </component>
