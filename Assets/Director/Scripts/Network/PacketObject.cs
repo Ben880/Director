@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using ProBuilder2.Common;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class PacketObject
 {
@@ -92,6 +92,11 @@ public class PacketObject
                 nodes.Add(new PacketNode(splitNode[0], splitNode[1]));
             }
         }
+    }
+
+    public void test()
+    {
+        Assert.IsTrue(true);
     }
     
     

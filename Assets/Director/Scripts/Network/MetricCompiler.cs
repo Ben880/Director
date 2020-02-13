@@ -16,6 +16,7 @@ public class MetricCompiler : MonoBehaviour
     private float sendEveryMS = 100;
     private float counter = 0;
 
+
     void Awake()
     {
         communication = GetComponent<Communication>();

@@ -575,6 +575,10 @@
               <e p="D_SpawnTracker.cs" t="Include" />
               <e p="D_SpawnTypes.cs" t="Include" />
             </e>
+            <e p="Depreciated" t="Include">
+              <e p="TCPTestClient.cs" t="Include" />
+              <e p="TCPTestServer.cs" t="Include" />
+            </e>
             <e p="Inputs" t="Include">
               <e p="D_InputObject.cs" t="Include" />
               <e p="D_UpdateDamageDelta.cs" t="Include" />
@@ -599,8 +603,6 @@
               <e p="NotifyObject.cs" t="Include" />
               <e p="PacketNode.cs" t="Include" />
               <e p="PacketObject.cs" t="Include" />
-              <e p="TCPTestClient.cs" t="Include" />
-              <e p="TCPTestServer.cs" t="Include" />
             </e>
             <e p="Points" t="Include">
               <e p="D_CheckPoint.cs" t="Include" />
