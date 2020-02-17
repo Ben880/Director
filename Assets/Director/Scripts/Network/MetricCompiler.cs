@@ -19,13 +19,14 @@ public class MetricCompiler : MonoBehaviour
 
     void Awake()
     {
+        director = new D_DirectorObjects();
         communication = GetComponent<Communication>();
     }
 
     void Update()
     {
         counter += Time.deltaTime;
-        if (counter >= sendEveryMS)
+        if (counter >= sendEveryMS/1000)
         {
             sendData();
             counter = 0;
@@ -34,6 +35,7 @@ public class MetricCompiler : MonoBehaviour
 
     private void sendData()
     {
+        
         PacketObject packet = new PacketObject();
         packet.setDestination("MetricCompiler");
         packet.setCommand("UpdateData");
@@ -43,5 +45,6 @@ public class MetricCompiler : MonoBehaviour
         }
         //send data string to the server
         communication.sendToServer(packet);
+        Debug.Log("sending packet to communication moduel");
     }
 }

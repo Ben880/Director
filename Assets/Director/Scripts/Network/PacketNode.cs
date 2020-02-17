@@ -9,7 +9,7 @@ public class PacketNode
     public string key;
     public dynamic value;
 
-    public string toString()
+    public override string ToString()
     {
         return new StringBuilder().Append(key).Append(":").Append(value).ToString();
     }

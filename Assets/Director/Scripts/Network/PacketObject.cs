@@ -58,7 +58,7 @@ public class PacketObject
         return nodes.Count;
     }
 
-    public string toString()
+    public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
         sb.Append("Destination:");

@@ -119,16 +119,16 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObjectTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObjectTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
       </list>
     </option>
   </component>
@@ -215,6 +215,7 @@
       <workItem from="1581449387724" duration="6479000" />
       <workItem from="1581618831538" duration="6300000" />
       <workItem from="1581625574387" duration="168000" />
+      <workItem from="1581961103610" duration="3680000" />
     </task>
     <servers />
   </component>
