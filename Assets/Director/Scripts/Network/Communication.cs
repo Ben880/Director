@@ -15,10 +15,11 @@ public class Communication : MonoBehaviour
     // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
-
-
-    public bool debug = true;
-    public bool silenceAllConsoleMessages = false;
+    //debugging
+    [SerializeField]
+    private bool debug = true;
+    [SerializeField]
+    private bool silenceAllConsoleMessages = false;
 
     void Awake()
     {

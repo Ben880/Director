@@ -5,6 +5,13 @@ using UnityEngine;
 public class NotifyObject
 {
     private bool notified;
+    private bool destroy;
+
+    public bool Destroy
+    {
+        get { return destroy; }
+        set { destroy = value; }
+    }
     public void notify()
     {
         notified = true;
@@ -19,4 +26,5 @@ public class NotifyObject
     {
         return notified;
     }
+    
 }

@@ -12,12 +12,7 @@ public class CommandTracker: MonoBehaviour
     {
         communication = GetComponent<Communication>();
     }
-
-    // unused may be removed
-    public void qucickRegisterCommand(string s)
-    {
-        registerCommand(new Command(s, false));
-    }
+    
     public void registerCommand(Command command)
     {
         commands.Add(command.getName(), command);
@@ -27,6 +22,7 @@ public class CommandTracker: MonoBehaviour
         po.addNode(new PacketNode("CommandName", command.getName()));
         po.addNode(new PacketNode("Enabled", command.isEnabled().ToString()));
     }
+    //method will be depreciated after new packets
     public void recievedCommand(PacketObject po)
     {
         Command commandToExecute = commands[po.getCommand()];
@@ -37,6 +33,19 @@ public class CommandTracker: MonoBehaviour
         else
         {
             commands[po.getCommand()].execute();
+        }
+    }
+    
+    public void executeCommand(String nameOfCommand)
+    {
+        Command commandToExecute = commands[nameOfCommand];
+        if (commandToExecute == null)
+            Debug.LogError("Command to execute is null");
+        else if (!commandToExecute.isEnabled())
+            Debug.LogError("Command to execute is disabled");
+        else
+        {
+            commandToExecute.execute();
         }
     }
     // ==================================================
@@ -62,10 +71,14 @@ public class CommandTracker: MonoBehaviour
         communication.sendToServer(packet);
     }
 
-    public void registerNotifyObject(string key, NotifyObject notifyObj)
+    public void addNotifyObject(string key, NotifyObject notifyObj)
     {
-        getCommand(key).registerNotifyObject(notifyObj);
+        getCommand(key).addNotifyObject(notifyObj);
     }
-    
+
+    public bool commandExists(string commandName)
+    {
+        return commands.ContainsKey(commandName);
+    }
     
 }

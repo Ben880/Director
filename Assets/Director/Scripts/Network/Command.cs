@@ -30,16 +30,19 @@ public class Command
         
     }
 
-    public void registerNotifyObject(NotifyObject notifyObject)
+    public void addNotifyObject(NotifyObject notifyObject)
     {
         notifyObjects.Add(notifyObject);
     }
 
     public void execute()
     {
-        foreach (NotifyObject notifyObj in notifyObjects)
+        for (int i = 0; i < notifyObjects.Count; i++)
         {
-            notifyObj.notify();
+            if (notifyObjects[i].Destroy)
+                notifyObjects.RemoveAt(i);
+            else
+                notifyObjects[i].notify();
         }
     }
     

@@ -25,6 +25,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Director.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,15 +34,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/Tests.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
@@ -75,20 +79,22 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/TCPTestServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/DataSender.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCollector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObjectTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObjectTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
       </list>
     </option>
@@ -177,7 +183,7 @@
       <workItem from="1581618831538" duration="6300000" />
       <workItem from="1581625574387" duration="168000" />
       <workItem from="1581961103610" duration="3680000" />
-      <workItem from="1582230821143" duration="499000" />
+      <workItem from="1582230821143" duration="4293000" />
     </task>
     <servers />
   </component>
@@ -185,7 +191,7 @@
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="PlayMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -208,10 +214,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582231347525" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581455028099">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582234162086">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1581455028099" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582234162086" />
     <state x="-1020" y="-34" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426896459" />
   </component>
   <component name="XDebuggerManager">
