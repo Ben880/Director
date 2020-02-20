@@ -25,27 +25,64 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/Local/vp_FPPlayerEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Sample(UFPS)/D_UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Demo/UFPS/Base/Scripts/Gameplay/AI/vp_SimpleAITurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Flags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/Api/CallbacksDelegator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/vp_BodyAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Tests/CommandTrackerTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/Local/vp_FPBodyAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDamageDelta.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_UpdateDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_SpawnTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
@@ -65,6 +102,7 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" />
@@ -80,23 +118,17 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObjectTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObjectTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Director/Scripts/Logic/D_DetectSeen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/CommandTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Director/Tests/CommandTrackerTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/vp_BodyAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +146,7 @@
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -183,9 +215,7 @@
       <workItem from="1581449387724" duration="6479000" />
       <workItem from="1581618831538" duration="6300000" />
       <workItem from="1581625574387" duration="168000" />
-      <workItem from="1581961103610" duration="4116000" />
-      <workItem from="1582069945989" duration="3892000" />
-      <workItem from="1582217507404" duration="6654000" />
+      <workItem from="1581961103610" duration="3680000" />
     </task>
     <servers />
   </component>
@@ -208,97 +238,15 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582073670544" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582073670544" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1582091697761">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697761" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582073670546" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.center/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.left/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1582091697760">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.right/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697760" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582073670545" />
-    <state width="1493" height="261" key="GridCell.Tab.3.bottom" timestamp="1582091697761">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.3.bottom/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697761" />
-    <state width="1493" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582073670546" />
-    <state width="1493" height="261" key="GridCell.Tab.3.center" timestamp="1582091697761">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.3.center/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697761" />
-    <state width="1493" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1582073670546" />
-    <state width="1493" height="261" key="GridCell.Tab.3.left" timestamp="1582091697761">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.3.left/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697761" />
-    <state width="1493" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1582073670546" />
-    <state width="1493" height="261" key="GridCell.Tab.3.right" timestamp="1582091697761">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.3.right/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582091697761" />
-    <state width="1493" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1582073670546" />
-    <state x="207" y="8" key="SettingsEditor" timestamp="1582219274192">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1182" y="-76" key="SettingsEditor" timestamp="1580426897777">
+      <screen x="-1366" y="-83" width="1366" height="728" />
     </state>
     <state x="-1182" y="-76" key="SettingsEditor/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426897777" />
-    <state x="207" y="8" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582219274192" />
-    <state x="389" y="55" width="756" height="768" key="search.everywhere.popup" timestamp="1582219194474">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581455028099">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1581455028099" />
     <state x="-1020" y="-34" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426896459" />
-    <state x="389" y="55" width="756" height="768" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582219194474" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
