@@ -41,7 +41,7 @@ public class MetricCompiler : MonoBehaviour
         packet.setCommand("UpdateData");
         foreach (var floatObj in director.getData().getFloatList())
         {
-            packet.addNode(new PacketNode(floatObj.key, floatObj.value));
+            packet.addNode(new PacketNode(floatObj.key, floatObj.value.ToString()));
         }
         //send data string to the server
         communication.sendToServer(packet);

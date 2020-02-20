@@ -29,11 +29,11 @@ public class NetworkSettings
         set
         {
             publicSession = value;
-            notifyServerOfChange("PublicSession", value);
+            notifyServerOfChange("PublicSession", value.ToString());
         }
     }
 
-    private void notifyServerOfChange(string key, dynamic value)
+    private void notifyServerOfChange(string key, string value)
     {
         PacketObject packet = new PacketObject();
         packet.setDestination("NetworkSettings");

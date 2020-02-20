@@ -25,55 +25,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Demo/UFPS/Base/Scripts/Gameplay/AI/vp_SimpleAITurret.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Data.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Flags.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTracker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/Api/CallbacksDelegator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_DamagPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Sample(UFPS)/D_UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Triggers/D_TriggerObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDistance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_InputObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateLastSpawned.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateDamageDelta.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_UpdateDebug.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_SpawnHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_LogicObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/Api/CallbacksDelegator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -120,14 +81,14 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObjectTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObjectTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
       </list>
     </option>
@@ -216,6 +177,7 @@
       <workItem from="1581618831538" duration="6300000" />
       <workItem from="1581625574387" duration="168000" />
       <workItem from="1581961103610" duration="3680000" />
+      <workItem from="1582230821143" duration="499000" />
     </task>
     <servers />
   </component>
@@ -242,6 +204,10 @@
       <screen x="-1366" y="-83" width="1366" height="728" />
     </state>
     <state x="-1182" y="-76" key="SettingsEditor/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426897777" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1582231347525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582231347525" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581455028099">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -115,7 +115,9 @@ public class Communication : MonoBehaviour
         else if (po.getDestination().Equals("UnityMain"))
         {
             if (po.getCommand().Equals("setID"))
-                ns.ID = Int32.Parse(po.getNode(po.findIndexOfNodeWithKey("ID")).value);
+            {
+                
+            } //ns.ID = Int32.Parse(po.getNode(po.findIndexOfNodeWithKey("ID")).value);
         }
         		
     }

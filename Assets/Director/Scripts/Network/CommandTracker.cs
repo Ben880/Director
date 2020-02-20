@@ -25,7 +25,7 @@ public class CommandTracker: MonoBehaviour
         po.setDestination("ServerCommandTracker");
         po.setCommand("RegisterCommand");
         po.addNode(new PacketNode("CommandName", command.getName()));
-        po.addNode(new PacketNode("Enabled", command.isEnabled()));
+        po.addNode(new PacketNode("Enabled", command.isEnabled().ToString()));
     }
     public void recievedCommand(PacketObject po)
     {
@@ -58,7 +58,7 @@ public class CommandTracker: MonoBehaviour
         packet.setDestination("CommandTracker");
         packet.setCommand("SetCommandEnabled");
         packet.addNode(new PacketNode("Key", key));
-        packet.addNode(new PacketNode("Value", value));
+        packet.addNode(new PacketNode("Value", value.ToString()));
         communication.sendToServer(packet);
     }
 

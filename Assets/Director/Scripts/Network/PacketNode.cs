@@ -7,14 +7,14 @@ using System;
 public class PacketNode
 {
     public string key;
-    public dynamic value;
+    public string value;
 
     public override string ToString()
     {
         return new StringBuilder().Append(key).Append(":").Append(value).ToString();
     }
     // test for passing stupid shit
-    public PacketNode(string key, dynamic value)
+    public PacketNode(string key, string value)
     {
         this.key = key;
         this.value = value;
