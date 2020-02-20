@@ -35,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Network/PacketObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/Local/vp_FPPlayerEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Sample(UFPS)/D_UpdateHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/Api/CallbacksDelegator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Scripts/Logic/D_DetectSeen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Director/Demo/UFPS/Base/Scripts/Gameplay/Player/vp_BodyAnimator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -184,7 +185,7 @@
       <workItem from="1581625574387" duration="168000" />
       <workItem from="1581961103610" duration="4116000" />
       <workItem from="1582069945989" duration="3892000" />
-      <workItem from="1582217507404" duration="6948000" />
+      <workItem from="1582217507404" duration="6654000" />
     </task>
     <servers />
   </component>

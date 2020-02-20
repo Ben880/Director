@@ -10,10 +10,6 @@
         <e p="Editor" t="Include">
           <e p="Director" t="Include">
             <e p="Demo" t="Include">
-              <e p="SampleScripts(UFPS)" t="Include">
-                <e p="D_DamagPlayer.cs" t="Include" />
-                <e p="D_UpdateHealth.cs" t="Include" />
-              </e>
               <e p="UFPS" t="Include">
                 <e p="Base" t="Include">
                   <e p="Content" t="Include">
@@ -620,6 +616,10 @@
                   <e p="D_Spawn.cs" t="Include" />
                   <e p="D_SpawnRandom.cs" t="Include" />
                 </e>
+              </e>
+              <e p="Sample(UFPS)" t="Include">
+                <e p="D_DamagPlayer.cs" t="Include" />
+                <e p="D_UpdateHealth.cs" t="Include" />
               </e>
               <e p="Tools" t="Include">
                 <e p="D_CircularArray.cs" t="Include" />
