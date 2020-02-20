@@ -9,6 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Director" t="Include">
           <e p="Demo" t="Include">
+            <e p="SampleScripts(UFPS)" t="Include">
+              <e p="D_DamagPlayer.cs" t="Include" />
+              <e p="D_UpdateHealth.cs" t="Include" />
+            </e>
             <e p="UFPS" t="Include">
               <e p="Base" t="Include">
                 <e p="Content" t="Include">
@@ -579,6 +583,7 @@
               <e p="TCPTestClient.cs" t="Include" />
               <e p="TCPTestServer.cs" t="Include" />
             </e>
+            <e p="Director.asmdef" t="Include" />
             <e p="Inputs" t="Include">
               <e p="D_InputObject.cs" t="Include" />
               <e p="D_UpdateDamageDelta.cs" t="Include" />
@@ -614,10 +619,6 @@
                 <e p="D_Spawn.cs" t="Include" />
                 <e p="D_SpawnRandom.cs" t="Include" />
               </e>
-            </e>
-            <e p="Sample(UFPS)" t="Include">
-              <e p="D_DamagPlayer.cs" t="Include" />
-              <e p="D_UpdateHealth.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
               <e p="D_CircularArray.cs" t="Include" />
@@ -865,6 +866,7 @@
           </e>
         </e>
       </e>
+      <e p="Director.csproj" t="IncludeRecursive" />
       <e p="Director.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
