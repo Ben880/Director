@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using DirectorProtobuf;
 using UnityEngine;
 [RequireComponent(typeof(Communication))]
 public class MetricCompiler : MonoBehaviour
@@ -21,6 +22,7 @@ public class MetricCompiler : MonoBehaviour
     {
         director = new D_DirectorObjects();
         communication = GetComponent<Communication>();
+        Data data  = new Data();
     }
 
     void Update()

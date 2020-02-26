@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="" />
+    <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Director.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Director.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +93,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/PacketObjectTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
@@ -96,6 +100,7 @@
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +188,10 @@
       <workItem from="1581618831538" duration="6300000" />
       <workItem from="1581625574387" duration="168000" />
       <workItem from="1581961103610" duration="3680000" />
-      <workItem from="1582230821143" duration="4293000" />
+      <workItem from="1582230821143" duration="4605000" />
+      <workItem from="1582691354736" duration="772000" />
+      <workItem from="1582736670573" duration="4000" />
+      <workItem from="1582736719434" duration="467000" />
     </task>
     <servers />
   </component>
