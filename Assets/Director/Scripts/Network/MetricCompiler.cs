@@ -37,16 +37,19 @@ public class MetricCompiler : MonoBehaviour
 
     private void sendData()
     {
-        
-        PacketObject packet = new PacketObject();
-        packet.setDestination("MetricCompiler");
-        packet.setCommand("UpdateData");
+        DataList dataList = new DataList();
+        //packet.setDestination("MetricCompiler");
+        //packet.setCommand("UpdateData");
         foreach (var floatObj in director.getData().getFloatList())
         {
-            packet.addNode(new PacketNode(floatObj.key, floatObj.value.ToString()));
+            Data data = new Data();
+            data.Name = floatObj.key;
+            data.Value = floatObj.value;
+            dataList.Data.Add(data);
+            //packet.addNode(new PacketNode(floatObj.key, floatObj.value.ToString()));
         }
         //send data string to the server
-        communication.sendToServer(packet);
+        communication.sendToServer(dataList);
         Debug.Log("sending packet to communication moduel");
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DirectorProtobuf;
 using UnityEngine;
 
 public class NetworkSettings
@@ -39,6 +40,7 @@ public class NetworkSettings
         packet.setDestination("NetworkSettings");
         packet.setCommand("ChangeSetting");
         packet.addNode(new PacketNode(key, value));
-        communication.sendToServer(packet);
+        Data data = new Data();
+        //communication.sendToServer(packet);
     }
 }

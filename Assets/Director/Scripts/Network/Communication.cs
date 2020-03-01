@@ -5,6 +5,8 @@ using UnityEngine;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using DirectorProtobuf;
+using Google.Protobuf;
 
 [RequireComponent(typeof(CommandTracker))]
 public class Communication : MonoBehaviour
@@ -45,7 +47,7 @@ public class Communication : MonoBehaviour
 
     }
 
-    public bool sendToServer(PacketObject packetObject) // function to send packets
+    public bool sendToServer(DataList protoObject) // function to send packets
     {
         if (socketConnection == null) {             
             return false;         
@@ -55,10 +57,10 @@ public class Communication : MonoBehaviour
             NetworkStream stream = socketConnection.GetStream(); 			
             if (stream.CanWrite) {
                 // Convert string message to byte array.                 
-                byte[] clientMessageAsByteArray = Encoding.ASCII.GetBytes(packetObject.ToString()); 				
+                byte[] clientMessageAsByteArray = protoObject.ToByteArray();//Encoding.ASCII.GetBytes().; 				
                 // Write byte array to socketConnection stream.                 
                 stream.Write(clientMessageAsByteArray, 0, clientMessageAsByteArray.Length);                 
-                sendMessageToConsole("Client sent his message - should be received by server", false);             
+                sendMessageToConsole("Client sent message - should be received by server", false);             
             }         
         } 		
         catch (SocketException socketException) {             
@@ -129,7 +131,7 @@ public class Communication : MonoBehaviour
         po.setDestination("ServerMain");
         po.setCommand("EndConnection");
         po.addNode(new PacketNode("Reason", "ApplicationQuit"));
-        sendToServer(po);
+            //sendToServer(po);
         clientReceiveThread.Abort();
         socketConnection.Close();
     }

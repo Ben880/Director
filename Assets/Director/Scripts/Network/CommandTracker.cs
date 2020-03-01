@@ -68,7 +68,7 @@ public class CommandTracker: MonoBehaviour
         packet.setCommand("SetCommandEnabled");
         packet.addNode(new PacketNode("Key", key));
         packet.addNode(new PacketNode("Value", value.ToString()));
-        communication.sendToServer(packet);
+        //communication.sendToServer(packet);
     }
 
     public void addNotifyObject(string key, NotifyObject notifyObj)
