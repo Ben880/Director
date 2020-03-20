@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\bwilcox\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\bwilcox\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Director.-713574918.00" t="ExcludeRecursive" />
-    <e p="C:\Users\bwilcox\Desktop\School\SP2\Repo\Director" t="IncludeRecursive">
+    <e p="C:\Users\bwilcox\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Director.1448223875.00" t="ExcludeRecursive" />
+    <e p="C:\Users\bwilcox\Desktop\School\SP2\SP2-Unity\Director" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -707,13 +707,11 @@
             <e p="Network" t="Include">
               <e p="Command.cs" t="Include" />
               <e p="CommandTracker.cs" t="Include" />
-              <e p="Communication.cs" t="Include" />
               <e p="MetricCompiler.cs" t="Include" />
               <e p="NetworkConfig.cs" t="Include" />
               <e p="NetworkSettings.cs" t="Include" />
               <e p="NotifyObject.cs" t="Include" />
-              <e p="PacketNode.cs" t="Include" />
-              <e p="PacketObject.cs" t="Include" />
+              <e p="ServerConnection.cs" t="Include" />
             </e>
             <e p="Points" t="Include">
               <e p="D_CheckPoint.cs" t="Include" />

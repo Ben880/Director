@@ -2,43 +2,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using DirectorProtobuf;
 using UnityEngine;
-[RequireComponent(typeof(Communication))]
+[RequireComponent(typeof(ServerConnection))]
 public class CommandTracker: MonoBehaviour 
 {
     private Dictionary<string, Command> commands = new Dictionary<string, Command>();
-    private Communication communication;
+    private ServerConnection serverConnection;
     void Awake()
     {
-        communication = GetComponent<Communication>();
+        serverConnection = GetComponent<ServerConnection>();
     }
-    
+
     public void registerCommand(Command command)
     {
         commands.Add(command.getName(), command);
-        PacketObject po = new PacketObject();
-        po.setDestination("ServerCommandTracker");
-        po.setCommand("RegisterCommand");
-        po.addNode(new PacketNode("CommandName", command.getName()));
-        po.addNode(new PacketNode("Enabled", command.isEnabled().ToString()));
+        sendToServer(command);
     }
-    //method will be depreciated after new packets
-    public void recievedCommand(PacketObject po)
+    public void setCommandEnabled(string key, bool value)
     {
-        Command commandToExecute = commands[po.getCommand()];
-        if (commandToExecute == null)
-            Debug.LogError("Command to execute is null");
-        else if (!commandToExecute.isEnabled())
-            Debug.LogError("Command to execute is disabled");
-        else
-        {
-            commands[po.getCommand()].execute();
-        }
+        getCommand(key).setEnabled(value);
+        sendToServer(getCommand(key));
     }
-    
-    public void executeCommand(String nameOfCommand)
+    //private logic for sending command info to server
+    private void sendToServer(Command command)
     {
-        Command commandToExecute = commands[nameOfCommand];
+        CommandChange commandBuff = new CommandChange();
+        commandBuff.Name = command.getName();
+        commandBuff.Value = command.isEnabled();
+        DataWrapper wrapper = new DataWrapper();
+        wrapper.CommandChange = commandBuff;
+        serverConnection.sendToServer(wrapper);
+    }
+
+    public void recievedCommand(DirectorRPC rpc)
+    {
+        Command commandToExecute = commands[rpc.Name];
         if (commandToExecute == null)
             Debug.LogError("Command to execute is null");
         else if (!commandToExecute.isEnabled())
@@ -48,6 +47,7 @@ public class CommandTracker: MonoBehaviour
             commandToExecute.execute();
         }
     }
+    
     // ==================================================
     // ===methods for restricted access of commands======
     // ==================================================
@@ -59,18 +59,7 @@ public class CommandTracker: MonoBehaviour
             Debug.LogError($"Key ({key}) does not exist", this);
         throw new Exception("No such key");
     }
-
-    public void setCommandEnabled(string key, bool value)
-    {
-        getCommand(key).setEnabled(value);
-        PacketObject packet = new PacketObject();
-        packet.setDestination("CommandTracker");
-        packet.setCommand("SetCommandEnabled");
-        packet.addNode(new PacketNode("Key", key));
-        packet.addNode(new PacketNode("Value", value.ToString()));
-        //communication.sendToServer(packet);
-    }
-
+    
     public void addNotifyObject(string key, NotifyObject notifyObj)
     {
         getCommand(key).addNotifyObject(notifyObj);

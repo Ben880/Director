@@ -7,11 +7,11 @@ public class NetworkSettings
 {
     private string id = "";
     private bool publicSession = true;
-    private Communication communication;
+    private ServerConnection serverConnection;
 
-    public NetworkSettings(Communication communication)
+    public NetworkSettings(ServerConnection serverConnection)
     {
-        this.communication = communication;
+        this.serverConnection = serverConnection;
     }
 
     public string ID
@@ -36,10 +36,6 @@ public class NetworkSettings
 
     private void notifyServerOfChange(string key, string value)
     {
-        PacketObject packet = new PacketObject();
-        packet.setDestination("NetworkSettings");
-        packet.setCommand("ChangeSetting");
-        packet.addNode(new PacketNode(key, value));
         Data data = new Data();
         //communication.sendToServer(packet);
     }

@@ -5,6 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Assert = UnityEngine.Assertions.Assert;
+using DirectorProtobuf;
 
 namespace Tests
 {
@@ -41,14 +42,15 @@ namespace Tests
             NotifyObject no = new NotifyObject();
             ct.addNotifyObject("Test", no);
             Assert.IsFalse(no.isTriggered());
-            ct.executeCommand("Test");
+            DirectorRPC rpc = new DirectorRPC();
+            rpc.Name = "Test";
+            ct.recievedCommand(rpc);
             Assert.IsTrue(no.isTriggered());
         }
         
         [Test]
         public void noKeyForNotifyObjectThrowsE()
         {
-            
             NotifyObject no = new NotifyObject();
             try
             {
