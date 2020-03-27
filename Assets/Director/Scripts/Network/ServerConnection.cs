@@ -37,8 +37,11 @@ public class ServerConnection : MonoBehaviour
         }
     }
 
-    public bool sendToServer(DataWrapper protoObject)
+    public void sendToServer(DataWrapper protoObject)
     {
+        if (socketConnection == null) {             
+            return;         
+        }  
         try {
             NetworkStream stream = socketConnection.GetStream();	
             if (stream.CanWrite) {
@@ -47,8 +50,7 @@ public class ServerConnection : MonoBehaviour
         } 		
         catch (SocketException socketException) {             
             Debug.Log("Socket exception: " + socketException, this);         
-        }     
-        return false;
+        }
     }
     private void ListenForCommands()
     {

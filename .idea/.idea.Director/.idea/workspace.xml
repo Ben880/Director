@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/PacketObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/Tests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/Tests.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +33,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Depreciated/TCPTestClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Director.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,11 +100,11 @@
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
       </list>
     </option>
   </component>
@@ -208,6 +200,7 @@
       <workItem from="1583275759632" duration="1027000" />
       <workItem from="1583277139519" duration="2516000" />
       <workItem from="1584655373105" duration="7354000" />
+      <workItem from="1585335404094" duration="1767000" />
     </task>
     <servers />
   </component>

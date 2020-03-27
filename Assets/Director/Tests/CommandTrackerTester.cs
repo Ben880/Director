@@ -17,9 +17,11 @@ namespace Tests
         public void setup()
         {
             go = new GameObject();
+            go.AddComponent<ServerConnection>();
             go.AddComponent<CommandTracker>();
             ct = go.GetComponent<CommandTracker>();
-            ct.registerCommand(new Command("Test", true));
+            Command command = new Command("Test", true);
+            ct.registerCommand(command, false);
         }
 
         [TearDown]

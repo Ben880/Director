@@ -14,10 +14,11 @@ public class CommandTracker: MonoBehaviour
         serverConnection = GetComponent<ServerConnection>();
     }
 
-    public void registerCommand(Command command)
+    public void registerCommand(Command command, bool send)
     {
         commands.Add(command.getName(), command);
-        sendToServer(command);
+        if (send)
+            sendToServer(command);
     }
     public void setCommandEnabled(string key, bool value)
     {
