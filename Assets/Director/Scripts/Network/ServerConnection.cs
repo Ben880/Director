@@ -9,11 +9,13 @@ using DirectorProtobuf;
 using Google.Protobuf;
 
 [RequireComponent(typeof(CommandTracker))]
+[RequireComponent(typeof(ProtoRouter))]
 public class ServerConnection : MonoBehaviour
 {
     //other needed classes
     private NetworkSettings ns;
     private CommandTracker commandTracker;
+    private ProtoRouter protoRouter;
     // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
@@ -22,6 +24,7 @@ public class ServerConnection : MonoBehaviour
     {
         ns = new NetworkSettings(this);
         commandTracker = GetComponent<CommandTracker>();
+        protoRouter = GetComponent<ProtoRouter>();
         connectToServer();
     }
     
@@ -39,7 +42,7 @@ public class ServerConnection : MonoBehaviour
 
     public void sendToServer(DataWrapper protoObject)
     {
-        if (socketConnection == null) {             
+        if (socketConnection == null || !ns.useNetwork) {             
             return;         
         }  
         try {
@@ -55,7 +58,7 @@ public class ServerConnection : MonoBehaviour
     private void ListenForCommands()
     {
         try { 			
-            socketConnection = new TcpClient("localhost", 8052);
+            socketConnection = new TcpClient(NetworkConfig.host, NetworkConfig.port);
             DataWrapper wrapper = new DataWrapper();          
             while (true)
             {
@@ -65,18 +68,13 @@ public class ServerConnection : MonoBehaviour
                     wrapper.MergeDelimitedFrom(stream);
                 } while (stream.DataAvailable);
                 Debug.Log("message received: " +wrapper.ToString(), this);
-                decodeMessage(wrapper);
+                protoRouter.routeProtobuf(wrapper);
             }         
         }         
         catch (SocketException socketException) {             
             Debug.Log("Socket exception: " + socketException, this);         
         }     
 
-    }
-
-    private void decodeMessage(DataWrapper wrapper)
-    {
-        //================== logic here
     }
     
     void OnApplicationQuit()

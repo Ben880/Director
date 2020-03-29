@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" afterDir="false" />
     </list>
@@ -35,7 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Depreciated/TCPTestClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Director.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +52,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/ProtoBuf/Google.Protobuf/CodedInputStream.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,11 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_CheckPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnDebug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_EnableMeshOnPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Enable.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_EnableRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" />
@@ -87,7 +89,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/TCPTestServer.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/DataSender.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCollector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkMain.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Tests/Packet.cs" />
@@ -100,11 +101,17 @@
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" />
       </list>
     </option>
   </component>
@@ -122,7 +129,7 @@
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -200,7 +207,8 @@
       <workItem from="1583275759632" duration="1027000" />
       <workItem from="1583277139519" duration="2516000" />
       <workItem from="1584655373105" duration="7354000" />
-      <workItem from="1585335404094" duration="1767000" />
+      <workItem from="1585335404094" duration="3176000" />
+      <workItem from="1585507675310" duration="6320000" />
     </task>
     <servers />
   </component>
@@ -223,19 +231,20 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1182" y="-76" key="SettingsEditor" timestamp="1580426897777">
-      <screen x="-1366" y="-83" width="1366" height="728" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1585507766621">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="184" y="7" key="SettingsEditor/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1585507766621" />
     <state x="-1182" y="-76" key="SettingsEditor/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426897777" />
     <state x="381" y="183" key="run.anything.popup" timestamp="1583097129003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="339" y="162" key="run.anything.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582231347525" />
     <state x="381" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583097129003" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582234162086">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585509612919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1582234162086" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1585509612919" />
     <state x="-1020" y="-34" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426896459" />
   </component>
   <component name="XDebuggerManager">

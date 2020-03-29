@@ -18,7 +18,6 @@ namespace Tests
         {
             go = new GameObject();
             go.AddComponent<ServerConnection>();
-            go.AddComponent<CommandTracker>();
             ct = go.GetComponent<CommandTracker>();
             Command command = new Command("Test", true);
             ct.registerCommand(command, false);
@@ -27,6 +26,7 @@ namespace Tests
         [TearDown]
         public void tearDown()
         {
+            ct = null;
             GameObject.Destroy(go);
         }
         
@@ -44,9 +44,9 @@ namespace Tests
             NotifyObject no = new NotifyObject();
             ct.addNotifyObject("Test", no);
             Assert.IsFalse(no.isTriggered());
-            DirectorRPC rpc = new DirectorRPC();
-            rpc.Name = "Test";
-            ct.recievedCommand(rpc);
+            ExecuteCommand command = new ExecuteCommand();
+            command.Name = "Test";
+            ct.recievedCommand(command);
             Assert.IsTrue(no.isTriggered());
         }
         
@@ -65,5 +65,6 @@ namespace Tests
             }
         }
         
+
     }
 }

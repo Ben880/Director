@@ -24,23 +24,23 @@ namespace DirectorProtobuf {
     static DataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIrQBCgtEYXRh",
+            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIroBCgtEYXRh",
             "V3JhcHBlchIuCghkYXRhTGlzdBgCIAEoCzIaLkRpcmVjdG9yUHJvdG9idWYu",
             "RGF0YUxpc3RIABI4Cg1jb21tYW5kQ2hhbmdlGAMgASgLMh8uRGlyZWN0b3JQ",
-            "cm90b2J1Zi5Db21tYW5kQ2hhbmdlSAASNAoLZGlyZWN0b3JSUEMYBCABKAsy",
-            "HS5EaXJlY3RvclByb3RvYnVmLkRpcmVjdG9yUlBDSABCBQoDbXNnIiMKBERh",
-            "dGESDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoAiIwCghEYXRhTGlzdBIk",
-            "CgRkYXRhGAIgAygLMhYuRGlyZWN0b3JQcm90b2J1Zi5EYXRhIiwKDUNvbW1h",
-            "bmRDaGFuZ2USDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoCCIpCgtEaXJl",
-            "Y3RvclJQQxIMCgRuYW1lGAIgAigJEgwKBGFyZ3MYAyADKAk="));
+            "cm90b2J1Zi5Db21tYW5kQ2hhbmdlSAASOgoOZXhlY3V0ZUNvbW1hbmQYBCAB",
+            "KAsyIC5EaXJlY3RvclByb3RvYnVmLkV4ZWN1dGVDb21tYW5kSABCBQoDbXNn",
+            "IiMKBERhdGESDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoAiIwCghEYXRh",
+            "TGlzdBIkCgRkYXRhGAIgAygLMhYuRGlyZWN0b3JQcm90b2J1Zi5EYXRhIiwK",
+            "DUNvbW1hbmRDaGFuZ2USDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoCCIs",
+            "Cg5FeGVjdXRlQ29tbWFuZBIMCgRuYW1lGAIgAigJEgwKBGFyZ3MYAyADKAk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "DirectorRPC" }, new[]{ "Msg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "ExecuteCommand" }, new[]{ "Msg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.Data), global::DirectorProtobuf.Data.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataList), global::DirectorProtobuf.DataList.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.CommandChange), global::DirectorProtobuf.CommandChange.Parser, new[]{ "Name", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DirectorRPC), global::DirectorProtobuf.DirectorRPC.Parser, new[]{ "Name", "Args" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.ExecuteCommand), global::DirectorProtobuf.ExecuteCommand.Parser, new[]{ "Name", "Args" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,8 +82,8 @@ namespace DirectorProtobuf {
         case MsgOneofCase.CommandChange:
           CommandChange = other.CommandChange.Clone();
           break;
-        case MsgOneofCase.DirectorRPC:
-          DirectorRPC = other.DirectorRPC.Clone();
+        case MsgOneofCase.ExecuteCommand:
+          ExecuteCommand = other.ExecuteCommand.Clone();
           break;
       }
 
@@ -141,25 +141,25 @@ namespace DirectorProtobuf {
       }
     }
 
-    /// <summary>Field number for the "directorRPC" field.</summary>
-    public const int DirectorRPCFieldNumber = 4;
+    /// <summary>Field number for the "executeCommand" field.</summary>
+    public const int ExecuteCommandFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::DirectorProtobuf.DirectorRPC DirectorRPC {
-      get { return HasDirectorRPC ? (global::DirectorProtobuf.DirectorRPC) msg_ : null; }
+    public global::DirectorProtobuf.ExecuteCommand ExecuteCommand {
+      get { return HasExecuteCommand ? (global::DirectorProtobuf.ExecuteCommand) msg_ : null; }
       set {
         msg_ = value;
-        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.DirectorRPC;
+        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.ExecuteCommand;
       }
     }
-    /// <summary>Gets whether the "directorRPC" field is set</summary>
+    /// <summary>Gets whether the "executeCommand" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasDirectorRPC {
-      get { return msgCase_ == MsgOneofCase.DirectorRPC; }
+    public bool HasExecuteCommand {
+      get { return msgCase_ == MsgOneofCase.ExecuteCommand; }
     }
-    /// <summary> Clears the value of the oneof if it's currently set to "directorRPC" </summary>
+    /// <summary> Clears the value of the oneof if it's currently set to "executeCommand" </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearDirectorRPC() {
-      if (HasDirectorRPC) {
+    public void ClearExecuteCommand() {
+      if (HasExecuteCommand) {
         ClearMsg();
       }
     }
@@ -170,7 +170,7 @@ namespace DirectorProtobuf {
       None = 0,
       DataList = 2,
       CommandChange = 3,
-      DirectorRPC = 4,
+      ExecuteCommand = 4,
     }
     private MsgOneofCase msgCase_ = MsgOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -199,7 +199,7 @@ namespace DirectorProtobuf {
       }
       if (!object.Equals(DataList, other.DataList)) return false;
       if (!object.Equals(CommandChange, other.CommandChange)) return false;
-      if (!object.Equals(DirectorRPC, other.DirectorRPC)) return false;
+      if (!object.Equals(ExecuteCommand, other.ExecuteCommand)) return false;
       if (MsgCase != other.MsgCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -209,7 +209,7 @@ namespace DirectorProtobuf {
       int hash = 1;
       if (HasDataList) hash ^= DataList.GetHashCode();
       if (HasCommandChange) hash ^= CommandChange.GetHashCode();
-      if (HasDirectorRPC) hash ^= DirectorRPC.GetHashCode();
+      if (HasExecuteCommand) hash ^= ExecuteCommand.GetHashCode();
       hash ^= (int) msgCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -232,9 +232,9 @@ namespace DirectorProtobuf {
         output.WriteRawTag(26);
         output.WriteMessage(CommandChange);
       }
-      if (HasDirectorRPC) {
+      if (HasExecuteCommand) {
         output.WriteRawTag(34);
-        output.WriteMessage(DirectorRPC);
+        output.WriteMessage(ExecuteCommand);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -250,8 +250,8 @@ namespace DirectorProtobuf {
       if (HasCommandChange) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CommandChange);
       }
-      if (HasDirectorRPC) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirectorRPC);
+      if (HasExecuteCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExecuteCommand);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -277,11 +277,11 @@ namespace DirectorProtobuf {
           }
           CommandChange.MergeFrom(other.CommandChange);
           break;
-        case MsgOneofCase.DirectorRPC:
-          if (DirectorRPC == null) {
-            DirectorRPC = new global::DirectorProtobuf.DirectorRPC();
+        case MsgOneofCase.ExecuteCommand:
+          if (ExecuteCommand == null) {
+            ExecuteCommand = new global::DirectorProtobuf.ExecuteCommand();
           }
-          DirectorRPC.MergeFrom(other.DirectorRPC);
+          ExecuteCommand.MergeFrom(other.ExecuteCommand);
           break;
       }
 
@@ -315,12 +315,12 @@ namespace DirectorProtobuf {
             break;
           }
           case 34: {
-            global::DirectorProtobuf.DirectorRPC subBuilder = new global::DirectorProtobuf.DirectorRPC();
-            if (HasDirectorRPC) {
-              subBuilder.MergeFrom(DirectorRPC);
+            global::DirectorProtobuf.ExecuteCommand subBuilder = new global::DirectorProtobuf.ExecuteCommand();
+            if (HasExecuteCommand) {
+              subBuilder.MergeFrom(ExecuteCommand);
             }
             input.ReadMessage(subBuilder);
-            DirectorRPC = subBuilder;
+            ExecuteCommand = subBuilder;
             break;
           }
         }
@@ -827,11 +827,11 @@ namespace DirectorProtobuf {
   /// <summary>
   ///protobufs for sending rpc
   /// </summary>
-  public sealed partial class DirectorRPC : pb::IMessage<DirectorRPC> {
-    private static readonly pb::MessageParser<DirectorRPC> _parser = new pb::MessageParser<DirectorRPC>(() => new DirectorRPC());
+  public sealed partial class ExecuteCommand : pb::IMessage<ExecuteCommand> {
+    private static readonly pb::MessageParser<ExecuteCommand> _parser = new pb::MessageParser<ExecuteCommand>(() => new ExecuteCommand());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DirectorRPC> Parser { get { return _parser; } }
+    public static pb::MessageParser<ExecuteCommand> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -844,22 +844,22 @@ namespace DirectorProtobuf {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DirectorRPC() {
+    public ExecuteCommand() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DirectorRPC(DirectorRPC other) : this() {
+    public ExecuteCommand(ExecuteCommand other) : this() {
       name_ = other.name_;
       args_ = other.args_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DirectorRPC Clone() {
-      return new DirectorRPC(this);
+    public ExecuteCommand Clone() {
+      return new ExecuteCommand(this);
     }
 
     /// <summary>Field number for the "name" field.</summary>
@@ -897,11 +897,11 @@ namespace DirectorProtobuf {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as DirectorRPC);
+      return Equals(other as ExecuteCommand);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DirectorRPC other) {
+    public bool Equals(ExecuteCommand other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -955,7 +955,7 @@ namespace DirectorProtobuf {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DirectorRPC other) {
+    public void MergeFrom(ExecuteCommand other) {
       if (other == null) {
         return;
       }

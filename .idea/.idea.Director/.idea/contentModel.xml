@@ -711,6 +711,8 @@
               <e p="NetworkConfig.cs" t="Include" />
               <e p="NetworkSettings.cs" t="Include" />
               <e p="NotifyObject.cs" t="Include" />
+              <e p="ProtoRouter.cs" t="Include" />
+              <e p="Routable.cs" t="Include" />
               <e p="ServerConnection.cs" t="Include" />
             </e>
             <e p="Points" t="Include">
@@ -748,6 +750,8 @@
           <e p="Tests" t="Include">
             <e p="CommandTester.cs" t="Include" />
             <e p="CommandTrackerTester.cs" t="Include" />
+            <e p="ProtoRouterTester.cs" t="Include" />
+            <e p="ServerConnectionTester.cs" t="Include" />
             <e p="Tests.asmdef" t="Include" />
           </e>
         </e>

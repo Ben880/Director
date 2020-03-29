@@ -5,13 +5,20 @@ using System.Globalization;
 using DirectorProtobuf;
 using UnityEngine;
 [RequireComponent(typeof(ServerConnection))]
-public class CommandTracker: MonoBehaviour 
+[RequireComponent(typeof(ProtoRouter))]
+public class CommandTracker: Routable 
 {
     private Dictionary<string, Command> commands = new Dictionary<string, Command>();
     private ServerConnection serverConnection;
     void Awake()
     {
         serverConnection = GetComponent<ServerConnection>();
+        GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this);
+    }
+
+    public override void route(DataWrapper wrapper)
+    {
+        recievedCommand(wrapper.ExecuteCommand);
     }
 
     public void registerCommand(Command command, bool send)
@@ -36,9 +43,9 @@ public class CommandTracker: MonoBehaviour
         serverConnection.sendToServer(wrapper);
     }
 
-    public void recievedCommand(DirectorRPC rpc)
+    public void recievedCommand(ExecuteCommand ec)
     {
-        Command commandToExecute = commands[rpc.Name];
+        Command commandToExecute = commands[ec.Name];
         if (commandToExecute == null)
             Debug.LogError("Command to execute is null");
         else if (!commandToExecute.isEnabled())

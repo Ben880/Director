@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DirectorProtobuf;
 using UnityEngine;
 
 public class NetworkSettings
 {
+    public bool useNetwork = true;
     private string id = "";
     private bool publicSession = true;
     private ServerConnection serverConnection;
@@ -13,6 +15,7 @@ public class NetworkSettings
     {
         this.serverConnection = serverConnection;
     }
+    
 
     public string ID
     {
@@ -38,5 +41,6 @@ public class NetworkSettings
     {
         Data data = new Data();
         //communication.sendToServer(packet);
+        throw new NotImplementedException();
     }
 }
