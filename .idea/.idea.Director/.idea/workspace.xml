@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +104,8 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
       </list>
     </option>
   </component>
@@ -208,7 +202,8 @@
       <workItem from="1583277139519" duration="2516000" />
       <workItem from="1584655373105" duration="7354000" />
       <workItem from="1585335404094" duration="3176000" />
-      <workItem from="1585507675310" duration="6320000" />
+      <workItem from="1585507675310" duration="7992000" />
+      <workItem from="1585599725266" duration="2075000" />
     </task>
     <servers />
   </component>
@@ -236,6 +231,10 @@
     </state>
     <state x="184" y="7" key="SettingsEditor/-1920.0.1536.832/0.0.1366.728@0.0.1366.728" timestamp="1585507766621" />
     <state x="-1182" y="-76" key="SettingsEditor/0.0.1536.824/-1366.-83.1366.728@-1366.-83.1366.728" timestamp="1580426897777" />
+    <state x="-1510" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1585601463565">
+      <screen x="-1920" y="0" width="1536" height="832" />
+    </state>
+    <state x="-1510" y="139" width="700" height="530" key="recent.locations.popup/-1920.0.1536.832/0.0.1366.728@-1920.0.1536.832" timestamp="1585601463565" />
     <state x="381" y="183" key="run.anything.popup" timestamp="1583097129003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

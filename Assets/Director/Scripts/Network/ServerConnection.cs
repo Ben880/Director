@@ -27,7 +27,12 @@ public class ServerConnection : MonoBehaviour
         protoRouter = GetComponent<ProtoRouter>();
         connectToServer();
     }
-    
+
+    public void Update()
+    {
+        
+    }
+
     private void connectToServer()
     {
         try {  			
@@ -42,11 +47,12 @@ public class ServerConnection : MonoBehaviour
 
     public void sendToServer(DataWrapper protoObject)
     {
-        if (socketConnection == null || !ns.useNetwork) {             
+        if (socketConnection == null || !ns.useNetwork || !socketConnection.Connected) {             
             return;         
         }  
-        try {
-            NetworkStream stream = socketConnection.GetStream();	
+        try
+        {
+            NetworkStream stream = socketConnection.GetStream();
             if (stream.CanWrite) {
                 protoObject.WriteDelimitedTo(stream);
             }         
@@ -57,7 +63,8 @@ public class ServerConnection : MonoBehaviour
     }
     private void ListenForCommands()
     {
-        try { 			
+        try 
+        { 			
             socketConnection = new TcpClient(NetworkConfig.host, NetworkConfig.port);
             DataWrapper wrapper = new DataWrapper();          
             while (true)
@@ -67,14 +74,13 @@ public class ServerConnection : MonoBehaviour
                 {
                     wrapper.MergeDelimitedFrom(stream);
                 } while (stream.DataAvailable);
-                Debug.Log("message received: " +wrapper.ToString(), this);
+                Debug.Log("message received: " +wrapper.MsgCase.ToString(), this);
                 protoRouter.routeProtobuf(wrapper);
             }         
         }         
         catch (SocketException socketException) {             
             Debug.Log("Socket exception: " + socketException, this);         
-        }     
-
+        }
     }
     
     void OnApplicationQuit()
