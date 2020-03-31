@@ -3,7 +3,6 @@
 
 **Server Repo:** https://github.com/Ben880/Director-Server
 
-**ProtoBuf Repo:** https://github.com/Ben880/Director-Protobuf
 
 **Wiki:** https://github.com/Ben880/Director/wiki       
 
