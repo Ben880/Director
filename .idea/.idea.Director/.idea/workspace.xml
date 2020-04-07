@@ -4,7 +4,8 @@
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,15 +98,15 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Communication.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetDebug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" />
       </list>
     </option>
   </component>
@@ -204,6 +205,9 @@
       <workItem from="1585335404094" duration="3176000" />
       <workItem from="1585507675310" duration="7992000" />
       <workItem from="1585599725266" duration="2075000" />
+      <workItem from="1585690362715" duration="17000" />
+      <workItem from="1585690730488" duration="2890000" />
+      <workItem from="1585781009541" duration="1290000" />
     </task>
     <servers />
   </component>

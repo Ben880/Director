@@ -16,7 +16,6 @@ public class NetworkSettings
         this.serverConnection = serverConnection;
     }
     
-
     public string ID
     {
         get { return id; }

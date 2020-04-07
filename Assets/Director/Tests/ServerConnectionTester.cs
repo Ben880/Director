@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DirectorProtobuf;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Assert = UnityEngine.Assertions.Assert;
+using Assert = NUnit.Framework.Assert;//= //UnityEngine.Assertions.Assert;
 
 namespace Tests
 {
@@ -39,6 +40,19 @@ namespace Tests
             DataList list = new DataList();
             wrapper.DataList = list;
             go.GetComponent<ServerConnection>().sendToServer(wrapper);
+        }
+        
+        [Test]
+        public void InvalidDataWrapper()
+        {
+            DataWrapper wrapper = new DataWrapper();
+            go.GetComponent<ServerConnection>().sendToServer(wrapper);
+            Assert.That(()=> throwsE(null), Throws.Exception);
+        }
+
+        private void throwsE(string s)
+        {
+            throw new Exception();
         }
 
 
