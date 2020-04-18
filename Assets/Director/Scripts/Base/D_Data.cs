@@ -22,15 +22,11 @@ public class D_Data: MonoBehaviour
     }
     [SerializeField]
     private List<Floats> floats = new List<Floats>();
-
-
     public void Start()
     {
 
     }
     
-    
-
     public List<Floats> getFloatList()
     {
         return floats;

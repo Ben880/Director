@@ -15,7 +15,7 @@ public class CommandTracker: Routable
         serverConnection = GetComponent<ServerConnection>();
         GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this);
     }
-
+    
     public override void route(DataWrapper wrapper)
     {
         recievedCommand(wrapper.ExecuteCommand);

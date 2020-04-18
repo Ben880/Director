@@ -4,25 +4,37 @@ using System.Collections.Generic;
 using DirectorProtobuf;
 using UnityEngine;
 
-public class NetworkSettings
+[RequireComponent(typeof(ServerConnection))]
+[RequireComponent(typeof(ProtoRouter))]
+public class NetworkSettings: Routable
 {
-    public bool useNetwork = true;
-    private string id = "";
+    private string name = "";
     private bool publicSession = true;
     private ServerConnection serverConnection;
 
-    public NetworkSettings(ServerConnection serverConnection)
+    void  Awake()
     {
-        this.serverConnection = serverConnection;
+        serverConnection = GetComponent<ServerConnection>();
+        GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.UnitySettings, this);
     }
-    
-    public string ID
+
+    void Start()
     {
-        get { return id; }
+        notifyServerOfChange();
+    }
+
+    public override void route(DataWrapper wrapper)
+    {
+        name = wrapper.UnitySettings.Name;
+    }
+
+    public string Name
+    {
+        get { return name; }
         set
         {
-            id = value;
-            notifyServerOfChange("ID", value);
+            name = value;
+            notifyServerOfChange();
         }
     }
 
@@ -32,14 +44,16 @@ public class NetworkSettings
         set
         {
             publicSession = value;
-            notifyServerOfChange("PublicSession", value.ToString());
+            notifyServerOfChange();
         }
     }
 
-    private void notifyServerOfChange(string key, string value)
+    private void notifyServerOfChange()
     {
-        Data data = new Data();
-        //communication.sendToServer(packet);
-        throw new NotImplementedException();
+        DataWrapper wrapper = new DataWrapper();
+        wrapper.UnitySettings = new UnitySettings();
+        wrapper.UnitySettings.Name = name;
+        wrapper.UnitySettings.Public = publicSession;
+        serverConnection.sendToServer(wrapper);
     }
 }

@@ -24,23 +24,30 @@ namespace DirectorProtobuf {
     static DataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIroBCgtEYXRh",
+            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIrQCCgtEYXRh",
             "V3JhcHBlchIuCghkYXRhTGlzdBgCIAEoCzIaLkRpcmVjdG9yUHJvdG9idWYu",
             "RGF0YUxpc3RIABI4Cg1jb21tYW5kQ2hhbmdlGAMgASgLMh8uRGlyZWN0b3JQ",
             "cm90b2J1Zi5Db21tYW5kQ2hhbmdlSAASOgoOZXhlY3V0ZUNvbW1hbmQYBCAB",
-            "KAsyIC5EaXJlY3RvclByb3RvYnVmLkV4ZWN1dGVDb21tYW5kSABCBQoDbXNn",
-            "IiMKBERhdGESDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoAiIwCghEYXRh",
-            "TGlzdBIkCgRkYXRhGAIgAygLMhYuRGlyZWN0b3JQcm90b2J1Zi5EYXRhIiwK",
-            "DUNvbW1hbmRDaGFuZ2USDAoEbmFtZRgCIAIoCRINCgV2YWx1ZRgDIAIoCCIs",
-            "Cg5FeGVjdXRlQ29tbWFuZBIMCgRuYW1lGAIgAigJEgwKBGFyZ3MYAyADKAk="));
+            "KAsyIC5EaXJlY3RvclByb3RvYnVmLkV4ZWN1dGVDb21tYW5kSAASPgoQdW5p",
+            "dHlDcmVkZW50aWFscxgFIAEoCzIiLkRpcmVjdG9yUHJvdG9idWYuVW5pdHlD",
+            "cmVkZW50aWFsc0gAEjgKDXVuaXR5U2V0dGluZ3MYBiABKAsyHy5EaXJlY3Rv",
+            "clByb3RvYnVmLlVuaXR5U2V0dGluZ3NIAEIFCgNtc2ciIwoERGF0YRIMCgRu",
+            "YW1lGAIgAigJEg0KBXZhbHVlGAMgAigCIjAKCERhdGFMaXN0EiQKBGRhdGEY",
+            "AiADKAsyFi5EaXJlY3RvclByb3RvYnVmLkRhdGEiLAoNQ29tbWFuZENoYW5n",
+            "ZRIMCgRuYW1lGAIgAigJEg0KBXZhbHVlGAMgAigIIiwKDkV4ZWN1dGVDb21t",
+            "YW5kEgwKBG5hbWUYAiACKAkSDAoEYXJncxgDIAMoCSItChBVbml0eUNyZWRl",
+            "bnRpYWxzEgoKAklEGAIgAigFEg0KBXRva2VuGAMgAigJIi0KDVVuaXR5U2V0",
+            "dGluZ3MSDAoEbmFtZRgCIAIoCRIOCgZwdWJsaWMYAyACKAg="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "ExecuteCommand" }, new[]{ "Msg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "ExecuteCommand", "UnityCredentials", "UnitySettings" }, new[]{ "Msg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.Data), global::DirectorProtobuf.Data.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataList), global::DirectorProtobuf.DataList.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.CommandChange), global::DirectorProtobuf.CommandChange.Parser, new[]{ "Name", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.ExecuteCommand), global::DirectorProtobuf.ExecuteCommand.Parser, new[]{ "Name", "Args" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.ExecuteCommand), global::DirectorProtobuf.ExecuteCommand.Parser, new[]{ "Name", "Args" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.UnityCredentials), global::DirectorProtobuf.UnityCredentials.Parser, new[]{ "ID", "Token" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.UnitySettings), global::DirectorProtobuf.UnitySettings.Parser, new[]{ "Name", "Public" }, null, null, null, null)
           }));
     }
     #endregion
@@ -84,6 +91,12 @@ namespace DirectorProtobuf {
           break;
         case MsgOneofCase.ExecuteCommand:
           ExecuteCommand = other.ExecuteCommand.Clone();
+          break;
+        case MsgOneofCase.UnityCredentials:
+          UnityCredentials = other.UnityCredentials.Clone();
+          break;
+        case MsgOneofCase.UnitySettings:
+          UnitySettings = other.UnitySettings.Clone();
           break;
       }
 
@@ -164,6 +177,52 @@ namespace DirectorProtobuf {
       }
     }
 
+    /// <summary>Field number for the "unityCredentials" field.</summary>
+    public const int UnityCredentialsFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::DirectorProtobuf.UnityCredentials UnityCredentials {
+      get { return HasUnityCredentials ? (global::DirectorProtobuf.UnityCredentials) msg_ : null; }
+      set {
+        msg_ = value;
+        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.UnityCredentials;
+      }
+    }
+    /// <summary>Gets whether the "unityCredentials" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasUnityCredentials {
+      get { return msgCase_ == MsgOneofCase.UnityCredentials; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "unityCredentials" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearUnityCredentials() {
+      if (HasUnityCredentials) {
+        ClearMsg();
+      }
+    }
+
+    /// <summary>Field number for the "unitySettings" field.</summary>
+    public const int UnitySettingsFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::DirectorProtobuf.UnitySettings UnitySettings {
+      get { return HasUnitySettings ? (global::DirectorProtobuf.UnitySettings) msg_ : null; }
+      set {
+        msg_ = value;
+        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.UnitySettings;
+      }
+    }
+    /// <summary>Gets whether the "unitySettings" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasUnitySettings {
+      get { return msgCase_ == MsgOneofCase.UnitySettings; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "unitySettings" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearUnitySettings() {
+      if (HasUnitySettings) {
+        ClearMsg();
+      }
+    }
+
     private object msg_;
     /// <summary>Enum of possible cases for the "msg" oneof.</summary>
     public enum MsgOneofCase {
@@ -171,6 +230,8 @@ namespace DirectorProtobuf {
       DataList = 2,
       CommandChange = 3,
       ExecuteCommand = 4,
+      UnityCredentials = 5,
+      UnitySettings = 6,
     }
     private MsgOneofCase msgCase_ = MsgOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -200,6 +261,8 @@ namespace DirectorProtobuf {
       if (!object.Equals(DataList, other.DataList)) return false;
       if (!object.Equals(CommandChange, other.CommandChange)) return false;
       if (!object.Equals(ExecuteCommand, other.ExecuteCommand)) return false;
+      if (!object.Equals(UnityCredentials, other.UnityCredentials)) return false;
+      if (!object.Equals(UnitySettings, other.UnitySettings)) return false;
       if (MsgCase != other.MsgCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -210,6 +273,8 @@ namespace DirectorProtobuf {
       if (HasDataList) hash ^= DataList.GetHashCode();
       if (HasCommandChange) hash ^= CommandChange.GetHashCode();
       if (HasExecuteCommand) hash ^= ExecuteCommand.GetHashCode();
+      if (HasUnityCredentials) hash ^= UnityCredentials.GetHashCode();
+      if (HasUnitySettings) hash ^= UnitySettings.GetHashCode();
       hash ^= (int) msgCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -236,6 +301,14 @@ namespace DirectorProtobuf {
         output.WriteRawTag(34);
         output.WriteMessage(ExecuteCommand);
       }
+      if (HasUnityCredentials) {
+        output.WriteRawTag(42);
+        output.WriteMessage(UnityCredentials);
+      }
+      if (HasUnitySettings) {
+        output.WriteRawTag(50);
+        output.WriteMessage(UnitySettings);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -252,6 +325,12 @@ namespace DirectorProtobuf {
       }
       if (HasExecuteCommand) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExecuteCommand);
+      }
+      if (HasUnityCredentials) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UnityCredentials);
+      }
+      if (HasUnitySettings) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UnitySettings);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -282,6 +361,18 @@ namespace DirectorProtobuf {
             ExecuteCommand = new global::DirectorProtobuf.ExecuteCommand();
           }
           ExecuteCommand.MergeFrom(other.ExecuteCommand);
+          break;
+        case MsgOneofCase.UnityCredentials:
+          if (UnityCredentials == null) {
+            UnityCredentials = new global::DirectorProtobuf.UnityCredentials();
+          }
+          UnityCredentials.MergeFrom(other.UnityCredentials);
+          break;
+        case MsgOneofCase.UnitySettings:
+          if (UnitySettings == null) {
+            UnitySettings = new global::DirectorProtobuf.UnitySettings();
+          }
+          UnitySettings.MergeFrom(other.UnitySettings);
           break;
       }
 
@@ -321,6 +412,24 @@ namespace DirectorProtobuf {
             }
             input.ReadMessage(subBuilder);
             ExecuteCommand = subBuilder;
+            break;
+          }
+          case 42: {
+            global::DirectorProtobuf.UnityCredentials subBuilder = new global::DirectorProtobuf.UnityCredentials();
+            if (HasUnityCredentials) {
+              subBuilder.MergeFrom(UnityCredentials);
+            }
+            input.ReadMessage(subBuilder);
+            UnityCredentials = subBuilder;
+            break;
+          }
+          case 50: {
+            global::DirectorProtobuf.UnitySettings subBuilder = new global::DirectorProtobuf.UnitySettings();
+            if (HasUnitySettings) {
+              subBuilder.MergeFrom(UnitySettings);
+            }
+            input.ReadMessage(subBuilder);
+            UnitySettings = subBuilder;
             break;
           }
         }
@@ -825,7 +934,7 @@ namespace DirectorProtobuf {
   }
 
   /// <summary>
-  ///protobufs for sending rpc
+  ///protobufs for sending commands
   /// </summary>
   public sealed partial class ExecuteCommand : pb::IMessage<ExecuteCommand> {
     private static readonly pb::MessageParser<ExecuteCommand> _parser = new pb::MessageParser<ExecuteCommand>(() => new ExecuteCommand());
@@ -980,6 +1089,377 @@ namespace DirectorProtobuf {
           }
           case 26: {
             args_.AddEntriesFrom(input, _repeated_args_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///connection interaction
+  /// </summary>
+  public sealed partial class UnityCredentials : pb::IMessage<UnityCredentials> {
+    private static readonly pb::MessageParser<UnityCredentials> _parser = new pb::MessageParser<UnityCredentials>(() => new UnityCredentials());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UnityCredentials> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DirectorProtobuf.DataReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnityCredentials() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnityCredentials(UnityCredentials other) : this() {
+      _hasBits0 = other._hasBits0;
+      iD_ = other.iD_;
+      token_ = other.token_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnityCredentials Clone() {
+      return new UnityCredentials(this);
+    }
+
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 2;
+    private readonly static int IDDefaultValue = 0;
+
+    private int iD_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ID {
+      get { if ((_hasBits0 & 1) != 0) { return iD_; } else { return IDDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        iD_ = value;
+      }
+    }
+    /// <summary>Gets whether the "ID" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasID {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "ID" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearID() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "token" field.</summary>
+    public const int TokenFieldNumber = 3;
+    private readonly static string TokenDefaultValue = "";
+
+    private string token_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Token {
+      get { return token_ ?? TokenDefaultValue; }
+      set {
+        token_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "token" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasToken {
+      get { return token_ != null; }
+    }
+    /// <summary>Clears the value of the "token" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearToken() {
+      token_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UnityCredentials);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UnityCredentials other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ID != other.ID) return false;
+      if (Token != other.Token) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasID) hash ^= ID.GetHashCode();
+      if (HasToken) hash ^= Token.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (HasID) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ID);
+      }
+      if (HasToken) {
+        output.WriteRawTag(26);
+        output.WriteString(Token);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasID) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ID);
+      }
+      if (HasToken) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UnityCredentials other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasID) {
+        ID = other.ID;
+      }
+      if (other.HasToken) {
+        Token = other.Token;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 16: {
+            ID = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            Token = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class UnitySettings : pb::IMessage<UnitySettings> {
+    private static readonly pb::MessageParser<UnitySettings> _parser = new pb::MessageParser<UnitySettings>(() => new UnitySettings());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UnitySettings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DirectorProtobuf.DataReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnitySettings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnitySettings(UnitySettings other) : this() {
+      _hasBits0 = other._hasBits0;
+      name_ = other.name_;
+      public_ = other.public_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnitySettings Clone() {
+      return new UnitySettings(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private readonly static string NameDefaultValue = "";
+
+    private string name_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_ ?? NameDefaultValue; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasName {
+      get { return name_ != null; }
+    }
+    /// <summary>Clears the value of the "name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearName() {
+      name_ = null;
+    }
+
+    /// <summary>Field number for the "public" field.</summary>
+    public const int PublicFieldNumber = 3;
+    private readonly static bool PublicDefaultValue = false;
+
+    private bool public_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Public {
+      get { if ((_hasBits0 & 1) != 0) { return public_; } else { return PublicDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        public_ = value;
+      }
+    }
+    /// <summary>Gets whether the "public" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasPublic {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "public" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearPublic() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UnitySettings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UnitySettings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (Public != other.Public) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasName) hash ^= Name.GetHashCode();
+      if (HasPublic) hash ^= Public.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (HasName) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (HasPublic) {
+        output.WriteRawTag(24);
+        output.WriteBool(Public);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (HasPublic) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UnitySettings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasName) {
+        Name = other.Name;
+      }
+      if (other.HasPublic) {
+        Public = other.Public;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 24: {
+            Public = input.ReadBool();
             break;
           }
         }

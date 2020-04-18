@@ -10,10 +10,11 @@ using Google.Protobuf;
 
 [RequireComponent(typeof(CommandTracker))]
 [RequireComponent(typeof(ProtoRouter))]
+[RequireComponent(typeof(NetworkSettings))]
 public class ServerConnection : MonoBehaviour
 {
     //other needed classes
-    private NetworkSettings ns;
+ 
     private CommandTracker commandTracker;
     private ProtoRouter protoRouter;
     // networking classes
@@ -22,13 +23,13 @@ public class ServerConnection : MonoBehaviour
 
     void Awake()
     {
-        ns = new NetworkSettings(this);
+        
         commandTracker = GetComponent<CommandTracker>();
         protoRouter = GetComponent<ProtoRouter>();
         connectToServer();
     }
 
-    public void Update()
+    void Start()
     {
         
     }
@@ -47,7 +48,7 @@ public class ServerConnection : MonoBehaviour
 
     public void sendToServer(DataWrapper protoObject)
     {
-        if (socketConnection == null || !ns.useNetwork || !socketConnection.Connected) {             
+        if (socketConnection == null || !socketConnection.Connected) {             
             return;         
         }  
         try
