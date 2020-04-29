@@ -12,13 +12,18 @@
       <Path>Library/PackageCache/com.unity.postprocessing@2.1.6</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@7.1.8</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@7.1.8</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.1.8</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@7.1.8</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.0.13</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.11</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.13</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.10</Path>
       <Path>Packages</Path>
@@ -30,6 +35,7 @@
       <Path>Images</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

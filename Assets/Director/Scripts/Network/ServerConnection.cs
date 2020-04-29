@@ -20,10 +20,11 @@ public class ServerConnection : MonoBehaviour
     // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
-
+    private bool retryConnection = false;
+    private D_Timer retryTime = new D_Timer();
+    
     void Awake()
     {
-        
         commandTracker = GetComponent<CommandTracker>();
         protoRouter = GetComponent<ProtoRouter>();
         connectToServer();
@@ -31,11 +32,29 @@ public class ServerConnection : MonoBehaviour
 
     void Start()
     {
-        
+        DataWrapper wrapper = new DataWrapper();
+        wrapper.UnitySettings = new UnitySettings();
+        wrapper.UnitySettings.Name = "Default";
+        wrapper.UnitySettings.Public = true;
+        sendToServer(wrapper);
+    }
+
+    private void Update()
+    {
+        if (retryConnection )
+        {
+            retryTime.step();
+            if (retryTime.isCompleted())
+            {
+                connectToServer();
+                retryTime.set(1);
+            }
+        }
     }
 
     private void connectToServer()
     {
+        retryConnection = false;
         try {  			
             clientReceiveThread = new Thread (new ThreadStart(ListenForCommands)); 			
             clientReceiveThread.IsBackground = true; 			
@@ -80,7 +99,10 @@ public class ServerConnection : MonoBehaviour
             }         
         }         
         catch (SocketException socketException) {             
-            Debug.Log("Socket exception: " + socketException, this);         
+            Debug.Log("Socket exception: " + socketException, this);
+            retryConnection = true;
+            retryTime.set(1);
+            clientReceiveThread.Abort();
         }
     }
     
