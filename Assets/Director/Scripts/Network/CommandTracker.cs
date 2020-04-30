@@ -21,6 +21,14 @@ public class CommandTracker: Routable
         recievedCommand(wrapper.ExecuteCommand);
     }
 
+    public void newsession()
+    {
+        Debug.Log("new session", this);
+        foreach (var cmd in commands)
+        {
+            sendToServer(cmd.Value);
+        }
+    }
     public void registerCommand(Command command, bool send)
     {
         commands.Add(command.getName(), command);

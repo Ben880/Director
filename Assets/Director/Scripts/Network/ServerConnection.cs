@@ -20,14 +20,16 @@ public class ServerConnection : MonoBehaviour
     // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
-    private bool retryConnection = false;
-    private D_Timer retryTime = new D_Timer();
+    private NetworkSettings networkSettings;
+    private float timmer = 0;
     
     void Awake()
     {
         commandTracker = GetComponent<CommandTracker>();
+        networkSettings = GetComponent<NetworkSettings>();
         protoRouter = GetComponent<ProtoRouter>();
         connectToServer();
+        
     }
 
     void Start()
@@ -41,24 +43,24 @@ public class ServerConnection : MonoBehaviour
 
     private void Update()
     {
-        if (retryConnection )
+        if (socketConnection == null)
         {
-            retryTime.step();
-            if (retryTime.isCompleted())
+            timmer += Time.deltaTime;
+            if (timmer > 2)
             {
                 connectToServer();
-                retryTime.set(1);
+                timmer = 0;
             }
         }
     }
 
     private void connectToServer()
     {
-        retryConnection = false;
         try {  			
             clientReceiveThread = new Thread (new ThreadStart(ListenForCommands)); 			
             clientReceiveThread.IsBackground = true; 			
             clientReceiveThread.Start();
+            
         } 		
         catch (Exception e) { 			
             Debug.Log("connect exception " + e, this); 		
@@ -83,10 +85,12 @@ public class ServerConnection : MonoBehaviour
     }
     private void ListenForCommands()
     {
-        try 
-        { 			
+        try
+        {
             socketConnection = new TcpClient(NetworkConfig.host, NetworkConfig.port);
-            DataWrapper wrapper = new DataWrapper();          
+            networkSettings.newsession();
+            commandTracker.newsession();
+            DataWrapper wrapper = new DataWrapper();
             while (true)
             {
                 var stream = socketConnection.GetStream();
@@ -94,14 +98,18 @@ public class ServerConnection : MonoBehaviour
                 {
                     wrapper.MergeDelimitedFrom(stream);
                 } while (stream.DataAvailable);
-                Debug.Log("message received: " +wrapper.MsgCase.ToString(), this);
+
+                Debug.Log("message received: " + wrapper.MsgCase.ToString(), this);
                 protoRouter.routeProtobuf(wrapper);
-            }         
-        }         
-        catch (SocketException socketException) {             
+            }
+        }
+        catch (SocketException socketException)
+        {
             Debug.Log("Socket exception: " + socketException, this);
-            retryConnection = true;
-            retryTime.set(1);
+        }
+        finally
+        {
+            socketConnection = null;
             clientReceiveThread.Abort();
         }
     }

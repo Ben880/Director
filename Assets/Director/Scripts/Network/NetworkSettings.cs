@@ -8,10 +8,15 @@ using UnityEngine;
 [RequireComponent(typeof(ProtoRouter))]
 public class NetworkSettings: Routable
 {
-    private string name = "";
+    private string name = "D";
     private bool publicSession = true;
     private ServerConnection serverConnection;
 
+    public void newsession()
+    {
+        Debug.Log("new session", this);
+        notifyServerOfChange();
+    }
     void  Awake()
     {
         serverConnection = GetComponent<ServerConnection>();

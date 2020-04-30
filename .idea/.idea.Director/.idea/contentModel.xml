@@ -706,6 +706,7 @@
             </e>
             <e p="Network" t="Include">
               <e p="Command.cs" t="Include" />
+              <e p="CommandAdder.cs" t="Include" />
               <e p="CommandTracker.cs" t="Include" />
               <e p="MetricCompiler.cs" t="Include" />
               <e p="NetworkConfig.cs" t="Include" />
