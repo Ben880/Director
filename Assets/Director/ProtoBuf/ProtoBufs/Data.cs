@@ -24,29 +24,28 @@ namespace DirectorProtobuf {
     static DataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIrQCCgtEYXRh",
+            "ChBQcm90by9EYXRhLnByb3RvEhBEaXJlY3RvclByb3RvYnVmIqgCCgtEYXRh",
             "V3JhcHBlchIuCghkYXRhTGlzdBgCIAEoCzIaLkRpcmVjdG9yUHJvdG9idWYu",
             "RGF0YUxpc3RIABI4Cg1jb21tYW5kQ2hhbmdlGAMgASgLMh8uRGlyZWN0b3JQ",
             "cm90b2J1Zi5Db21tYW5kQ2hhbmdlSAASOgoOZXhlY3V0ZUNvbW1hbmQYBCAB",
-            "KAsyIC5EaXJlY3RvclByb3RvYnVmLkV4ZWN1dGVDb21tYW5kSAASPgoQdW5p",
-            "dHlDcmVkZW50aWFscxgFIAEoCzIiLkRpcmVjdG9yUHJvdG9idWYuVW5pdHlD",
-            "cmVkZW50aWFsc0gAEjgKDXVuaXR5U2V0dGluZ3MYBiABKAsyHy5EaXJlY3Rv",
-            "clByb3RvYnVmLlVuaXR5U2V0dGluZ3NIAEIFCgNtc2ciIwoERGF0YRIMCgRu",
-            "YW1lGAIgAigJEg0KBXZhbHVlGAMgAigCIjAKCERhdGFMaXN0EiQKBGRhdGEY",
-            "AiADKAsyFi5EaXJlY3RvclByb3RvYnVmLkRhdGEiLAoNQ29tbWFuZENoYW5n",
-            "ZRIMCgRuYW1lGAIgAigJEg0KBXZhbHVlGAMgAigIIiwKDkV4ZWN1dGVDb21t",
-            "YW5kEgwKBG5hbWUYAiACKAkSDAoEYXJncxgDIAMoCSItChBVbml0eUNyZWRl",
-            "bnRpYWxzEgoKAklEGAIgAigFEg0KBXRva2VuGAMgAigJIi0KDVVuaXR5U2V0",
+            "KAsyIC5EaXJlY3RvclByb3RvYnVmLkV4ZWN1dGVDb21tYW5kSAASMgoKZ2V0",
+            "Q29tbWFuZBgFIAEoCzIcLkRpcmVjdG9yUHJvdG9idWYuR2V0Q29tbWFuZEgA",
+            "EjgKDXVuaXR5U2V0dGluZ3MYBiABKAsyHy5EaXJlY3RvclByb3RvYnVmLlVu",
+            "aXR5U2V0dGluZ3NIAEIFCgNtc2ciIwoERGF0YRIMCgRuYW1lGAIgAigJEg0K",
+            "BXZhbHVlGAMgAigCIjAKCERhdGFMaXN0EiQKBGRhdGEYAiADKAsyFi5EaXJl",
+            "Y3RvclByb3RvYnVmLkRhdGEiLAoNQ29tbWFuZENoYW5nZRIMCgRuYW1lGAIg",
+            "AigJEg0KBXZhbHVlGAMgAigIIiwKDkV4ZWN1dGVDb21tYW5kEgwKBG5hbWUY",
+            "AiACKAkSDAoEYXJncxgDIAMoCSIMCgpHZXRDb21tYW5kIi0KDVVuaXR5U2V0",
             "dGluZ3MSDAoEbmFtZRgCIAIoCRIOCgZwdWJsaWMYAyACKAg="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "ExecuteCommand", "UnityCredentials", "UnitySettings" }, new[]{ "Msg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataWrapper), global::DirectorProtobuf.DataWrapper.Parser, new[]{ "DataList", "CommandChange", "ExecuteCommand", "GetCommand", "UnitySettings" }, new[]{ "Msg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.Data), global::DirectorProtobuf.Data.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.DataList), global::DirectorProtobuf.DataList.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.CommandChange), global::DirectorProtobuf.CommandChange.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.ExecuteCommand), global::DirectorProtobuf.ExecuteCommand.Parser, new[]{ "Name", "Args" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.UnityCredentials), global::DirectorProtobuf.UnityCredentials.Parser, new[]{ "ID", "Token" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.GetCommand), global::DirectorProtobuf.GetCommand.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DirectorProtobuf.UnitySettings), global::DirectorProtobuf.UnitySettings.Parser, new[]{ "Name", "Public" }, null, null, null, null)
           }));
     }
@@ -92,8 +91,8 @@ namespace DirectorProtobuf {
         case MsgOneofCase.ExecuteCommand:
           ExecuteCommand = other.ExecuteCommand.Clone();
           break;
-        case MsgOneofCase.UnityCredentials:
-          UnityCredentials = other.UnityCredentials.Clone();
+        case MsgOneofCase.GetCommand:
+          GetCommand = other.GetCommand.Clone();
           break;
         case MsgOneofCase.UnitySettings:
           UnitySettings = other.UnitySettings.Clone();
@@ -177,25 +176,25 @@ namespace DirectorProtobuf {
       }
     }
 
-    /// <summary>Field number for the "unityCredentials" field.</summary>
-    public const int UnityCredentialsFieldNumber = 5;
+    /// <summary>Field number for the "getCommand" field.</summary>
+    public const int GetCommandFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::DirectorProtobuf.UnityCredentials UnityCredentials {
-      get { return HasUnityCredentials ? (global::DirectorProtobuf.UnityCredentials) msg_ : null; }
+    public global::DirectorProtobuf.GetCommand GetCommand {
+      get { return HasGetCommand ? (global::DirectorProtobuf.GetCommand) msg_ : null; }
       set {
         msg_ = value;
-        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.UnityCredentials;
+        msgCase_ = value == null ? MsgOneofCase.None : MsgOneofCase.GetCommand;
       }
     }
-    /// <summary>Gets whether the "unityCredentials" field is set</summary>
+    /// <summary>Gets whether the "getCommand" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasUnityCredentials {
-      get { return msgCase_ == MsgOneofCase.UnityCredentials; }
+    public bool HasGetCommand {
+      get { return msgCase_ == MsgOneofCase.GetCommand; }
     }
-    /// <summary> Clears the value of the oneof if it's currently set to "unityCredentials" </summary>
+    /// <summary> Clears the value of the oneof if it's currently set to "getCommand" </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearUnityCredentials() {
-      if (HasUnityCredentials) {
+    public void ClearGetCommand() {
+      if (HasGetCommand) {
         ClearMsg();
       }
     }
@@ -230,7 +229,7 @@ namespace DirectorProtobuf {
       DataList = 2,
       CommandChange = 3,
       ExecuteCommand = 4,
-      UnityCredentials = 5,
+      GetCommand = 5,
       UnitySettings = 6,
     }
     private MsgOneofCase msgCase_ = MsgOneofCase.None;
@@ -261,7 +260,7 @@ namespace DirectorProtobuf {
       if (!object.Equals(DataList, other.DataList)) return false;
       if (!object.Equals(CommandChange, other.CommandChange)) return false;
       if (!object.Equals(ExecuteCommand, other.ExecuteCommand)) return false;
-      if (!object.Equals(UnityCredentials, other.UnityCredentials)) return false;
+      if (!object.Equals(GetCommand, other.GetCommand)) return false;
       if (!object.Equals(UnitySettings, other.UnitySettings)) return false;
       if (MsgCase != other.MsgCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -273,7 +272,7 @@ namespace DirectorProtobuf {
       if (HasDataList) hash ^= DataList.GetHashCode();
       if (HasCommandChange) hash ^= CommandChange.GetHashCode();
       if (HasExecuteCommand) hash ^= ExecuteCommand.GetHashCode();
-      if (HasUnityCredentials) hash ^= UnityCredentials.GetHashCode();
+      if (HasGetCommand) hash ^= GetCommand.GetHashCode();
       if (HasUnitySettings) hash ^= UnitySettings.GetHashCode();
       hash ^= (int) msgCase_;
       if (_unknownFields != null) {
@@ -301,9 +300,9 @@ namespace DirectorProtobuf {
         output.WriteRawTag(34);
         output.WriteMessage(ExecuteCommand);
       }
-      if (HasUnityCredentials) {
+      if (HasGetCommand) {
         output.WriteRawTag(42);
-        output.WriteMessage(UnityCredentials);
+        output.WriteMessage(GetCommand);
       }
       if (HasUnitySettings) {
         output.WriteRawTag(50);
@@ -326,8 +325,8 @@ namespace DirectorProtobuf {
       if (HasExecuteCommand) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExecuteCommand);
       }
-      if (HasUnityCredentials) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UnityCredentials);
+      if (HasGetCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetCommand);
       }
       if (HasUnitySettings) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UnitySettings);
@@ -362,11 +361,11 @@ namespace DirectorProtobuf {
           }
           ExecuteCommand.MergeFrom(other.ExecuteCommand);
           break;
-        case MsgOneofCase.UnityCredentials:
-          if (UnityCredentials == null) {
-            UnityCredentials = new global::DirectorProtobuf.UnityCredentials();
+        case MsgOneofCase.GetCommand:
+          if (GetCommand == null) {
+            GetCommand = new global::DirectorProtobuf.GetCommand();
           }
-          UnityCredentials.MergeFrom(other.UnityCredentials);
+          GetCommand.MergeFrom(other.GetCommand);
           break;
         case MsgOneofCase.UnitySettings:
           if (UnitySettings == null) {
@@ -415,12 +414,12 @@ namespace DirectorProtobuf {
             break;
           }
           case 42: {
-            global::DirectorProtobuf.UnityCredentials subBuilder = new global::DirectorProtobuf.UnityCredentials();
-            if (HasUnityCredentials) {
-              subBuilder.MergeFrom(UnityCredentials);
+            global::DirectorProtobuf.GetCommand subBuilder = new global::DirectorProtobuf.GetCommand();
+            if (HasGetCommand) {
+              subBuilder.MergeFrom(GetCommand);
             }
             input.ReadMessage(subBuilder);
-            UnityCredentials = subBuilder;
+            GetCommand = subBuilder;
             break;
           }
           case 50: {
@@ -1097,15 +1096,11 @@ namespace DirectorProtobuf {
 
   }
 
-  /// <summary>
-  ///connection interaction
-  /// </summary>
-  public sealed partial class UnityCredentials : pb::IMessage<UnityCredentials> {
-    private static readonly pb::MessageParser<UnityCredentials> _parser = new pb::MessageParser<UnityCredentials>(() => new UnityCredentials());
+  public sealed partial class GetCommand : pb::IMessage<GetCommand> {
+    private static readonly pb::MessageParser<GetCommand> _parser = new pb::MessageParser<GetCommand>(() => new GetCommand());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UnityCredentials> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetCommand> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1118,95 +1113,41 @@ namespace DirectorProtobuf {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UnityCredentials() {
+    public GetCommand() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UnityCredentials(UnityCredentials other) : this() {
-      _hasBits0 = other._hasBits0;
-      iD_ = other.iD_;
-      token_ = other.token_;
+    public GetCommand(GetCommand other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UnityCredentials Clone() {
-      return new UnityCredentials(this);
-    }
-
-    /// <summary>Field number for the "ID" field.</summary>
-    public const int IDFieldNumber = 2;
-    private readonly static int IDDefaultValue = 0;
-
-    private int iD_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ID {
-      get { if ((_hasBits0 & 1) != 0) { return iD_; } else { return IDDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        iD_ = value;
-      }
-    }
-    /// <summary>Gets whether the "ID" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasID {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "ID" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearID() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "token" field.</summary>
-    public const int TokenFieldNumber = 3;
-    private readonly static string TokenDefaultValue = "";
-
-    private string token_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Token {
-      get { return token_ ?? TokenDefaultValue; }
-      set {
-        token_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-    /// <summary>Gets whether the "token" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasToken {
-      get { return token_ != null; }
-    }
-    /// <summary>Clears the value of the "token" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearToken() {
-      token_ = null;
+    public GetCommand Clone() {
+      return new GetCommand(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as UnityCredentials);
+      return Equals(other as GetCommand);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UnityCredentials other) {
+    public bool Equals(GetCommand other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ID != other.ID) return false;
-      if (Token != other.Token) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasID) hash ^= ID.GetHashCode();
-      if (HasToken) hash ^= Token.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1220,14 +1161,6 @@ namespace DirectorProtobuf {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (HasID) {
-        output.WriteRawTag(16);
-        output.WriteInt32(ID);
-      }
-      if (HasToken) {
-        output.WriteRawTag(26);
-        output.WriteString(Token);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1236,12 +1169,6 @@ namespace DirectorProtobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (HasID) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ID);
-      }
-      if (HasToken) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1249,15 +1176,9 @@ namespace DirectorProtobuf {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UnityCredentials other) {
+    public void MergeFrom(GetCommand other) {
       if (other == null) {
         return;
-      }
-      if (other.HasID) {
-        ID = other.ID;
-      }
-      if (other.HasToken) {
-        Token = other.Token;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1270,20 +1191,15 @@ namespace DirectorProtobuf {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 16: {
-            ID = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            Token = input.ReadString();
-            break;
-          }
         }
       }
     }
 
   }
 
+  /// <summary>
+  ///connection interaction
+  /// </summary>
   public sealed partial class UnitySettings : pb::IMessage<UnitySettings> {
     private static readonly pb::MessageParser<UnitySettings> _parser = new pb::MessageParser<UnitySettings>(() => new UnitySettings());
     private pb::UnknownFieldSet _unknownFields;

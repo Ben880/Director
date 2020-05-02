@@ -673,6 +673,7 @@
           </e>
           <e p="Scripts" t="Include">
             <e p="Base" t="Include">
+              <e p="D_CommandController.cs" t="Include" />
               <e p="D_Conditon.cs" t="Include" />
               <e p="D_Data.cs" t="Include" />
               <e p="D_Debug.cs" t="Include" />
@@ -707,6 +708,7 @@
             <e p="Network" t="Include">
               <e p="Command.cs" t="Include" />
               <e p="CommandAdder.cs" t="Include" />
+              <e p="CommandRequester.cs" t="Include" />
               <e p="CommandTracker.cs" t="Include" />
               <e p="MetricCompiler.cs" t="Include" />
               <e p="NetworkConfig.cs" t="Include" />

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using ProBuilder2.Common;
 using Unity.Collections;
 using UnityEngine;
 using UnityEditor;
@@ -75,6 +76,7 @@ public class D_Director : MonoBehaviour
     private static float spawnChanceReductionCounter = 0;
     public static float spawnChanceReductionTime = 10; 
     private D_SpawnController[] spawnControllers;
+    private D_CommandController[] commandControllers;
     public int spawnChanceCount = 10; 
     //============================
     //===== Mono Functions========
@@ -99,6 +101,11 @@ public class D_Director : MonoBehaviour
         {
             controller.executeLogic();
         }
+
+        foreach (var controller in commandControllers)
+        {
+            controller.executeLogic();
+        }
         updateStates();
         updateCurrentDifficulty();
         updateSpawnChance();
@@ -110,6 +117,7 @@ public class D_Director : MonoBehaviour
     private void getControllers()
     {
         spawnControllers = gameObject.GetComponentsInChildren<D_SpawnController>();
+        commandControllers = gameObject.GetComponentsInChildren<D_CommandController>();
     }
     private void createSpawnData()
     {

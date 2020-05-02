@@ -5,9 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Demo/Scenes/Sample(UFPS).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Demo/Scenes/Sample(UFPS).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +47,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Depreciated/TCPTestClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_CommandController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/ProtoBuf/ProtoBufs/Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandRequester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandAdder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,8 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_Spawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/SpawnScripts/D_SpawnRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularArray.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
@@ -78,7 +80,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Logic/D_DetectSeen.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateTime.cs" />
@@ -112,6 +113,9 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandRequester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_CommandController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Director.cs" />
       </list>
     </option>
   </component>
@@ -220,6 +224,7 @@
       <workItem from="1587225817874" duration="2103000" />
       <workItem from="1587502594887" duration="2178000" />
       <workItem from="1588220118848" duration="4076000" />
+      <workItem from="1588353791924" duration="5844000" />
     </task>
     <servers />
   </component>
