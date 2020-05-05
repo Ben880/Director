@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\bmwla\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\bmwla\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\bmwla\Desktop\School\SP2\Director" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Director" t="Include">
+          <e p="Demo" t="Include">
+            <e p="UFPS" t="Include">
+              <e p="Base" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Core" t="Include">
+                    <e p="Editor" t="Include">
+                      <e p="Menu" t="Include">
+                        <e p="vp_AboutBox.cs" t="Include" />
+                        <e p="vp_AddonBrowser.cs" t="Include" />
+                        <e p="vp_UFPSMenu.cs" t="Include" />
+                        <e p="vp_UpdateDialog.cs" t="Include" />
+                      </e>
+                      <e p="vp_ComponentPersister.cs" t="Include" />
+                      <e p="vp_EditorApplicationQuit.cs" t="Include" />
+                      <e p="vp_EditorGUIUtility.cs" t="Include" />
+                      <e p="vp_EditorUtility.cs" t="Include" />
+                      <e p="vp_EventDumpWindow.cs" t="Include" />
+                      <e p="vp_FileDialog.cs" t="Include" />
+                      <e p="vp_FPCameraEditor.cs" t="Include" />
+                      <e p="vp_FPControllerEditor.cs" t="Include" />
+                      <e p="vp_FPInputEditor.cs" t="Include" />
+                      <e p="vp_FPPlayerEventHandlerEditor.cs" t="Include" />
+                      <e p="vp_FPWeaponEditor.cs" t="Include" />
+                      <e p="vp_FPWeaponMeleeAttackEditor.cs" t="Include" />
+                      <e p="vp_FPWeaponShooterEditor.cs" t="Include" />
+                      <e p="vp_InputEditor.cs" t="Include" />
+                      <e p="vp_InputWindow.cs" t="Include" />
+                      <e p="vp_MessageBox.cs" t="Include" />
+                      <e p="vp_PresetEditorGUIUtility.cs" t="Include" />
+                      <e p="vp_ShooterEditor.cs" t="Include" />
+                      <e p="vp_TimerEditor.cs" t="Include" />
+                      <e p="vp_UFPSInfo.cs" t="Include" />
+                      <e p="vp_WeaponEditor.cs" t="Include" />
+                      <e p="vp_WeaponShooterEditor.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Effects" t="Include">
+                    <e p="Editor" t="Include">
+                      <e p="vp_PlayerFootFXHandlerEditor.cs" t="Include" />
+                    </e>
+                    <e p="SurfaceSystem" t="Include">
+                      <e p="Editor" t="Include">
+                        <e p="vp_DecalManagerEditor.cs" t="Include" />
+                        <e p="vp_SurfaceManagerEditor.cs" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                  <e p="Gameplay" t="Include">
+                    <e p="Editor" t="Include">
+                      <e p="vp_FootstepManagerEditor.cs" t="Include" />
+                      <e p="vp_MovingPlatformEditor.cs" t="Include" />
+                      <e p="vp_RemotePlayerWizard.cs" t="Include" />
+                      <e p="vp_SpawnPointEditor.cs" t="Include" />
+                      <e p="vp_SurfaceIdentifierEditor.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ProCore" t="Include">
+          <e p="ProBuilder" t="Include">
+            <e p="About" t="Include">
+              <e p="Editor" t="Include">
+                <e p="pb_AboutWindow.cs" t="Include" />
+                <e p="pb_UpdateAvailable.cs" t="Include" />
+                <e p="pb_UpdateCheck.cs" t="Include" />
+                <e p="pb_VersionInfo.cs" t="Include" />
+                <e p="pb_VersionUtil.cs" t="Include" />
+              </e>
+            </e>
+            <e p="API Examples" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ClearUnusedAttributes.cs" t="Include" />
+                <e p="CreateShadowObject.cs" t="Include" />
+                <e p="CustomAction.cs" t="Include" />
+                <e p="EditorCallbackViewer.cs" t="Include" />
+                <e p="RenameNewObjects.cs" t="Include" />
+                <e p="SetCustomUnwrapParams.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Addons" t="Include">
+                <e p="pb_Fbx.cs" t="Include" />
+              </e>
+              <e p="MenuItems" t="Include">
+                <e p="Actions" t="Include">
+                  <e p="pb_ExportObj.cs" t="Include" />
+                  <e p="pb_GenerateUV2.cs" t="Include" />
+                  <e p="pb_MakeMeshAsset.cs" t="Include" />
+                  <e p="pb_ProBuilderize.cs" t="Include" />
+                  <e p="pb_StripProBuilderScripts.cs" t="Include" />
+                </e>
+                <e p="Geometry" t="Include">
+                  <e p="pb_BridgeEdges.cs" t="Include" />
+                  <e p="pb_ConformNormals.cs" t="Include" />
+                  <e p="pb_ConnectEdges.cs" t="Include" />
+                  <e p="pb_DetachDeleteFace.cs" t="Include" />
+                  <e p="pb_ExtrudeElement.cs" t="Include" />
+                  <e p="pb_FlipEdge.cs" t="Include" />
+                  <e p="pb_FlipNormals.cs" t="Include" />
+                  <e p="pb_FreezeTransform.cs" t="Include" />
+                  <e p="pb_MergeFaces.cs" t="Include" />
+                  <e p="pb_SetPivot.cs" t="Include" />
+                  <e p="pb_Triangulate.cs" t="Include" />
+                  <e p="pb_VertexMergeWeld.cs" t="Include" />
+                </e>
+                <e p="Repair" t="Include">
+                  <e p="pb_CleanLeakedMeshes.cs" t="Include" />
+                  <e p="pb_ForceSceneRefresh.cs" t="Include" />
+                  <e p="pb_RebuildMeshes.cs" t="Include" />
+                  <e p="pb_RebuildSharedIndices.cs" t="Include" />
+                  <e p="pb_RemoveDegenerateTris.cs" t="Include" />
+                  <e p="pb_RepairColors.cs" t="Include" />
+                  <e p="pb_RepairMeshReferences.cs" t="Include" />
+                  <e p="pb_RepairUV.cs" t="Include" />
+                  <e p="pb_ResetEntityMaterials.cs" t="Include" />
+                  <e p="pb_UpgradeBasicToAdvanced.cs" t="Include" />
+                </e>
+                <e p="Selection" t="Include">
+                  <e p="pb_EdgeSelection.cs" t="Include" />
+                  <e p="pb_ExpandSelection.cs" t="Include" />
+                  <e p="pb_InvertSelection.cs" t="Include" />
+                  <e p="pb_MaterialSelection.cs" t="Include" />
+                </e>
+                <e p="Tools" t="Include">
+                  <e p="pb_BooleanInterface.cs" t="Include" />
+                  <e p="pb_MaterialSelection.cs" t="Include" />
+                </e>
+                <e p="Window" t="Include">
+                  <e p="pb_ProBuilderMenuItems.cs" t="Include" />
+                </e>
+              </e>
+              <e p="pb_MenuItems.cs" t="Include" />
+              <e p="pb_MissingScriptEditor.cs" t="Include" />
+              <e p="pb_Preferences.cs" t="Include" />
+              <e p="pb_ScenePostProcessor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ProGrids" t="Include">
+            <e p="About" t="Include">
+              <e p="Editor" t="Include">
+                <e p="pg_AboutWindow.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="pg_Editor.cs" t="Include" />
+              <e p="pg_GridRenderer.cs" t="Include" />
+              <e p="pg_ParameterWindow.cs" t="Include" />
+              <e p="pg_Preferences.cs" t="Include" />
+              <e p="pg_ToggleContent.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
