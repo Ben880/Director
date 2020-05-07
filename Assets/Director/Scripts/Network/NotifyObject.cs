@@ -4,27 +4,17 @@ using UnityEngine;
 
 public class NotifyObject
 {
+    // ===========================================================================================
+    // Purpose: object to be notified of command execute
+    // ===========================================================================================
     private bool notified;
-    private bool destroy;
 
-    public bool Destroy
-    {
-        get { return destroy; }
-        set { destroy = value; }
-    }
-    public void notify()
-    {
-        notified = true;
-    }
+    public bool Destroy { get; set; }
 
-    public void reset()
-    {
-        notified = false;
-    }
+    public void Notify() { notified = true; }
 
-    public bool isTriggered()
-    {
-        return notified;
-    }
+    public void Reset() { notified = false; }
+
+    public bool IsTriggered() { return notified; }
     
 }

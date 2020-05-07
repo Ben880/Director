@@ -8,38 +8,21 @@ using UnityEngine;
 [RequireComponent(typeof(ProtoRouter))]
 public class NetworkSettings: Routable
 {
+    // ===========================================================================================
+    // Purpose: tracks unity name and if its public and sends to server
+    // ===========================================================================================
     private string name = "D";
     private bool publicSession = true;
     private ServerConnection serverConnection;
-
-    public void newsession()
-    {
-        Debug.Log("new session", this);
-        notifyServerOfChange();
-    }
-    void  Awake()
-    {
-        serverConnection = GetComponent<ServerConnection>();
-        GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.UnitySettings, this);
-    }
-
-    void Start()
-    {
-        notifyServerOfChange();
-    }
-
-    public override void route(DataWrapper wrapper)
-    {
-        name = wrapper.UnitySettings.Name;
-    }
-
+    // ======================================================================
+    // ==============================Data Functions=========================
+    // ======================================================================
     public string Name
     {
         get { return name; }
-        set
-        {
-            name = value;
-            notifyServerOfChange();
+        set { 
+            name = value; 
+            NotifyServerOfChange(); 
         }
     }
 
@@ -49,16 +32,35 @@ public class NetworkSettings: Routable
         set
         {
             publicSession = value;
-            notifyServerOfChange();
+            NotifyServerOfChange();
         }
     }
+    // ======================================================================
+    // ==============================Unity Functions=========================
+    // ======================================================================
+    public void  Awake()
+    {
+        serverConnection = GetComponent<ServerConnection>();
+        GetComponent<ProtoRouter>().RegisterRoute(DataWrapper.MsgOneofCase.UnitySettings, this);
+    }
 
-    private void notifyServerOfChange()
+    public void Start()
+    {
+        NotifyServerOfChange();
+    }
+    // ======================================================================
+    // ==============================override Functions======================
+    // ======================================================================
+    public override void Route(DataWrapper wrapper) { name = wrapper.UnitySettings.Name; }
+    // ======================================================================
+    // ==============================Public Functions========================
+    // ======================================================================
+    public void Newsession() { NotifyServerOfChange(); }
+    
+    private void NotifyServerOfChange()
     {
         DataWrapper wrapper = new DataWrapper();
-        wrapper.UnitySettings = new UnitySettings();
-        wrapper.UnitySettings.Name = name;
-        wrapper.UnitySettings.Public = publicSession;
-        serverConnection.sendToServer(wrapper);
+        wrapper.UnitySettings = new UnitySettings {Name = name, Public = publicSession};
+        serverConnection.SendToServer(wrapper);
     }
 }

@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Routable : MonoBehaviour
 {
-
-    public virtual void route(DataWrapper wrapper)
+    // ===========================================================================================
+    // Purpose: class to be extended for protobuf routing
+    // ===========================================================================================
+    public virtual void Route(DataWrapper wrapper)
     {
     }
 }

@@ -8,66 +8,72 @@ using UnityEngine;
 [RequireComponent(typeof(ProtoRouter))]
 public class CommandTracker: Routable 
 {
+    // ===========================================================================================
+    // Purpose: tracks commands and their changes and sends to server
+    // ===========================================================================================
     private Dictionary<string, Command> commands = new Dictionary<string, Command>();
     private ServerConnection serverConnection;
-    void Awake()
+    // ======================================================================
+    // ==============================Unity Functions=========================
+    // ======================================================================
+    public void Awake()
     {
         serverConnection = GetComponent<ServerConnection>();
-        GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this);
+        GetComponent<ProtoRouter>().RegisterRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this);
+    }
+    // ======================================================================
+    // ==============================Override Functions======================
+    // ======================================================================
+    public override void Route(DataWrapper wrapper) { ReceivedCommand(wrapper.ExecuteCommand); }
+    // ======================================================================
+    // ==============================Public Functions========================
+    // ======================================================================
+    public void AddNotifyObject(string key, NotifyObject notifyObj) { GetCommand(key).AddNotifyObject(notifyObj); }
+
+    public void NewSession() { foreach (var cmd in commands) { SendToServer(cmd.Value); } }
+    
+    public void RegisterCommand(Command command, bool send)
+    {
+        commands.Add(command.GetName(), command);
+        if (send)
+            SendToServer(command);
     }
     
-    public override void route(DataWrapper wrapper)
+    public void SetCommandEnabled(string key, bool value)
     {
-        recievedCommand(wrapper.ExecuteCommand);
+        GetCommand(key).SetEnabled(value);
+        SendToServer(GetCommand(key));
     }
-
-    public void newsession()
+    
+    public void ReceivedCommand(ExecuteCommand ec)
     {
-        Debug.Log("new session", this);
-        foreach (var cmd in commands)
+        if (commands.ContainsKey(ec.Name))
         {
-            sendToServer(cmd.Value);
+            Command commandToExecute = commands[ec.Name];
+            if (commandToExecute == null)
+                Debug.LogError("Command to execute is null");
+            else if (!commandToExecute.IsEnabled())
+                Debug.LogError("Command to execute is disabled");
+            else
+            {
+                commandToExecute.Execute();
+            }
         }
     }
-    public void registerCommand(Command command, bool send)
-    {
-        commands.Add(command.getName(), command);
-        if (send)
-            sendToServer(command);
-    }
-    public void setCommandEnabled(string key, bool value)
-    {
-        getCommand(key).setEnabled(value);
-        sendToServer(getCommand(key));
-    }
-    //private logic for sending command info to server
-    private void sendToServer(Command command)
+    // ======================================================================
+    // ==============================Private Functions========================
+    // ======================================================================
+    private void SendToServer(Command command)
     {
         CommandChange commandBuff = new CommandChange();
-        commandBuff.Name = command.getName();
-        commandBuff.Value = command.isEnabled();
+        commandBuff.Name = command.GetName();
+        commandBuff.Value = command.IsEnabled();
         DataWrapper wrapper = new DataWrapper();
         wrapper.CommandChange = commandBuff;
-        serverConnection.sendToServer(wrapper);
-    }
-
-    public void recievedCommand(ExecuteCommand ec)
-    {
-        Command commandToExecute = commands[ec.Name];
-        if (commandToExecute == null)
-            Debug.LogError("Command to execute is null");
-        else if (!commandToExecute.isEnabled())
-            Debug.LogError("Command to execute is disabled");
-        else
-        {
-            commandToExecute.execute();
-        }
+        serverConnection.SendToServer(wrapper);
     }
     
-    // ==================================================
-    // ===methods for restricted access of commands======
-    // ==================================================
-    private Command getCommand(string key)
+    private Command GetCommand(string key)
     {
         if (commands.ContainsKey(key))
             return commands[key];
@@ -76,14 +82,8 @@ public class CommandTracker: Routable
         throw new Exception("No such key");
     }
     
-    public void addNotifyObject(string key, NotifyObject notifyObj)
-    {
-        getCommand(key).addNotifyObject(notifyObj);
-    }
-
-    public bool commandExists(string commandName)
-    {
-        return commands.ContainsKey(commandName);
-    }
-    
+    // ======================================================================
+    // ==============================Test Functions==========================
+    // ======================================================================
+    public bool CommandExists(string commandName) { return commands.ContainsKey(commandName); }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NetworkConfig
 {
-    public const string host = "localhost";
-    public const int port = 8052;
+    // ===========================================================================================
+    // Purpose: config data for server connection
+    // ===========================================================================================
+    public const string Host = "localhost";
+    public const int Port = 8052;
 }

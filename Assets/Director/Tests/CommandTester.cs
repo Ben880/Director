@@ -12,15 +12,15 @@ namespace Tests
         private Command co;
         private NotifyObject no;
         [SetUp]
-        public void setup()
+        public void Setup()
         {
             co = new Command("Test", true);
             no = new NotifyObject();
-            co.addNotifyObject(no);
+            co.AddNotifyObject(no);
         }
 
         [TearDown]
-        public void tearDown()
+        public void TearDown()
         {
             co = null;
             no = null;
@@ -28,30 +28,30 @@ namespace Tests
         [Test]
         public void BasicTests()
         {
-            Assert.IsTrue(co.getName().Equals("Test"));
-            Assert.IsTrue(co.isEnabled());
-            co.setEnabled(false);
-            Assert.IsFalse(co.isEnabled());
+            Assert.IsTrue(co.GetName().Equals("Test"));
+            Assert.IsTrue(co.IsEnabled());
+            co.SetEnabled(false);
+            Assert.IsFalse(co.IsEnabled());
         }
         
         [Test]
         public void NotifyObjects()
         {
-            Assert.IsFalse(no.isTriggered());
-            co.execute();
-            Assert.IsTrue(no.isTriggered());
-            no.reset();
-            Assert.IsFalse(no.isTriggered());
-            no.notify();
-            Assert.IsTrue(no.isTriggered());
+            Assert.IsFalse(no.IsTriggered());
+            co.Execute();
+            Assert.IsTrue(no.IsTriggered());
+            no.Reset();
+            Assert.IsFalse(no.IsTriggered());
+            no.Notify();
+            Assert.IsTrue(no.IsTriggered());
         }
 
         [Test]
         public void NotifyObjectsDestroy()
         {
             no.Destroy = true;
-            co.execute();
-            Assert.IsFalse(no.isTriggered());
+            co.Execute();
+            Assert.IsFalse(no.IsTriggered());
         }
 
 

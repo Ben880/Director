@@ -13,83 +13,75 @@ using Google.Protobuf;
 [RequireComponent(typeof(NetworkSettings))]
 public class ServerConnection : MonoBehaviour
 {
+    // ===========================================================================================
+    // Purpose: handles connection to server
+    // ===========================================================================================
     //other needed classes
- 
     private CommandTracker commandTracker;
     private ProtoRouter protoRouter;
     // networking classes
     private TcpClient socketConnection; 	
     private Thread clientReceiveThread;
     private NetworkSettings networkSettings;
-    private float timmer = 0;
-    
-    void Awake()
+    // timer
+    private float timer = 0;
+    // ======================================================================
+    // ==============================Unity Functions=========================
+    // ======================================================================
+    public void Awake()
     {
         commandTracker = GetComponent<CommandTracker>();
         networkSettings = GetComponent<NetworkSettings>();
         protoRouter = GetComponent<ProtoRouter>();
-        connectToServer();
-        
+        ConnectToServer();
     }
 
-    void Start()
+    public void Update()
     {
-        DataWrapper wrapper = new DataWrapper();
-        wrapper.UnitySettings = new UnitySettings();
-        wrapper.UnitySettings.Name = "Default";
-        wrapper.UnitySettings.Public = true;
-        sendToServer(wrapper);
+        if (socketConnection != null) return;
+        timer += Time.deltaTime;
+        if (!(timer > 2)) return;
+        ConnectToServer();
+        timer = 0;
     }
 
-    private void Update()
+    public void OnApplicationQuit()
     {
-        if (socketConnection == null)
+        clientReceiveThread.Abort();
+        socketConnection.Close();
+    }
+    // ======================================================================
+    // ==============================Unity Functions=========================
+    // ======================================================================
+    private void ConnectToServer()
+    {
+        try 
         {
-            timmer += Time.deltaTime;
-            if (timmer > 2)
-            {
-                connectToServer();
-                timmer = 0;
-            }
-        }
-    }
-
-    private void connectToServer()
-    {
-        try {  			
-            clientReceiveThread = new Thread (new ThreadStart(ListenForCommands)); 			
-            clientReceiveThread.IsBackground = true; 			
+            clientReceiveThread = new Thread(new ThreadStart(ListenForCommands)) {IsBackground = true};
             clientReceiveThread.Start();
-            
         } 		
-        catch (Exception e) { 			
-            Debug.Log("connect exception " + e, this); 		
-        }
+        catch (Exception e) { Debug.Log("connect exception " + e, this); }
     }
 
-    public void sendToServer(DataWrapper protoObject)
+    public void SendToServer(DataWrapper wrapper)
     {
-        if (socketConnection == null || !socketConnection.Connected) {             
-            return;         
-        }  
+        if (socketConnection == null || !socketConnection.Connected)            
+            return;
         try
         {
             NetworkStream stream = socketConnection.GetStream();
             if (stream.CanWrite) {
-                protoObject.WriteDelimitedTo(stream);
+                wrapper.WriteDelimitedTo(stream);
             }         
         } 		
-        catch (SocketException socketException) {             
-            Debug.Log("Socket exception: " + socketException, this);         
-        }
+        catch (SocketException socketE) { Debug.Log("Socket exception: " + socketE, this); }
     }
     private void ListenForCommands()
     {
         try
         {
-            socketConnection = new TcpClient(NetworkConfig.host, NetworkConfig.port);
-            networkSettings.newsession();
-            commandTracker.newsession();
+            socketConnection = new TcpClient(NetworkConfig.Host, NetworkConfig.Port);
+            commandTracker.NewSession();
             DataWrapper wrapper = new DataWrapper();
             while (true)
             {
@@ -98,15 +90,11 @@ public class ServerConnection : MonoBehaviour
                 {
                     wrapper.MergeDelimitedFrom(stream);
                 } while (stream.DataAvailable);
-
                 Debug.Log("message received: " + wrapper.MsgCase.ToString(), this);
-                protoRouter.routeProtobuf(wrapper);
+                protoRouter.RouteProtobuf(wrapper);
             }
         }
-        catch (SocketException socketException)
-        {
-            Debug.Log("Socket exception: " + socketException, this);
-        }
+        catch (SocketException socketE) { Debug.Log("Socket exception: " + socketE, this); }
         finally
         {
             socketConnection = null;
@@ -114,9 +102,5 @@ public class ServerConnection : MonoBehaviour
         }
     }
     
-    void OnApplicationQuit()
-    {
-        clientReceiveThread.Abort();
-        socketConnection.Close();
-    }
+
 }

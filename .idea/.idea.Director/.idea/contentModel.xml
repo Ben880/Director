@@ -707,7 +707,6 @@
             </e>
             <e p="Network" t="Include">
               <e p="Command.cs" t="Include" />
-              <e p="CommandAdder.cs" t="Include" />
               <e p="CommandRequester.cs" t="Include" />
               <e p="CommandTracker.cs" t="Include" />
               <e p="MetricCompiler.cs" t="Include" />
@@ -753,6 +752,7 @@
           <e p="Tests" t="Include">
             <e p="CommandTester.cs" t="Include" />
             <e p="CommandTrackerTester.cs" t="Include" />
+            <e p="MetricCompilerTester.cs" t="Include" />
             <e p="ProtoRouterTester.cs" t="Include" />
             <e p="ServerConnectionTester.cs" t="Include" />
             <e p="Tests.asmdef" t="Include" />

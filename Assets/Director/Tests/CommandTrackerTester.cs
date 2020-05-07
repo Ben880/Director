@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Assert = UnityEngine.Assertions.Assert;
+using Assert = NUnit.Framework.Assert;
 using DirectorProtobuf;
 
 namespace Tests
@@ -14,17 +14,17 @@ namespace Tests
         private GameObject go;
         private CommandTracker ct;
         [SetUp]
-        public void setup()
+        public void Setup()
         {
             go = new GameObject();
             go.AddComponent<ServerConnection>();
             ct = go.GetComponent<CommandTracker>();
             Command command = new Command("Test", true);
-            ct.registerCommand(command, false);
+            ct.RegisterCommand(command, false);
         }
 
         [TearDown]
-        public void tearDown()
+        public void TearDown()
         {
             ct = null;
             GameObject.Destroy(go);
@@ -32,37 +32,29 @@ namespace Tests
         
         // A Test behaves as an ordinary method
         [Test]
-        public void registerCommand()
+        public void RegisterCommand()
         {
-            Assert.IsTrue(ct.commandExists("Test"));
-            Assert.IsFalse(ct.commandExists("NotATest"));
+            Assert.IsTrue(ct.CommandExists("Test"));
+            Assert.IsFalse(ct.CommandExists("NotATest"));
         }
 
         [Test]
-        public void executeCommand()
+        public void ExecuteCommand()
         {
             NotifyObject no = new NotifyObject();
-            ct.addNotifyObject("Test", no);
-            Assert.IsFalse(no.isTriggered());
+            ct.AddNotifyObject("Test", no);
+            Assert.IsFalse(no.IsTriggered());
             ExecuteCommand command = new ExecuteCommand();
             command.Name = "Test";
-            ct.recievedCommand(command);
-            Assert.IsTrue(no.isTriggered());
+            ct.ReceivedCommand(command);
+            Assert.IsTrue(no.IsTriggered());
         }
         
         [Test]
-        public void noKeyForNotifyObjectThrowsE()
+        public void NoKeyForNotifyDNT()
         {
             NotifyObject no = new NotifyObject();
-            try
-            {
-                ct.addNotifyObject("Test", no);
-                Assert.IsTrue(false);
-            }
-            catch (Exception e)
-            {
-                Assert.IsTrue(true);
-            }
+            Assert.DoesNotThrow(() => ct.AddNotifyObject("Test", no));
         }
         
 

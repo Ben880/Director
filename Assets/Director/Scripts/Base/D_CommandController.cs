@@ -71,16 +71,16 @@ public class D_CommandController : D_DirectorObject
             reasons.Add(condition.ToString());
         }
         Command command = new Command(commandName, false);
-        command.addNotifyObject(no);
+        command.AddNotifyObject(no);
         ct = GameObject.FindGameObjectWithTag("NetworkController").GetComponent<CommandTracker>();
-        ct.registerCommand(command, true);
+        ct.RegisterCommand(command, true);
     }
     
     public void executeLogic()
     {
         if (shouldSpawn() != lastShouldSpawn)
         {
-            ct.setCommandEnabled(commandName, shouldSpawn());
+            ct.SetCommandEnabled(commandName, shouldSpawn());
             lastShouldSpawn = shouldSpawn();
             Debug.Log("Changed command state " + commandName+ " to " + lastShouldSpawn, this);
         }
@@ -90,9 +90,9 @@ public class D_CommandController : D_DirectorObject
 
     public void listenForCommands()
     {
-        if (no.isTriggered() && director.getDirectorScript().requestSpawn(spawnType))
+        if (no.IsTriggered() && director.getDirectorScript().requestSpawn(spawnType))
         {
-            no.reset();
+            no.Reset();
             GameObject spawnObject = locateSpawn();                       // spawn result of locateHealth()
             if (spawnObject != null)
             {

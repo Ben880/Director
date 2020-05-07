@@ -5,7 +5,7 @@ using DirectorProtobuf;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Assert = NUnit.Framework.Assert;//= //UnityEngine.Assertions.Assert;
+using Assert = NUnit.Framework.Assert;
 
 namespace Tests
 {
@@ -39,14 +39,14 @@ namespace Tests
             DataWrapper wrapper = new DataWrapper();
             DataList list = new DataList();
             wrapper.DataList = list;
-            go.GetComponent<ServerConnection>().sendToServer(wrapper);
+            go.GetComponent<ServerConnection>().SendToServer(wrapper);
         }
         
         [Test]
         public void InvalidDataWrapper()
         {
             DataWrapper wrapper = new DataWrapper();
-            go.GetComponent<ServerConnection>().sendToServer(wrapper);
+            go.GetComponent<ServerConnection>().SendToServer(wrapper);
             Assert.That(()=> throwsE(null), Throws.Exception);
         }
 

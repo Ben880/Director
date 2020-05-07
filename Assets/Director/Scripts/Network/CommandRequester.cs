@@ -3,29 +3,25 @@ using System.Collections.Generic;
 using DirectorProtobuf;
 using UnityEngine;
 
+[RequireComponent(typeof(ServerConnection))]
 public class CommandRequester : MonoBehaviour
 {
+    // ===========================================================================================
+    // Purpose: request a command from the server to space out received time between commands
+    // ===========================================================================================
     [SerializeField]
-    private float requestTime = 5;
-
+    private float requestTime = 0.2f;
     private float timer = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private ServerConnection sc;
 
-    // Update is called once per frame
-    void Update()
+    public void Awake() { sc = GetComponent<ServerConnection>();}
+
+    public void Update()
     {
         timer += Time.deltaTime;
-        if (timer > requestTime)
-        {
-            //Debug.Log("Requesting any avalible commands",this);
-            DataWrapper wrapper = new DataWrapper();
-            wrapper.GetCommand = new GetCommand();
-            gameObject.GetComponent<ServerConnection>().sendToServer(wrapper);
-            timer = 0;
-        }
+        if (!(timer > requestTime)) return;
+        DataWrapper wrapper = new DataWrapper {GetCommand = new GetCommand()};
+        sc.SendToServer(wrapper);
+        timer = 0;
     }
 }

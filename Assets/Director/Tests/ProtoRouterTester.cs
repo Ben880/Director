@@ -12,19 +12,11 @@ namespace Tests
     {
         public class TestRoute : Routable
         {
-            public DataWrapper WrapperRecieved;
+            public DataWrapper WrapperReceived;
+            public void Awake() { GetComponent<ProtoRouter>().RegisterRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this); }
 
-            public void Awake()
-            {
-                GetComponent<ProtoRouter>().registerRoute(DataWrapper.MsgOneofCase.ExecuteCommand, this);
-            }
-
-            public override void route(DataWrapper wrapper)
-            {
-                WrapperRecieved = wrapper;
-            }
+            public override void Route(DataWrapper wrapper) { WrapperReceived = wrapper; }
         }
-
         private GameObject go;
 
         [SetUp]
@@ -34,7 +26,7 @@ namespace Tests
             go.AddComponent<ProtoRouter>();
             go.AddComponent<TestRoute>();
         }
-
+        
         [TearDown]
         public void tearDown()
         {
@@ -48,9 +40,9 @@ namespace Tests
             ExecuteCommand command = new ExecuteCommand();
             command.Name = "Test";
             wrapper.ExecuteCommand = command;
-            go.GetComponent<ProtoRouter>().routeProtobuf(wrapper);
+            go.GetComponent<ProtoRouter>().RouteProtobuf(wrapper);
             TestRoute ro = go.GetComponent<TestRoute>();
-            Assert.IsNotNull(ro.WrapperRecieved);
+            Assert.IsNotNull(ro.WrapperReceived);
             Assert.IsTrue(wrapper.MsgCase == DataWrapper.MsgOneofCase.ExecuteCommand);
             Assert.IsTrue(wrapper.ExecuteCommand.Name.Equals("Test"));
         }

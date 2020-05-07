@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Command
 {
+    // ===========================================================================================
+    // Purpose: data type for commands
+    // ===========================================================================================
     private string commandName = "";
     private bool enabled = false;
     private List<NotifyObject> notifyObjects = new List<NotifyObject>();
@@ -15,34 +18,23 @@ public class Command
         this.enabled = enabled;
     }
     
-    // get the name of the command
-    public string getName()
-    {
-        return commandName;
-    }
-    public bool isEnabled()
-    {
-        return enabled;
-    }
-    public void setEnabled(bool enabled)
-    {
-        this.enabled = enabled;
-        
-    }
+    // getters and setters
+    public string GetName() { return commandName; }
+    
+    public bool IsEnabled() { return enabled; }
+    
+    public void SetEnabled(bool enabled) { this.enabled = enabled; }
+    
+    public void AddNotifyObject(NotifyObject notifyObject) { notifyObjects.Add(notifyObject); }
 
-    public void addNotifyObject(NotifyObject notifyObject)
-    {
-        notifyObjects.Add(notifyObject);
-    }
-
-    public void execute()
+    public void Execute()
     {
         for (int i = 0; i < notifyObjects.Count; i++)
         {
             if (notifyObjects[i].Destroy)
                 notifyObjects.RemoveAt(i);
             else
-                notifyObjects[i].notify();
+                notifyObjects[i].Notify();
         }
     }
     
