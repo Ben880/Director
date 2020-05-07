@@ -20,27 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assembly-CSharp-Editor.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assembly-CSharp-Editor.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_CommandController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandAdder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandAdder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandRequester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandRequester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/CommandTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/CommandTrackerTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/ProtoRouterTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Tests/ServerConnectionTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +229,8 @@
       <workItem from="1588711856278" duration="22000" />
       <workItem from="1588711909206" duration="22000" />
       <workItem from="1588794153599" duration="2843000" />
-      <workItem from="1588826143319" duration="3345000" />
+      <workItem from="1588826143319" duration="3473000" />
+      <workItem from="1588830217291" duration="1705000" />
     </task>
     <servers />
   </component>
