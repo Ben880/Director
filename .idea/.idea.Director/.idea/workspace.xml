@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c659dba4-9410-4a96-8c87-5c2a969e975f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Director/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Demo/Scenes/Sample(UFPS).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Demo/Scenes/Sample(UFPS).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +49,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ProtoRouter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_UpdateDebug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandRequester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Command.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/CommandTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/Routable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Depreciated/TCPTestClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Zones/D_ZoneUpdater.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Director/Tests/Tests.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NotifyObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Base/D_CommandController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/DisplayConnectionInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/ProtoBuf/Google.Protobuf/CodedInputStream.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/ServerConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Inputs/D_UpdateVelocity.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_RegiserConsoleTextMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_DirectorObjects.cs" />
@@ -89,7 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Points.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Points/D_PointObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_LookingAtDebug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Conditon.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Tools/D_CircularList.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_SpawnController.cs" />
@@ -129,6 +133,8 @@
         <option value="$PROJECT_DIR$/Assets/Director/Tests/MetricCompilerTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/MetricCompiler.cs" />
         <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/NetworkSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Network/DisplayConnectionInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Director/Scripts/Base/D_Debug.cs" />
       </list>
     </option>
   </component>
@@ -231,6 +237,8 @@
       <workItem from="1588794153599" duration="2843000" />
       <workItem from="1588826143319" duration="3473000" />
       <workItem from="1588830217291" duration="1705000" />
+      <workItem from="1588959898844" duration="857000" />
+      <workItem from="1588961034473" duration="728000" />
     </task>
     <servers />
   </component>

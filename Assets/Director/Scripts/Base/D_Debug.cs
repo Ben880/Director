@@ -6,7 +6,7 @@ using UnityEngine;
 public class D_Debug
 {
     private static bool useTextMesh = false;
-    private static int listSize = 20;
+    private static int listSize = 15;
     private static TextMeshProUGUI text;
     private static D_CircularList<string> strings = new D_CircularList<string>(listSize);
     private static StringBuilder sb = new StringBuilder();
